@@ -1,0 +1,50 @@
+---------------------------------------------------------------
+[ 2023-03-31T08:49:26+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002038s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.014515s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000803s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.012761s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.012829s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.012059s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000459s ]
+---------------------------------------------------------------
+[ 2023-03-31T08:50:23+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/log/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000736s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.011606s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.011603s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.012829s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/log/index' LIMIT 1 [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_login_log` [ RunTime:0.012478s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_login_log` `a` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_login_log` `a` LIMIT 1 [ RunTime:0.000437s ]
+---------------------------------------------------------------
+[ 2023-03-31T10:23:30+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/login/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001572s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.020122s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001282s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.019935s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`title` FROM `tp_admin` `a` LEFT JOIN `tp_auth_group` `b` ON `a`.`groupId`=`b`.`id` WHERE  `userName` = 'admin' LIMIT 1 [ RunTime:0.001817s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.018610s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_login_log` [ RunTime:0.018676s ]
+[ sql ] [ SQL ] INSERT INTO `tp_login_log` (`uid` , `userName` , `roles` , `loginTime` , `loginIp`) VALUES (1 , 'admin' , '超级管理员' , 1680229410 , '127.0.0.1') [ RunTime:0.005620s ]
+[ sql ] [ SQL ] UPDATE `tp_admin`  SET `loginTime`=1680229410  WHERE  `id` = 1 [ RunTime:0.002929s ]
+---------------------------------------------------------------
+[ 2023-03-31T10:23:31+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000744s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.019536s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.019505s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.020235s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.018384s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000425s ]

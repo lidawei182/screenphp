@@ -1,0 +1,198 @@
+---------------------------------------------------------------
+[ 2023-05-17T16:16:17+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/login/saveLogin
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T16:16:17+08:00 ] 127.0.0.1 POST www.mmcall.test.net/index.php/admin/login/saveLogin
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yunmmcall_big.t_tree' doesn't exist[D:\PHPTutorial\WWW\screenphp\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2023-05-17T17:28:03+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/login/index
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:28:04+08:00 ] 127.0.0.1 POST www.mmcall.test.net/index.php/admin/login/index
+[ error ] [10302]用户不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:28:20+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/login/saveLogin
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:28:24+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/login/index
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:28:25+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:28:27+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F17%5C%22,%5C%222023%2F4%2F20%5C%22],[%5C%222023%2F4%2F21%5C%22,%5C%222023%2F4%2F24%5C%22],[%5C%222023%2F4%2F25%5C%22,%5C%222023%2F4%2F28%5C%22],[%5C%222023%2F4%2F29%5C%22,%5C%222023%2F5%2F2%5C%22],[%5C%222023%2F5%2F3%5C%22,%5C%222023%2F5%2F6%5C%22],[%5C%222023%2F5%2F7%5C%22,%5C%222023%2F5%2F10%5C%22],[%5C%222023%2F5%2F11%5C%22,%5C%222023%2F5%2F14%5C%22],[%5C%222023%2F5%2F15%5C%22,%5C%222023%2F5%2F17%5C%22]]%22%7D&signature=c638dad114b534c0127f51aa917e29f0
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:28:28+08:00 ] 127.0.0.1 GET www.mmcall.test.net/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F17%5C%22,%5C%222023%2F4%2F20%5C%22],[%5C%222023%2F4%2F21%5C%22,%5C%222023%2F4%2F24%5C%22],[%5C%222023%2F4%2F25%5C%22,%5C%222023%2F4%2F28%5C%22],[%5C%222023%2F4%2F29%5C%22,%5C%222023%2F5%2F2%5C%22],[%5C%222023%2F5%2F3%5C%22,%5C%222023%2F5%2F6%5C%22],[%5C%222023%2F5%2F7%5C%22,%5C%222023%2F5%2F10%5C%22],[%5C%222023%2F5%2F11%5C%22,%5C%222023%2F5%2F14%5C%22],[%5C%222023%2F5%2F15%5C%22,%5C%222023%2F5%2F17%5C%22]]%22%7D&signature=c638dad114b534c0127f51aa917e29f0
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.No' in 'field list'[D:\PHPTutorial\WWW\screenphp\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2023-05-17T17:28:28+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:28:28+08:00 ] 127.0.0.1 POST www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.No' in 'field list'[D:\PHPTutorial\WWW\screenphp\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2023-05-17T17:32:27+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F17%5C%22,%5C%222023%2F4%2F20%5C%22],[%5C%222023%2F4%2F21%5C%22,%5C%222023%2F4%2F24%5C%22],[%5C%222023%2F4%2F25%5C%22,%5C%222023%2F4%2F28%5C%22],[%5C%222023%2F4%2F29%5C%22,%5C%222023%2F5%2F2%5C%22],[%5C%222023%2F5%2F3%5C%22,%5C%222023%2F5%2F6%5C%22],[%5C%222023%2F5%2F7%5C%22,%5C%222023%2F5%2F10%5C%22],[%5C%222023%2F5%2F11%5C%22,%5C%222023%2F5%2F14%5C%22],[%5C%222023%2F5%2F15%5C%22,%5C%222023%2F5%2F17%5C%22]]%22%7D&signature=c638dad114b534c0127f51aa917e29f0
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:32:28+08:00 ] 127.0.0.1 GET www.mmcall.test.net/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F17%5C%22,%5C%222023%2F4%2F20%5C%22],[%5C%222023%2F4%2F21%5C%22,%5C%222023%2F4%2F24%5C%22],[%5C%222023%2F4%2F25%5C%22,%5C%222023%2F4%2F28%5C%22],[%5C%222023%2F4%2F29%5C%22,%5C%222023%2F5%2F2%5C%22],[%5C%222023%2F5%2F3%5C%22,%5C%222023%2F5%2F6%5C%22],[%5C%222023%2F5%2F7%5C%22,%5C%222023%2F5%2F10%5C%22],[%5C%222023%2F5%2F11%5C%22,%5C%222023%2F5%2F14%5C%22],[%5C%222023%2F5%2F15%5C%22,%5C%222023%2F5%2F17%5C%22]]%22%7D&signature=c638dad114b534c0127f51aa917e29f0
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.No' in 'field list'[D:\PHPTutorial\WWW\screenphp\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2023-05-17T17:33:28+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:33:28+08:00 ] 127.0.0.1 POST www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'yunmmcall_big.t_people' doesn't exist[D:\PHPTutorial\WWW\screenphp\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2023-05-17T17:36:27+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F17%5C%22,%5C%222023%2F4%2F20%5C%22],[%5C%222023%2F4%2F21%5C%22,%5C%222023%2F4%2F24%5C%22],[%5C%222023%2F4%2F25%5C%22,%5C%222023%2F4%2F28%5C%22],[%5C%222023%2F4%2F29%5C%22,%5C%222023%2F5%2F2%5C%22],[%5C%222023%2F5%2F3%5C%22,%5C%222023%2F5%2F6%5C%22],[%5C%222023%2F5%2F7%5C%22,%5C%222023%2F5%2F10%5C%22],[%5C%222023%2F5%2F11%5C%22,%5C%222023%2F5%2F14%5C%22],[%5C%222023%2F5%2F15%5C%22,%5C%222023%2F5%2F17%5C%22]]%22%7D&signature=c638dad114b534c0127f51aa917e29f0
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:38:23+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:38:26+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F17%5C%22,%5C%222023%2F4%2F20%5C%22],[%5C%222023%2F4%2F21%5C%22,%5C%222023%2F4%2F24%5C%22],[%5C%222023%2F4%2F25%5C%22,%5C%222023%2F4%2F28%5C%22],[%5C%222023%2F4%2F29%5C%22,%5C%222023%2F5%2F2%5C%22],[%5C%222023%2F5%2F3%5C%22,%5C%222023%2F5%2F6%5C%22],[%5C%222023%2F5%2F7%5C%22,%5C%222023%2F5%2F10%5C%22],[%5C%222023%2F5%2F11%5C%22,%5C%222023%2F5%2F14%5C%22],[%5C%222023%2F5%2F15%5C%22,%5C%222023%2F5%2F17%5C%22]]%22%7D&signature=c638dad114b534c0127f51aa917e29f0
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:38:26+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:38:27+08:00 ] 127.0.0.1 POST www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'c.deviceid' in 'on clause'[D:\PHPTutorial\WWW\screenphp\thinkphp\library\think\db\Connection.php:385]
+---------------------------------------------------------------
+[ 2023-05-17T17:39:01+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:39:04+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F17%5C%22,%5C%222023%2F4%2F20%5C%22],[%5C%222023%2F4%2F21%5C%22,%5C%222023%2F4%2F24%5C%22],[%5C%222023%2F4%2F25%5C%22,%5C%222023%2F4%2F28%5C%22],[%5C%222023%2F4%2F29%5C%22,%5C%222023%2F5%2F2%5C%22],[%5C%222023%2F5%2F3%5C%22,%5C%222023%2F5%2F6%5C%22],[%5C%222023%2F5%2F7%5C%22,%5C%222023%2F5%2F10%5C%22],[%5C%222023%2F5%2F11%5C%22,%5C%222023%2F5%2F14%5C%22],[%5C%222023%2F5%2F15%5C%22,%5C%222023%2F5%2F17%5C%22]]%22%7D&signature=c638dad114b534c0127f51aa917e29f0
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:39:05+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:39:22+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/getPeopleList
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:39:25+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/dateCallsList
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:39:26+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/historyCallsList
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:39:30+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/admin/index
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:39:30+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/roles/getLists
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:39:33+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F17%5C%22,%5C%222023%2F4%2F20%5C%22],[%5C%222023%2F4%2F21%5C%22,%5C%222023%2F4%2F24%5C%22],[%5C%222023%2F4%2F25%5C%22,%5C%222023%2F4%2F28%5C%22],[%5C%222023%2F4%2F29%5C%22,%5C%222023%2F5%2F2%5C%22],[%5C%222023%2F5%2F3%5C%22,%5C%222023%2F5%2F6%5C%22],[%5C%222023%2F5%2F7%5C%22,%5C%222023%2F5%2F10%5C%22],[%5C%222023%2F5%2F11%5C%22,%5C%222023%2F5%2F14%5C%22],[%5C%222023%2F5%2F15%5C%22,%5C%222023%2F5%2F17%5C%22]]%22%7D&signature=c638dad114b534c0127f51aa917e29f0
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:39:33+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:40:55+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:41:27+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:43:32+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F17%5C%22,%5C%222023%2F4%2F20%5C%22],[%5C%222023%2F4%2F21%5C%22,%5C%222023%2F4%2F24%5C%22],[%5C%222023%2F4%2F25%5C%22,%5C%222023%2F4%2F28%5C%22],[%5C%222023%2F4%2F29%5C%22,%5C%222023%2F5%2F2%5C%22],[%5C%222023%2F5%2F3%5C%22,%5C%222023%2F5%2F6%5C%22],[%5C%222023%2F5%2F7%5C%22,%5C%222023%2F5%2F10%5C%22],[%5C%222023%2F5%2F11%5C%22,%5C%222023%2F5%2F14%5C%22],[%5C%222023%2F5%2F15%5C%22,%5C%222023%2F5%2F17%5C%22]]%22%7D&signature=c638dad114b534c0127f51aa917e29f0
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:44:23+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:44:32+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:44:40+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:46:49+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:47:01+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:47:04+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F17%5C%22,%5C%222023%2F4%2F20%5C%22],[%5C%222023%2F4%2F21%5C%22,%5C%222023%2F4%2F24%5C%22],[%5C%222023%2F4%2F25%5C%22,%5C%222023%2F4%2F28%5C%22],[%5C%222023%2F4%2F29%5C%22,%5C%222023%2F5%2F2%5C%22],[%5C%222023%2F5%2F3%5C%22,%5C%222023%2F5%2F6%5C%22],[%5C%222023%2F5%2F7%5C%22,%5C%222023%2F5%2F10%5C%22],[%5C%222023%2F5%2F11%5C%22,%5C%222023%2F5%2F14%5C%22],[%5C%222023%2F5%2F15%5C%22,%5C%222023%2F5%2F17%5C%22]]%22%7D&signature=c638dad114b534c0127f51aa917e29f0
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:47:05+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:47:42+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:47:48+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:47:50+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F17%5C%22,%5C%222023%2F4%2F20%5C%22],[%5C%222023%2F4%2F21%5C%22,%5C%222023%2F4%2F24%5C%22],[%5C%222023%2F4%2F25%5C%22,%5C%222023%2F4%2F28%5C%22],[%5C%222023%2F4%2F29%5C%22,%5C%222023%2F5%2F2%5C%22],[%5C%222023%2F5%2F3%5C%22,%5C%222023%2F5%2F6%5C%22],[%5C%222023%2F5%2F7%5C%22,%5C%222023%2F5%2F10%5C%22],[%5C%222023%2F5%2F11%5C%22,%5C%222023%2F5%2F14%5C%22],[%5C%222023%2F5%2F15%5C%22,%5C%222023%2F5%2F17%5C%22]]%22%7D&signature=c638dad114b534c0127f51aa917e29f0
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:47:51+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:48:39+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:49:33+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:51:13+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:51:15+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:51:18+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F17%5C%22,%5C%222023%2F4%2F20%5C%22],[%5C%222023%2F4%2F21%5C%22,%5C%222023%2F4%2F24%5C%22],[%5C%222023%2F4%2F25%5C%22,%5C%222023%2F4%2F28%5C%22],[%5C%222023%2F4%2F29%5C%22,%5C%222023%2F5%2F2%5C%22],[%5C%222023%2F5%2F3%5C%22,%5C%222023%2F5%2F6%5C%22],[%5C%222023%2F5%2F7%5C%22,%5C%222023%2F5%2F10%5C%22],[%5C%222023%2F5%2F11%5C%22,%5C%222023%2F5%2F14%5C%22],[%5C%222023%2F5%2F15%5C%22,%5C%222023%2F5%2F17%5C%22]]%22%7D&signature=c638dad114b534c0127f51aa917e29f0
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:51:19+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:53:29+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:53:33+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:53:35+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F17%5C%22,%5C%222023%2F4%2F20%5C%22],[%5C%222023%2F4%2F21%5C%22,%5C%222023%2F4%2F24%5C%22],[%5C%222023%2F4%2F25%5C%22,%5C%222023%2F4%2F28%5C%22],[%5C%222023%2F4%2F29%5C%22,%5C%222023%2F5%2F2%5C%22],[%5C%222023%2F5%2F3%5C%22,%5C%222023%2F5%2F6%5C%22],[%5C%222023%2F5%2F7%5C%22,%5C%222023%2F5%2F10%5C%22],[%5C%222023%2F5%2F11%5C%22,%5C%222023%2F5%2F14%5C%22],[%5C%222023%2F5%2F15%5C%22,%5C%222023%2F5%2F17%5C%22]]%22%7D&signature=c638dad114b534c0127f51aa917e29f0
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:53:36+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:54:45+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:57:35+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F17%5C%22,%5C%222023%2F4%2F20%5C%22],[%5C%222023%2F4%2F21%5C%22,%5C%222023%2F4%2F24%5C%22],[%5C%222023%2F4%2F25%5C%22,%5C%222023%2F4%2F28%5C%22],[%5C%222023%2F4%2F29%5C%22,%5C%222023%2F5%2F2%5C%22],[%5C%222023%2F5%2F3%5C%22,%5C%222023%2F5%2F6%5C%22],[%5C%222023%2F5%2F7%5C%22,%5C%222023%2F5%2F10%5C%22],[%5C%222023%2F5%2F11%5C%22,%5C%222023%2F5%2F14%5C%22],[%5C%222023%2F5%2F15%5C%22,%5C%222023%2F5%2F17%5C%22]]%22%7D&signature=c638dad114b534c0127f51aa917e29f0
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:57:53+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:58:10+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:58:14+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:58:17+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F17%5C%22,%5C%222023%2F4%2F20%5C%22],[%5C%222023%2F4%2F21%5C%22,%5C%222023%2F4%2F24%5C%22],[%5C%222023%2F4%2F25%5C%22,%5C%222023%2F4%2F28%5C%22],[%5C%222023%2F4%2F29%5C%22,%5C%222023%2F5%2F2%5C%22],[%5C%222023%2F5%2F3%5C%22,%5C%222023%2F5%2F6%5C%22],[%5C%222023%2F5%2F7%5C%22,%5C%222023%2F5%2F10%5C%22],[%5C%222023%2F5%2F11%5C%22,%5C%222023%2F5%2F14%5C%22],[%5C%222023%2F5%2F15%5C%22,%5C%222023%2F5%2F17%5C%22]]%22%7D&signature=c638dad114b534c0127f51aa917e29f0
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T17:58:18+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T18:02:16+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F17%5C%22,%5C%222023%2F4%2F20%5C%22],[%5C%222023%2F4%2F21%5C%22,%5C%222023%2F4%2F24%5C%22],[%5C%222023%2F4%2F25%5C%22,%5C%222023%2F4%2F28%5C%22],[%5C%222023%2F4%2F29%5C%22,%5C%222023%2F5%2F2%5C%22],[%5C%222023%2F5%2F3%5C%22,%5C%222023%2F5%2F6%5C%22],[%5C%222023%2F5%2F7%5C%22,%5C%222023%2F5%2F10%5C%22],[%5C%222023%2F5%2F11%5C%22,%5C%222023%2F5%2F14%5C%22],[%5C%222023%2F5%2F15%5C%22,%5C%222023%2F5%2F17%5C%22]]%22%7D&signature=c638dad114b534c0127f51aa917e29f0
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T18:03:16+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T18:06:15+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F17%5C%22,%5C%222023%2F4%2F20%5C%22],[%5C%222023%2F4%2F21%5C%22,%5C%222023%2F4%2F24%5C%22],[%5C%222023%2F4%2F25%5C%22,%5C%222023%2F4%2F28%5C%22],[%5C%222023%2F4%2F29%5C%22,%5C%222023%2F5%2F2%5C%22],[%5C%222023%2F5%2F3%5C%22,%5C%222023%2F5%2F6%5C%22],[%5C%222023%2F5%2F7%5C%22,%5C%222023%2F5%2F10%5C%22],[%5C%222023%2F5%2F11%5C%22,%5C%222023%2F5%2F14%5C%22],[%5C%222023%2F5%2F15%5C%22,%5C%222023%2F5%2F17%5C%22]]%22%7D&signature=c638dad114b534c0127f51aa917e29f0
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T18:08:16+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/mapIntegration
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-05-17T18:10:15+08:00 ] 127.0.0.1 OPTIONS www.mmcall.test.net/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F17%5C%22,%5C%222023%2F4%2F20%5C%22],[%5C%222023%2F4%2F21%5C%22,%5C%222023%2F4%2F24%5C%22],[%5C%222023%2F4%2F25%5C%22,%5C%222023%2F4%2F28%5C%22],[%5C%222023%2F4%2F29%5C%22,%5C%222023%2F5%2F2%5C%22],[%5C%222023%2F5%2F3%5C%22,%5C%222023%2F5%2F6%5C%22],[%5C%222023%2F5%2F7%5C%22,%5C%222023%2F5%2F10%5C%22],[%5C%222023%2F5%2F11%5C%22,%5C%222023%2F5%2F14%5C%22],[%5C%222023%2F5%2F15%5C%22,%5C%222023%2F5%2F17%5C%22]]%22%7D&signature=c638dad114b534c0127f51aa917e29f0
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]

@@ -1,0 +1,1622 @@
+---------------------------------------------------------------
+[ 2023-03-27T15:10:52+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/login/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000935s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.019725s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.019911s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`title` FROM `tp_admin` `a` LEFT JOIN `tp_auth_group` `b` ON `a`.`groupId`=`b`.`id` WHERE  `userName` = 'admin' LIMIT 1 [ RunTime:0.002051s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016831s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000371s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_login_log` [ RunTime:0.018877s ]
+[ sql ] [ SQL ] INSERT INTO `tp_login_log` (`uid` , `userName` , `roles` , `loginTime` , `loginIp`) VALUES (1 , 'admin' , '超级管理员' , 1679901052 , '127.0.0.1') [ RunTime:0.002077s ]
+[ sql ] [ SQL ] UPDATE `tp_admin`  SET `loginTime`=1679901052  WHERE  `id` = 1 [ RunTime:0.001881s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:10:52+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000655s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017570s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017787s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.020058s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016568s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000313s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:11:03+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000674s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017519s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017383s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017741s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016649s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000506s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:13:11+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000802s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018037s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018380s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017837s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.017923s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000541s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:15:06+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/login/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000732s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017474s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017721s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`title` FROM `tp_admin` `a` LEFT JOIN `tp_auth_group` `b` ON `a`.`groupId`=`b`.`id` WHERE  `userName` = 'admin' LIMIT 1 [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016598s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_login_log` [ RunTime:0.016521s ]
+[ sql ] [ SQL ] INSERT INTO `tp_login_log` (`uid` , `userName` , `roles` , `loginTime` , `loginIp`) VALUES (1 , 'admin' , '超级管理员' , 1679901306 , '127.0.0.1') [ RunTime:0.001749s ]
+[ sql ] [ SQL ] UPDATE `tp_admin`  SET `loginTime`=1679901306  WHERE  `id` = 1 [ RunTime:0.001643s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:15:06+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000649s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017394s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017515s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017981s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016608s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000392s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:16:52+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000664s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017981s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018725s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018402s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016436s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000331s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:19:01+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000638s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017380s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017849s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017610s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016426s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000325s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:20:10+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000660s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017558s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017325s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017645s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.017124s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000313s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:21:42+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000633s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017296s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017335s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017631s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016443s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000308s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:22:25+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000651s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017415s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017306s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017630s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016440s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000307s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:24:11+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000688s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017998s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018104s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018113s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.018653s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000457s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:24:35+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000694s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018264s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017765s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018246s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000502s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.017967s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000746s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:25:59+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000695s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017830s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017963s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018114s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.017132s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000369s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:28:07+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000661s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017808s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017960s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018807s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.017018s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000419s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:28:48+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000595s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017503s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017369s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017655s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016351s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000403s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:29:56+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000663s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018688s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017263s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017628s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016392s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000350s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:31:14+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000654s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017459s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017496s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.019449s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016523s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000330s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:31:27+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000666s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017670s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017441s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017757s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016479s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000311s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:33:38+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000653s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017796s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017573s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017881s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016618s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000425s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:33:56+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000594s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017475s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017805s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017710s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016416s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000313s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:34:45+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000578s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017512s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017637s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017625s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016556s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000342s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:35:07+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000854s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018836s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018346s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.019141s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.017089s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000328s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:35:18+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000610s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017921s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017619s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017774s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016475s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000312s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:35:29+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000622s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017664s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017521s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017685s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016379s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000312s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:36:18+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000674s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018852s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018835s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017882s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016719s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000338s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:38:19+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000729s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018791s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018372s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018373s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.017018s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000308s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:38:42+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000612s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017955s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017490s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017606s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016290s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000313s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:38:55+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000632s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017500s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017473s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017544s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016443s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000308s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:39:08+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000641s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017424s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017712s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018200s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016420s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000329s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:39:51+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000623s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017338s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017313s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017505s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016542s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000365s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:40:08+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000863s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018840s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018539s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.020009s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.017522s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000325s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:40:19+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000632s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017608s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017294s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017418s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016274s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000325s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:42:02+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000587s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017433s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017197s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017552s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016981s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000324s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:42:22+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000570s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018415s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018253s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018694s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016855s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000360s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:42:33+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000613s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017426s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017597s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017448s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016456s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000344s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:42:42+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000642s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017505s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017598s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017648s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000432s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016286s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000309s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:43:01+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000641s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017910s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017974s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017645s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016330s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000309s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:43:10+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000652s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017378s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017310s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017910s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016226s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000310s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:45:22+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000630s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018017s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018322s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018173s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.017003s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000312s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:45:43+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000636s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017521s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017518s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017497s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016631s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000315s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:53:04+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000773s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017390s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017341s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017414s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016471s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000338s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:53:52+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000602s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017490s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017374s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017603s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016282s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000308s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:54:17+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000667s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017885s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017227s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017538s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016405s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000403s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:54:36+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000605s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017732s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017387s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017601s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016246s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000328s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:56:47+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000677s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017534s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017392s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017976s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016356s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000309s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:57:05+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000652s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017447s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017990s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017718s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016471s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000342s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:57:28+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000605s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017470s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017343s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017548s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016457s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000321s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:57:51+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000616s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017523s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017264s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017778s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016543s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000324s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:58:20+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000625s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017327s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017986s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017838s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016314s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000314s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:58:41+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000646s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017829s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017613s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017520s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016336s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000346s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:58:57+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000633s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017585s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017443s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017450s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016326s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000333s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:59:20+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000599s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017730s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017469s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017560s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016378s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000313s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:59:34+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000628s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017623s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017449s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017985s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016412s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000334s ]
+---------------------------------------------------------------
+[ 2023-03-27T15:59:50+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000622s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017672s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017596s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017553s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016469s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000309s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:00:01+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000617s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017407s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017276s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017459s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016353s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000317s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:00:13+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000608s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017400s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017418s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017531s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016349s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000328s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:00:55+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000585s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017406s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017350s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017559s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016473s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000395s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:01:28+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000593s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017329s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017523s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017677s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016693s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000338s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:02:08+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000605s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017581s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017499s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017551s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016722s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000345s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:02:44+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000622s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017620s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017617s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017716s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016641s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000316s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:02:55+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000729s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017652s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017750s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017904s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016492s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000313s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:03:09+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000628s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017638s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017464s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017608s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016467s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000333s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:03:30+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000620s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017501s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017699s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017607s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016725s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000313s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:03:42+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000580s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017649s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017583s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000440s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017545s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016363s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000353s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:03:54+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000568s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017596s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017597s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017563s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016342s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000342s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:04:18+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000625s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017660s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017408s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017606s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016370s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000327s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:04:47+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000603s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017506s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018041s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017865s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016382s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000338s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:05:01+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000607s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017352s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017238s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017497s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016333s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000325s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:05:16+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000647s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017650s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017268s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017459s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016394s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000310s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:05:51+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000606s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017392s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017310s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017555s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016312s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000308s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:06:15+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000645s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017640s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017464s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017721s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016563s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000340s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:06:31+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000596s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017618s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017712s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017545s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016609s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000311s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:06:42+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000645s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017608s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017658s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017674s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016367s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000324s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:06:51+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000610s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017492s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017295s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017533s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016440s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000369s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:08:17+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000839s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017403s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017267s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017570s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016871s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000344s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:08:37+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000631s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017425s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017222s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017547s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016332s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000308s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:09:01+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000633s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017380s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017391s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017602s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016287s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000321s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:09:10+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000615s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017533s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017477s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017541s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016392s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000319s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:09:26+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000615s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017563s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017314s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017468s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016315s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000311s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:09:40+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000618s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017496s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017293s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017504s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016302s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000316s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:10:06+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000615s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018242s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017950s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018034s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.017302s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000314s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:10:18+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000629s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017337s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017309s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017579s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016269s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000317s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:10:37+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000634s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017552s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017465s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017593s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016797s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000337s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:10:51+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000665s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017614s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017473s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017613s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016379s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000311s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:11:36+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000581s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017409s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017238s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017562s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.017036s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000350s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:13:36+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000646s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017434s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017455s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017591s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016464s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000343s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:14:16+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000595s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017533s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017362s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017573s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016540s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000311s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:15:00+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000586s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017452s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017483s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017591s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016359s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000337s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:15:10+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000643s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017781s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017406s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017689s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016340s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000312s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:15:21+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000602s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018105s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018228s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018224s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016907s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000317s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:15:52+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000670s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018592s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018351s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.019006s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.018418s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000317s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:17:57+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000652s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.022414s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.020322s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018623s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016847s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000394s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:27:02+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/login/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000810s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017329s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017361s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`title` FROM `tp_admin` `a` LEFT JOIN `tp_auth_group` `b` ON `a`.`groupId`=`b`.`id` WHERE  `userName` = 'admin' LIMIT 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016423s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_login_log` [ RunTime:0.016841s ]
+[ sql ] [ SQL ] INSERT INTO `tp_login_log` (`uid` , `userName` , `roles` , `loginTime` , `loginIp`) VALUES (1 , 'admin' , '超级管理员' , 1679905622 , '127.0.0.1') [ RunTime:0.001792s ]
+[ sql ] [ SQL ] UPDATE `tp_admin`  SET `loginTime`=1679905622  WHERE  `id` = 1 [ RunTime:0.001757s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:27:03+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000647s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017346s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017271s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017733s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016497s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000332s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:27:33+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000656s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018060s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018995s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.019780s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016696s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000364s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:27:54+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000689s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018902s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018062s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018177s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016717s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000411s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:29:03+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000687s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018571s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.020544s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.019774s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016838s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000355s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:30:44+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000863s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.019031s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018707s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017930s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016481s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000339s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:35:07+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018933s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.019426s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.024562s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000801s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018511s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016911s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000330s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:35:40+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000655s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018521s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018124s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018560s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.017480s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000822s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000540s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:37:00+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000659s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.021429s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.019502s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.019653s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016864s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000322s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:37:34+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000674s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018477s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017552s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018173s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016636s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000360s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:40:40+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000714s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.020286s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.019488s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000501s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018806s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.017020s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000340s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:50:35+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000855s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018877s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.019820s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018717s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.019313s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000325s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:50:55+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001067s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.021684s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018414s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017845s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.017167s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.001164s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000596s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:51:25+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000657s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018303s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018241s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018593s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.017042s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000438s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:52:24+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000690s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018797s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001235s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.021259s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.020823s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.001087s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.018920s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001038s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:52:52+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000774s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.019688s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018545s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.022067s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.001508s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.023638s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000922s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000654s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:53:53+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000663s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018018s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017901s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.020955s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.021614s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000844s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:57:15+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000705s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018574s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017781s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018382s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.017676s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000355s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:58:46+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000678s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017898s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017944s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018350s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.020061s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000404s ]
+---------------------------------------------------------------
+[ 2023-03-27T16:59:22+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000672s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018567s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.021909s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.020379s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016485s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000363s ]
+---------------------------------------------------------------
+[ 2023-03-27T17:02:49+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000711s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.019054s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018320s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018801s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.017022s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000328s ]
+---------------------------------------------------------------
+[ 2023-03-27T17:12:26+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001133s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017978s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017634s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018209s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016869s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000403s ]
+---------------------------------------------------------------
+[ 2023-03-27T17:17:56+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001138s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018416s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.019386s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018644s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016880s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000348s ]
+---------------------------------------------------------------
+[ 2023-03-27T17:18:00+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000669s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018251s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.019274s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018640s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.017454s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000406s ]
+---------------------------------------------------------------
+[ 2023-03-27T17:25:19+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000987s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.020625s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017840s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017792s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016589s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000344s ]
+---------------------------------------------------------------
+[ 2023-03-27T17:26:45+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000706s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018034s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018116s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.022254s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.018747s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000461s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000320s ]
+---------------------------------------------------------------
+[ 2023-03-27T17:27:36+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000837s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.021219s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.021765s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.020077s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.017140s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000313s ]
+---------------------------------------------------------------
+[ 2023-03-27T17:30:40+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000777s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017869s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.025209s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.020389s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.017615s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000342s ]
+---------------------------------------------------------------
+[ 2023-03-27T17:31:59+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000697s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017820s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018680s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018424s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016582s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000343s ]
+---------------------------------------------------------------
+[ 2023-03-27T17:32:30+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000656s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018667s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018761s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018530s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.017132s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000462s ]
+---------------------------------------------------------------
+[ 2023-03-27T17:32:56+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000785s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018917s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018311s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.025931s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000757s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.018615s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000686s ]
+---------------------------------------------------------------
+[ 2023-03-27T17:33:29+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000645s ] mysql:host=127.0.0.1;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017502s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.018237s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.017711s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016445s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000309s ]

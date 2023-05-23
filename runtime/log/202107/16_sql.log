@@ -1,0 +1,39 @@
+---------------------------------------------------------------
+[ 2021-07-16T09:02:22+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.050259s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.182690s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.014805s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.057276s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.044558s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000851s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.034493s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000747s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.032418s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001958s ]
+---------------------------------------------------------------
+[ 2021-07-16T09:14:39+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.020846s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.015880s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000794s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.016330s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.016384s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000756s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000613s ]
+---------------------------------------------------------------
+[ 2021-07-16T11:44:37+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.150755s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.235996s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.016492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.035011s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.014591s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.016559s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.010152s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.015574s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.012602s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000744s ]

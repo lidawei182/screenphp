@@ -1,0 +1,3 @@
+---------------------------------------------------------------
+[ 2019-10-30T18:10:19+08:00 ] 127.0.0.1 GET www.hardphp.com/index.php/admin
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]

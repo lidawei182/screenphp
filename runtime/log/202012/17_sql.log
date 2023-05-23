@@ -1,0 +1,82 @@
+---------------------------------------------------------------
+[ 2020-12-17T14:08:43+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/login/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001783s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.035032s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.019582s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`title` FROM `tp_admin` `a` LEFT JOIN `tp_auth_group` `b` ON `a`.`groupId`=`b`.`id` WHERE  `userName` = 'admin' LIMIT 1 [ RunTime:0.011464s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.008329s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_login_log` [ RunTime:0.019323s ]
+[ sql ] [ SQL ] INSERT INTO `tp_login_log` (`uid` , `userName` , `roles` , `loginTime` , `loginIp`) VALUES (1 , 'admin' , '超级管理员' , 1608185323 , '127.0.0.1') [ RunTime:0.050865s ]
+[ sql ] [ SQL ] UPDATE `tp_admin`  SET `loginTime`=1608185323  WHERE  `id` = 1 [ RunTime:0.034325s ]
+---------------------------------------------------------------
+[ 2020-12-17T14:08:43+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011009s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.007696s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.008565s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.010238s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.007654s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000406s ]
+---------------------------------------------------------------
+[ 2020-12-17T14:08:52+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/log/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010364s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.007828s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.007549s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.009310s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/log/index' LIMIT 1 [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_login_log` [ RunTime:0.008400s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_login_log` `a` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_login_log` `a` LIMIT 1 [ RunTime:0.000404s ]
+---------------------------------------------------------------
+[ 2020-12-17T14:09:06+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/log/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010242s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.007529s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.009217s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.009353s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/log/index' LIMIT 1 [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_login_log` [ RunTime:0.015167s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_login_log` `a` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_login_log` `a` LIMIT 1 [ RunTime:0.000560s ]
+---------------------------------------------------------------
+[ 2020-12-17T14:09:13+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/rules/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000766s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.007414s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.007803s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.008318s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/rules/index' LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_auth_rule` `a` [ RunTime:0.000382s ]
+---------------------------------------------------------------
+[ 2020-12-17T14:14:31+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011683s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008014s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.006855s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.008134s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.006364s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.001012s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000484s ]
+---------------------------------------------------------------
+[ 2020-12-17T14:14:31+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/rules/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000755s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.025955s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.007921s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.007785s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/rules/index' LIMIT 1 [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_auth_rule` `a` [ RunTime:0.000454s ]

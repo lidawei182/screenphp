@@ -1,0 +1,3632 @@
+---------------------------------------------------------------
+[ 2019-11-15T09:11:11+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.640000s] [吞吐率：1.56req/s] [内存消耗：2,704.24kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => 'C78D2EDE1A6C3731BA3657F2E32F5146MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz8mJZrmJu9SIheBxpcNkl666jml5fWqpsci4nqyIZJG6xWSgmJnPum6N0YKexp16i7-PqJiFj4Zrs6vWjIlleZnGoWKtjbShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=C78D2EDE1A6C3731BA3657F2E32F5146MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz8mJZrmJu9SIheBxpcNkl666jml5fWqpsci4nqyIZJG6xWSgmJnPum6N0YKexp16i7-PqJiFj4Zrs6vWjIlleZnGoWKtjbShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:16:40+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.088000s] [吞吐率：11.36req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => 'C78D2EDE1A6C3731BA3657F2E32F5146MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz8mJZrmJu9SIheBxpcNkl666jml5fWqpsci4nqyIZJG6xWSgmJnPum6N0YKexp16i7-PqJiFj4Zrs6vWjIlleZnGoWKtjbShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=C78D2EDE1A6C3731BA3657F2E32F5146MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz8mJZrmJu9SIheBxpcNkl666jml5fWqpsci4nqyIZJG6xWSgmJnPum6N0YKexp16i7-PqJiFj4Zrs6vWjIlleZnGoWKtjbShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:16:58+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.091000s] [吞吐率：10.99req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => 'C78D2EDE1A6C3731BA3657F2E32F5146MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz8mJZrmJu9SIheBxpcNkl666jml5fWqpsci4nqyIZJG6xWSgmJnPum6N0YKexp16i7-PqJiFj4Zrs6vWjIlleZnGoWKtjbShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=C78D2EDE1A6C3731BA3657F2E32F5146MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz8mJZrmJu9SIheBxpcNkl666jml5fWqpsci4nqyIZJG6xWSgmJnPum6N0YKexp16i7-PqJiFj4Zrs6vWjIlleZnGoWKtjbShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:17:47+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.088000s] [吞吐率：11.36req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => 'C78D2EDE1A6C3731BA3657F2E32F5146MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz8mJZrmJu9SIheBxpcNkl666jml5fWqpsci4nqyIZJG6xWSgmJnPum6N0YKexp16i7-PqJiFj4Zrs6vWjIlleZnGoWKtjbShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=C78D2EDE1A6C3731BA3657F2E32F5146MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz8mJZrmJu9SIheBxpcNkl666jml5fWqpsci4nqyIZJG6xWSgmJnPum6N0YKexp16i7-PqJiFj4Zrs6vWjIlleZnGoWKtjbShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:25:40+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.104000s] [吞吐率：9.62req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => 'C78D2EDE1A6C3731BA3657F2E32F5146MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz8mJZrmJu9SIheBxpcNkl666jml5fWqpsci4nqyIZJG6xWSgmJnPum6N0YKexp16i7-PqJiFj4Zrs6vWjIlleZnGoWKtjbShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=C78D2EDE1A6C3731BA3657F2E32F5146MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz8mJZrmJu9SIheBxpcNkl666jml5fWqpsci4nqyIZJG6xWSgmJnPum6N0YKexp16i7-PqJiFj4Zrs6vWjIlleZnGoWKtjbShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:26:19+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.092000s] [吞吐率：10.87req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => 'C78D2EDE1A6C3731BA3657F2E32F5146MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz8mJZrmJu9SIheBxpcNkl666jml5fWqpsci4nqyIZJG6xWSgmJnPum6N0YKexp16i7-PqJiFj4Zrs6vWjIlleZnGoWKtjbShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=C78D2EDE1A6C3731BA3657F2E32F5146MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz8mJZrmJu9SIheBxpcNkl666jml5fWqpsci4nqyIZJG6xWSgmJnPum6N0YKexp16i7-PqJiFj4Zrs6vWjIlleZnGoWKtjbShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:32:31+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.099000s] [吞吐率：10.10req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => 'C78D2EDE1A6C3731BA3657F2E32F5146MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz8mJZrmJu9SIheBxpcNkl666jml5fWqpsci4nqyIZJG6xWSgmJnPum6N0YKexp16i7-PqJiFj4Zrs6vWjIlleZnGoWKtjbShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=C78D2EDE1A6C3731BA3657F2E32F5146MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz8mJZrmJu9SIheBxpcNkl666jml5fWqpsci4nqyIZJG6xWSgmJnPum6N0YKexp16i7-PqJiFj4Zrs6vWjIlleZnGoWKtjbShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:32:34+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.082000s] [吞吐率：12.20req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => 'C78D2EDE1A6C3731BA3657F2E32F5146MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz8mJZrmJu9SIheBxpcNkl666jml5fWqpsci4nqyIZJG6xWSgmJnPum6N0YKexp16i7-PqJiFj4Zrs6vWjIlleZnGoWKtjbShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=C78D2EDE1A6C3731BA3657F2E32F5146MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz8mJZrmJu9SIheBxpcNkl666jml5fWqpsci4nqyIZJG6xWSgmJnPum6N0YKexp16i7-PqJiFj4Zrs6vWjIlleZnGoWKtjbShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:32:44+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/login/index
+[运行时间：0.240000s] [吞吐率：4.17req/s] [内存消耗：2,660.36kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '73',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'userName' => 'admin',
+  'password' => '123456',
+  'signature' => '5c9dde2ed54c2625dcafa37e79314ea6',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\Login.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:32:44+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.093000s] [吞吐率：10.75req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => 'D8BDA761348EDA4759787C277463864AMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmOt66Ii6pxpcOsfme7fX6blKSLrri7uKWKZJCZsWSpr4rdrbGF1JyCxYZ6icqNkn6Jpq2QuKi0qIGgiafFn3-ahqShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=D8BDA761348EDA4759787C277463864AMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmOt66Ii6pxpcOsfme7fX6blKSLrri7uKWKZJCZsWSpr4rdrbGF1JyCxYZ6icqNkn6Jpq2QuKi0qIGgiafFn3-ahqShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:33:37+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.117000s] [吞吐率：8.55req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => 'D8BDA761348EDA4759787C277463864AMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmOt66Ii6pxpcOsfme7fX6blKSLrri7uKWKZJCZsWSpr4rdrbGF1JyCxYZ6icqNkn6Jpq2QuKi0qIGgiafFn3-ahqShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=D8BDA761348EDA4759787C277463864AMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmOt66Ii6pxpcOsfme7fX6blKSLrri7uKWKZJCZsWSpr4rdrbGF1JyCxYZ6icqNkn6Jpq2QuKi0qIGgiafFn3-ahqShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:34:13+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.082000s] [吞吐率：12.20req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => 'D8BDA761348EDA4759787C277463864AMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmOt66Ii6pxpcOsfme7fX6blKSLrri7uKWKZJCZsWSpr4rdrbGF1JyCxYZ6icqNkn6Jpq2QuKi0qIGgiafFn3-ahqShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=D8BDA761348EDA4759787C277463864AMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmOt66Ii6pxpcOsfme7fX6blKSLrri7uKWKZJCZsWSpr4rdrbGF1JyCxYZ6icqNkn6Jpq2QuKi0qIGgiafFn3-ahqShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:34:43+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/log/index
+[运行时间：0.110000s] [吞吐率：9.09req/s] [内存消耗：2,636.75kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'log',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '102',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => 'D8BDA761348EDA4759787C277463864AMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmOt66Ii6pxpcOsfme7fX6blKSLrri7uKWKZJCZsWSpr4rdrbGF1JyCxYZ6icqNkn6Jpq2QuKi0qIGgiafFn3-ahqShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=D8BDA761348EDA4759787C277463864AMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmOt66Ii6pxpcOsfme7fX6blKSLrri7uKWKZJCZsWSpr4rdrbGF1JyCxYZ6icqNkn6Jpq2QuKi0qIGgiafFn3-ahqShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'psize' => '10',
+  'uid' => '',
+  'userName' => '',
+  'loginIp' => '',
+  'startTime' => '',
+  'endTime' => '',
+  'signature' => '3a0d400aec6ff9b5dcd635a9d2a62ae9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Log->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\Log.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:34:45+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/log/index
+[运行时间：0.091000s] [吞吐率：10.99req/s] [内存消耗：2,633.39kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'log',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '102',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => 'D8BDA761348EDA4759787C277463864AMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmOt66Ii6pxpcOsfme7fX6blKSLrri7uKWKZJCZsWSpr4rdrbGF1JyCxYZ6icqNkn6Jpq2QuKi0qIGgiafFn3-ahqShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=D8BDA761348EDA4759787C277463864AMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmOt66Ii6pxpcOsfme7fX6blKSLrri7uKWKZJCZsWSpr4rdrbGF1JyCxYZ6icqNkn6Jpq2QuKi0qIGgiafFn3-ahqShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'page' => '3',
+  'psize' => '10',
+  'uid' => '',
+  'userName' => '',
+  'loginIp' => '',
+  'startTime' => '',
+  'endTime' => '',
+  'signature' => 'bfedf132bbb60de2abdd4956e656e28e',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Log->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\Log.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:34:52+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/login/index
+[运行时间：0.176000s] [吞吐率：5.68req/s] [内存消耗：2,660.36kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '73',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'userName' => 'admin',
+  'password' => '123456',
+  'signature' => '5c9dde2ed54c2625dcafa37e79314ea6',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\Login.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:34:52+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.099000s] [吞吐率：10.10req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:34:53+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/log/index
+[运行时间：0.086000s] [吞吐率：11.63req/s] [内存消耗：2,636.75kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'log',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '102',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'psize' => '10',
+  'uid' => '',
+  'userName' => '',
+  'loginIp' => '',
+  'startTime' => '',
+  'endTime' => '',
+  'signature' => '3a0d400aec6ff9b5dcd635a9d2a62ae9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Log->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\Log.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:35:20+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.083000s] [吞吐率：12.05req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:36:42+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.083000s] [吞吐率：12.05req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:36:54+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.089000s] [吞吐率：11.24req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:37:32+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.092000s] [吞吐率：10.87req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:37:33+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.096000s] [吞吐率：10.42req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:38:22+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.094000s] [吞吐率：10.64req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:42:51+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.133000s] [吞吐率：7.52req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:43:22+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.110000s] [吞吐率：9.09req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:44:21+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.085000s] [吞吐率：11.76req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:45:17+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.088000s] [吞吐率：11.36req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:48:35+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.120000s] [吞吐率：8.33req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=31C54240EF85D51CC7104B99597C69D4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YrmPt7qHmtBxpbh2hnnGgZyDiLJqoca2l6mVhoW5xZ6c3YnPsn6dqnWquYigg8Z-gqOUapOit7qeaoGKfJi1jJXYirShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:51:12+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/login/index
+[运行时间：0.152000s] [吞吐率：6.58req/s] [内存消耗：2,660.36kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '73',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'userName' => 'admin',
+  'password' => '123456',
+  'signature' => '5c9dde2ed54c2625dcafa37e79314ea6',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\Login.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:51:13+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.103000s] [吞吐率：9.71req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => 'D54BE726A771C5542C06D8CFF9EC38C4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YtWPt7KHmtBxpcR4mHa_f6engbN7h8rQzrKNnWy9vnqDr46Wrqia0H6JtWRhnbKlfWWBpYuEytDKfIt3p9m2inPSh6Shdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=D54BE726A771C5542C06D8CFF9EC38C4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YtWPt7KHmtBxpcR4mHa_f6engbN7h8rQzrKNnWy9vnqDr46Wrqia0H6JtWRhnbKlfWWBpYuEytDKfIt3p9m2inPSh6Shdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:51:22+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.092000s] [吞吐率：10.87req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => 'D54BE726A771C5542C06D8CFF9EC38C4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YtWPt7KHmtBxpcR4mHa_f6engbN7h8rQzrKNnWy9vnqDr46Wrqia0H6JtWRhnbKlfWWBpYuEytDKfIt3p9m2inPSh6Shdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=D54BE726A771C5542C06D8CFF9EC38C4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YtWPt7KHmtBxpcR4mHa_f6engbN7h8rQzrKNnWy9vnqDr46Wrqia0H6JtWRhnbKlfWWBpYuEytDKfIt3p9m2inPSh6Shdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:52:06+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.094000s] [吞吐率：10.64req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => 'D54BE726A771C5542C06D8CFF9EC38C4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YtWPt7KHmtBxpcR4mHa_f6engbN7h8rQzrKNnWy9vnqDr46Wrqia0H6JtWRhnbKlfWWBpYuEytDKfIt3p9m2inPSh6Shdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=D54BE726A771C5542C06D8CFF9EC38C4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YtWPt7KHmtBxpcR4mHa_f6engbN7h8rQzrKNnWy9vnqDr46Wrqia0H6JtWRhnbKlfWWBpYuEytDKfIt3p9m2inPSh6Shdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T09:52:33+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.093000s] [吞吐率：10.75req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => 'D54BE726A771C5542C06D8CFF9EC38C4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YtWPt7KHmtBxpcR4mHa_f6engbN7h8rQzrKNnWy9vnqDr46Wrqia0H6JtWRhnbKlfWWBpYuEytDKfIt3p9m2inPSh6Shdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=D54BE726A771C5542C06D8CFF9EC38C4MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YtWPt7KHmtBxpcR4mHa_f6engbN7h8rQzrKNnWy9vnqDr46Wrqia0H6JtWRhnbKlfWWBpYuEytDKfIt3p9m2inPSh6Shdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T10:04:47+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/login/index
+[运行时间：0.144000s] [吞吐率：6.94req/s] [内存消耗：2,660.36kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '73',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'userName' => 'admin',
+  'password' => '123456',
+  'signature' => '5c9dde2ed54c2625dcafa37e79314ea6',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\Login.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T10:04:47+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.092000s] [吞吐率：10.87req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '75A62C9670C26D4498474C881422A0ACMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqNt7aIheBxpa-dlKO6aZyClGmhf77dvK-WY6fWyYuH1JmWzK6cvnVjt3h-hMelinuTaqWjuM2zsI2fZ5eye6W6ktqhdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=75A62C9670C26D4498474C881422A0ACMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqNt7aIheBxpa-dlKO6aZyClGmhf77dvK-WY6fWyYuH1JmWzK6cvnVjt3h-hMelinuTaqWjuM2zsI2fZ5eye6W6ktqhdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T10:05:24+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.087000s] [吞吐率：11.49req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '75A62C9670C26D4498474C881422A0ACMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqNt7aIheBxpa-dlKO6aZyClGmhf77dvK-WY6fWyYuH1JmWzK6cvnVjt3h-hMelinuTaqWjuM2zsI2fZ5eye6W6ktqhdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=75A62C9670C26D4498474C881422A0ACMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqNt7aIheBxpa-dlKO6aZyClGmhf77dvK-WY6fWyYuH1JmWzK6cvnVjt3h-hMelinuTaqWjuM2zsI2fZ5eye6W6ktqhdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T10:05:33+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/login/index
+[运行时间：0.158000s] [吞吐率：6.33req/s] [内存消耗：2,660.36kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '73',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'userName' => 'admin',
+  'password' => '123456',
+  'signature' => '5c9dde2ed54c2625dcafa37e79314ea6',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\Login.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T10:05:33+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.097000s] [吞吐率：10.31req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T10:08:15+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.089000s] [吞吐率：11.24req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T10:12:36+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.084000s] [吞吐率：11.90req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T10:14:46+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.093000s] [吞吐率：10.75req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T10:15:32+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.087000s] [吞吐率：11.49req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T10:17:00+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.094000s] [吞吐率：10.64req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T10:20:31+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.162000s] [吞吐率：6.17req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T10:32:10+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.116000s] [吞吐率：8.62req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T10:33:08+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.084000s] [吞吐率：11.90req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T10:33:43+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.108000s] [吞吐率：9.26req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T10:35:36+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.093000s] [吞吐率：10.75req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T10:46:42+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.099000s] [吞吐率：10.10req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T10:47:35+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.090000s] [吞吐率：11.11req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T10:48:57+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.092000s] [吞吐率：10.87req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T10:52:29+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.087000s] [吞吐率：11.49req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T10:58:05+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.139000s] [吞吐率：7.19req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T10:59:07+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.077000s] [吞吐率：12.99req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T11:04:52+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.098000s] [吞吐率：10.20req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T11:06:44+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.112000s] [吞吐率：8.93req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=740C4C7E2F0D48C39808FB6B867698F5MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5YpqOu9SHheBxpbNkaYOzpn6DkX6KrMfNuG6BdnmtuniH0o2VyK-R1Ip1uXZ-eb-OsGV9gXuCx7mofoqdcMu9n4u7haShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T11:26:45+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/login/index
+[运行时间：0.236000s] [吞吐率：4.24req/s] [内存消耗：2,659.30kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '73',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'userName' => 'admin',
+  'password' => '123456',
+  'signature' => '5c9dde2ed54c2625dcafa37e79314ea6',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\Login.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T11:26:45+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.085000s] [吞吐率：11.76req/s] [内存消耗：2,704.25kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '0B239DB47A16FBFF2DDB6D54ED3F5C0FMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5aqmNu8iIi6pxpbtloIyzfqhmh45ubci6ymmHd6_at2SVvI-60IGLvJSax4Z1Z79_ioWRanKix7ewgoOJppXFZHaYktqhdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=0B239DB47A16FBFF2DDB6D54ED3F5C0FMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7J5aqmNu8iIi6pxpbtloIyzfqhmh45ubci6ymmHd6_at2SVvI-60IGLvJSax4Z1Z79_ioWRanKix7ewgoOJppXFZHaYktqhdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T13:00:12+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/login/index
+[运行时间：0.161000s] [吞吐率：6.21req/s] [内存消耗：2,660.36kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '73',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'userName' => 'admin',
+  'password' => '123456',
+  'signature' => '5c9dde2ed54c2625dcafa37e79314ea6',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\Login.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T13:00:12+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.088000s] [吞吐率：11.36req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '7DBC89A0497F6E090BF36C560FCB152BMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7KJZqmJu8yHmtBxpcasmHaygYqKgn-PsbnQ2oCKoKeruaGClo6ozI-LqpyauHiTZ7qOin-Ka6GhurqfgYifjc25oH_KjbShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=7DBC89A0497F6E090BF36C560FCB152BMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqnz7KJZqmJu8yHmtBxpcasmHaygYqKgn-PsbnQ2oCKoKeruaGClo6ozI-LqpyauHiTZ7qOin-Ka6GhurqfgYifjc25oH_KjbShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T17:32:51+08:00 ] 127.0.0.1 GET www.hardphp.com/index.php/21fb214254807fef9591.hot-update.json
+[运行时间：0.225000s] [吞吐率：4.44req/s] [内存消耗：1,433.39kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '21fb214254807fef9591.hot-update.json',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T17:33:21+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/login/index
+[运行时间：0.457000s] [吞吐率：2.19req/s] [内存消耗：2,660.36kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '73',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'userName' => 'admin',
+  'password' => '123456',
+  'signature' => '5c9dde2ed54c2625dcafa37e79314ea6',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\Login.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T17:33:21+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.115000s] [吞吐率：8.70req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '7873F369A720C9E18755D6669F4FFFCAMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5YqmNu8iHi6pxpbOIcazKfZxhfoChf7bP0q6IeHDNuohzqoa5nYGMqWGGx4mGg7KzkaiBaYels93Aeol4n86xZJW6i7Shdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=7873F369A720C9E18755D6669F4FFFCAMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5YqmNu8iHi6pxpbOIcazKfZxhfoChf7bP0q6IeHDNuohzqoa5nYGMqWGGx4mGg7KzkaiBaYels93Aeol4n86xZJW6i7Shdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T17:37:06+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.092000s] [吞吐率：10.87req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '7873F369A720C9E18755D6669F4FFFCAMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5YqmNu8iHi6pxpbOIcazKfZxhfoChf7bP0q6IeHDNuohzqoa5nYGMqWGGx4mGg7KzkaiBaYels93Aeol4n86xZJW6i7Shdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=7873F369A720C9E18755D6669F4FFFCAMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5YqmNu8iHi6pxpbOIcazKfZxhfoChf7bP0q6IeHDNuohzqoa5nYGMqWGGx4mGg7KzkaiBaYels93Aeol4n86xZJW6i7Shdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T17:41:29+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.089000s] [吞吐率：11.24req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '7873F369A720C9E18755D6669F4FFFCAMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5YqmNu8iHi6pxpbOIcazKfZxhfoChf7bP0q6IeHDNuohzqoa5nYGMqWGGx4mGg7KzkaiBaYels93Aeol4n86xZJW6i7Shdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=7873F369A720C9E18755D6669F4FFFCAMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5YqmNu8iHi6pxpbOIcazKfZxhfoChf7bP0q6IeHDNuohzqoa5nYGMqWGGx4mGg7KzkaiBaYels93Aeol4n86xZJW6i7Shdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T17:42:03+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.127000s] [吞吐率：7.87req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '7873F369A720C9E18755D6669F4FFFCAMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5YqmNu8iHi6pxpbOIcazKfZxhfoChf7bP0q6IeHDNuohzqoa5nYGMqWGGx4mGg7KzkaiBaYels93Aeol4n86xZJW6i7Shdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=7873F369A720C9E18755D6669F4FFFCAMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5YqmNu8iHi6pxpbOIcazKfZxhfoChf7bP0q6IeHDNuohzqoa5nYGMqWGGx4mGg7KzkaiBaYels93Aeol4n86xZJW6i7Shdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T17:43:04+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.093000s] [吞吐率：10.75req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '7873F369A720C9E18755D6669F4FFFCAMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5YqmNu8iHi6pxpbOIcazKfZxhfoChf7bP0q6IeHDNuohzqoa5nYGMqWGGx4mGg7KzkaiBaYels93Aeol4n86xZJW6i7Shdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=7873F369A720C9E18755D6669F4FFFCAMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5YqmNu8iHi6pxpbOIcazKfZxhfoChf7bP0q6IeHDNuohzqoa5nYGMqWGGx4mGg7KzkaiBaYels93Aeol4n86xZJW6i7Shdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T17:43:07+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.103000s] [吞吐率：9.71req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '7873F369A720C9E18755D6669F4FFFCAMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5YqmNu8iHi6pxpbOIcazKfZxhfoChf7bP0q6IeHDNuohzqoa5nYGMqWGGx4mGg7KzkaiBaYels93Aeol4n86xZJW6i7Shdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=7873F369A720C9E18755D6669F4FFFCAMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5YqmNu8iHi6pxpbOIcazKfZxhfoChf7bP0q6IeHDNuohzqoa5nYGMqWGGx4mGg7KzkaiBaYels93Aeol4n86xZJW6i7Shdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T17:43:12+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.111000s] [吞吐率：9.01req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '7873F369A720C9E18755D6669F4FFFCAMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5YqmNu8iHi6pxpbOIcazKfZxhfoChf7bP0q6IeHDNuohzqoa5nYGMqWGGx4mGg7KzkaiBaYels93Aeol4n86xZJW6i7Shdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=7873F369A720C9E18755D6669F4FFFCAMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5YqmNu8iHi6pxpbOIcazKfZxhfoChf7bP0q6IeHDNuohzqoa5nYGMqWGGx4mGg7KzkaiBaYels93Aeol4n86xZJW6i7Shdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T18:05:21+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/login/index
+[运行时间：0.253000s] [吞吐率：3.95req/s] [内存消耗：2,660.36kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '73',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'userName' => 'admin',
+  'password' => '123456',
+  'signature' => '5c9dde2ed54c2625dcafa37e79314ea6',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\Login.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T18:05:21+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.194000s] [吞吐率：5.15req/s] [内存消耗：2,704.62kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'content-length' => '42',
+  'pragma' => 'no-cache',
+  'cache-control' => 'no-cache',
+  'accept' => 'application/json, text/plain, */*',
+  'origin' => 'http://localhost:8080',
+  'x-access-token' => '5017B05FA63486613B6813C3B3701B4EMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5YtWMu9CHj6pxpcZjdna2pXp7lZGphLvRr7CMZZ_NuZ6Dloqo0KOK0JidtJ-Fq7ikqH6Sj6WuuJSwiYaHo9vGZne6haShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=5017B05FA63486613B6813C3B3701B4EMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5YtWMu9CHj6pxpcZjdna2pXp7lZGphLvRr7CMZZ_NuZ6Dloqo0KOK0JidtJ-Fq7ikqH6Sj6WuuJSwiYaHo9vGZne6haShdg',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T18:43:53+08:00 ] 127.0.0.1 GET www.hardphp.com/
+[运行时间：0.057000s] [吞吐率：17.54req/s] [内存消耗：1,472.69kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'www.hardphp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\index\controller\Index->index[ D:\phpStudy\WWW\hardphp\application\index\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T18:45:45+08:00 ] 127.0.0.1 GET www.hardphp.com/index.php/21a1f21f36ff357d3236.hot-update.json
+[运行时间：0.056000s] [吞吐率：17.86req/s] [内存消耗：1,433.27kb] [文件加载：48]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '21a1f21f36ff357d3236.hot-update.json',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'close',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'accept' => '*/*',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'x-forwarded-for' => '127.0.0.1',
+  'x-forwarded-port' => '8080',
+  'x-forwarded-proto' => 'http',
+  'x-forwarded-host' => 'localhost:8080',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T18:48:53+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/login/index
+[运行时间：0.230000s] [吞吐率：4.35req/s] [内存消耗：2,659.17kb] [文件加载：73]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hardphp.com/vue-admin/',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'x-access-appid' => '123456',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'origin' => 'http://www.hardphp.com',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '73',
+  'connection' => 'close',
+  'host' => 'www.hardphp.com',
+)
+[ info ] [ PARAM ] array (
+  'userName' => 'admin',
+  'password' => '123456',
+  'signature' => '5c9dde2ed54c2625dcafa37e79314ea6',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\Login.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T18:48:54+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.139000s] [吞吐率：7.19req/s] [内存消耗：2,703.18kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Admin-Token=F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hardphp.com/vue-admin/',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'x-access-appid' => '123456',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-token' => 'F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'origin' => 'http://www.hardphp.com',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'www.hardphp.com',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T18:49:13+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[运行时间：0.164000s] [吞吐率：6.10req/s] [内存消耗：2,664.63kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Admin-Token=F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hardphp.com/vue-admin/',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'x-access-appid' => '123456',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-token' => 'F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'origin' => 'http://www.hardphp.com',
+  'accept' => 'application/json, text/plain, */*',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'content-length' => '113',
+  'connection' => 'close',
+  'host' => 'www.hardphp.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'psize' => '10',
+  'id' => '',
+  'sort' => '+id',
+  'userName' => '',
+  'realName' => '',
+  'startTime' => '',
+  'endTime' => '',
+  'signature' => 'cd37ba2321ac45805f4858b3f48b6249',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\User->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T18:50:55+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[运行时间：0.117000s] [吞吐率：8.55req/s] [内存消耗：2,662.05kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Admin-Token=F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hardphp.com/vue-admin/',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'x-access-appid' => '123456',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-token' => 'F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'origin' => 'http://www.hardphp.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '149',
+  'connection' => 'close',
+  'host' => 'www.hardphp.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'psize' => '10',
+  'id' => '',
+  'sort' => '+id',
+  'userName' => '',
+  'realName' => '街头霸王',
+  'startTime' => '',
+  'endTime' => '',
+  'signature' => 'a98902245631a51221bc1d8d78c3e673',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\User->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T18:51:37+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/log/index
+[运行时间：0.111000s] [吞吐率：9.01req/s] [内存消耗：2,635.20kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'log',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Admin-Token=F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hardphp.com/vue-admin/',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'x-access-appid' => '123456',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-token' => 'F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'origin' => 'http://www.hardphp.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '102',
+  'connection' => 'close',
+  'host' => 'www.hardphp.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'psize' => '10',
+  'uid' => '',
+  'userName' => '',
+  'loginIp' => '',
+  'startTime' => '',
+  'endTime' => '',
+  'signature' => '3a0d400aec6ff9b5dcd635a9d2a62ae9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Log->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\Log.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T18:51:39+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/log/index
+[运行时间：0.126000s] [吞吐率：7.94req/s] [内存消耗：2,635.22kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'log',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Admin-Token=F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hardphp.com/vue-admin/',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'x-access-appid' => '123456',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-token' => 'F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'origin' => 'http://www.hardphp.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '102',
+  'connection' => 'close',
+  'host' => 'www.hardphp.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '3',
+  'psize' => '10',
+  'uid' => '',
+  'userName' => '',
+  'loginIp' => '',
+  'startTime' => '',
+  'endTime' => '',
+  'signature' => 'bfedf132bbb60de2abdd4956e656e28e',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Log->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\Log.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T18:51:40+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/log/index
+[运行时间：0.114000s] [吞吐率：8.77req/s] [内存消耗：2,635.22kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'log',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Admin-Token=F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hardphp.com/vue-admin/',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'x-access-appid' => '123456',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-token' => 'F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'origin' => 'http://www.hardphp.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '102',
+  'connection' => 'close',
+  'host' => 'www.hardphp.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '2',
+  'psize' => '10',
+  'uid' => '',
+  'userName' => '',
+  'loginIp' => '',
+  'startTime' => '',
+  'endTime' => '',
+  'signature' => '424cce26b2d3042abe0114939b7efba0',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Log->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\Log.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T18:51:41+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/log/index
+[运行时间：0.126000s] [吞吐率：7.94req/s] [内存消耗：2,635.20kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'log',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Admin-Token=F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hardphp.com/vue-admin/',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'x-access-appid' => '123456',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-token' => 'F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'origin' => 'http://www.hardphp.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '102',
+  'connection' => 'close',
+  'host' => 'www.hardphp.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'psize' => '10',
+  'uid' => '',
+  'userName' => '',
+  'loginIp' => '',
+  'startTime' => '',
+  'endTime' => '',
+  'signature' => '3a0d400aec6ff9b5dcd635a9d2a62ae9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Log->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\Log.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T18:51:46+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/log/index
+[运行时间：0.126000s] [吞吐率：7.94req/s] [内存消耗：2,635.22kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'log',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Admin-Token=F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hardphp.com/vue-admin/',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'x-access-appid' => '123456',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-token' => 'F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'origin' => 'http://www.hardphp.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '102',
+  'connection' => 'close',
+  'host' => 'www.hardphp.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '3',
+  'psize' => '10',
+  'uid' => '',
+  'userName' => '',
+  'loginIp' => '',
+  'startTime' => '',
+  'endTime' => '',
+  'signature' => 'bfedf132bbb60de2abdd4956e656e28e',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Log->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\Log.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T18:51:53+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/log/index
+[运行时间：0.137000s] [吞吐率：7.30req/s] [内存消耗：2,635.20kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'log',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Admin-Token=F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hardphp.com/vue-admin/',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'x-access-appid' => '123456',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-token' => 'F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'origin' => 'http://www.hardphp.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '102',
+  'connection' => 'close',
+  'host' => 'www.hardphp.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'psize' => '10',
+  'uid' => '',
+  'userName' => '',
+  'loginIp' => '',
+  'startTime' => '',
+  'endTime' => '',
+  'signature' => '3a0d400aec6ff9b5dcd635a9d2a62ae9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Log->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\Log.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T18:52:00+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[运行时间：0.092000s] [吞吐率：10.87req/s] [内存消耗：2,664.51kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Admin-Token=F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hardphp.com/vue-admin/',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'x-access-appid' => '123456',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-token' => 'F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'origin' => 'http://www.hardphp.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '113',
+  'connection' => 'close',
+  'host' => 'www.hardphp.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'psize' => '10',
+  'id' => '',
+  'sort' => '+id',
+  'userName' => '',
+  'realName' => '',
+  'startTime' => '',
+  'endTime' => '',
+  'signature' => 'cd37ba2321ac45805f4858b3f48b6249',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\User->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T18:52:04+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[运行时间：0.111000s] [吞吐率：9.01req/s] [内存消耗：2,664.35kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Admin-Token=F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hardphp.com/vue-admin/',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'x-access-appid' => '123456',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-token' => 'F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'origin' => 'http://www.hardphp.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '111',
+  'connection' => 'close',
+  'host' => 'www.hardphp.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'psize' => '10',
+  'id' => '',
+  'sort' => '-id',
+  'userName' => '',
+  'realName' => '',
+  'startTime' => '',
+  'endTime' => '',
+  'signature' => '3a9ad0493793b271508302ad38a8352b',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\User->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T18:52:06+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[运行时间：0.108000s] [吞吐率：9.26req/s] [内存消耗：2,664.51kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Admin-Token=F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hardphp.com/vue-admin/',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'x-access-appid' => '123456',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-token' => 'F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'origin' => 'http://www.hardphp.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '113',
+  'connection' => 'close',
+  'host' => 'www.hardphp.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'psize' => '10',
+  'id' => '',
+  'sort' => '+id',
+  'userName' => '',
+  'realName' => '',
+  'startTime' => '',
+  'endTime' => '',
+  'signature' => 'cd37ba2321ac45805f4858b3f48b6249',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\User->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T18:52:11+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[运行时间：0.106000s] [吞吐率：9.43req/s] [内存消耗：2,664.35kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Admin-Token=F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hardphp.com/vue-admin/',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'x-access-appid' => '123456',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-token' => 'F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'origin' => 'http://www.hardphp.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '111',
+  'connection' => 'close',
+  'host' => 'www.hardphp.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'psize' => '10',
+  'id' => '',
+  'sort' => '-id',
+  'userName' => '',
+  'realName' => '',
+  'startTime' => '',
+  'endTime' => '',
+  'signature' => '3a9ad0493793b271508302ad38a8352b',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\User->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T18:52:12+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[运行时间：0.112000s] [吞吐率：8.93req/s] [内存消耗：2,664.51kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Admin-Token=F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hardphp.com/vue-admin/',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'x-access-appid' => '123456',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-token' => 'F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'origin' => 'http://www.hardphp.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '113',
+  'connection' => 'close',
+  'host' => 'www.hardphp.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'psize' => '10',
+  'id' => '',
+  'sort' => '+id',
+  'userName' => '',
+  'realName' => '',
+  'startTime' => '',
+  'endTime' => '',
+  'signature' => 'cd37ba2321ac45805f4858b3f48b6249',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\User->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T18:52:44+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[运行时间：0.122000s] [吞吐率：8.20req/s] [内存消耗：2,664.51kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Admin-Token=F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hardphp.com/vue-admin/',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'x-access-appid' => '123456',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-token' => 'F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'origin' => 'http://www.hardphp.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '113',
+  'connection' => 'close',
+  'host' => 'www.hardphp.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'psize' => '10',
+  'id' => '',
+  'sort' => '+id',
+  'userName' => '',
+  'realName' => '',
+  'startTime' => '',
+  'endTime' => '',
+  'signature' => 'cd37ba2321ac45805f4858b3f48b6249',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\User->index[ D:\phpStudy\WWW\hardphp\application\admin\controller\User.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T18:54:40+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.093000s] [吞吐率：10.75req/s] [内存消耗：2,703.06kb] [文件加载：72]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Admin-Token=F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hardphp.com/vue-admin/',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'x-access-appid' => '123456',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-token' => 'F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'origin' => 'http://www.hardphp.com',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'www.hardphp.com',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\phpStudy\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2019-11-15T18:55:56+08:00 ] 127.0.0.1 GET www.hardphp.com/index.php/admin/Banner/getbanner?signature=776a8773415590486189e97e10f77114
+[运行时间：0.170000s] [吞吐率：5.88req/s] [内存消耗：2,639.28kb] [文件加载：71]
+[ info ] [ LANG ] D:\phpStudy\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Banner',
+    2 => 'getbanner',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Admin-Token=F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://www.hardphp.com/vue-admin/',
+  'x-access-appid' => '123456',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/74.0.3729.131 Safari/537.36',
+  'x-access-token' => 'F374E4F4284383CDAF0A50F32C84C4E6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qbuyiIqn08l5ZqmZltSHheBxpa-dZYa9aYKqhoF6rLeTvImLepDZxYyV1ZKo0KmbqnKYsGNoZ8Z_qKV-fZOxt7mzbJhkm83HZ4LYjrShdg',
+  'accept' => 'application/json, text/plain, */*',
+  'connection' => 'close',
+  'host' => 'www.hardphp.com',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Banner->getbanner[ D:\phpStudy\WWW\hardphp\application\admin\controller\Banner.php ]
+[ info ] [ LOG ] INIT File

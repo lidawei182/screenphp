@@ -1,0 +1,27 @@
+---------------------------------------------------------------
+[ 2023-02-13T11:47:57+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/login/index
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-02-13T11:47:58+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-02-13T11:48:00+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/index/getTopMenu?signature=776a8773415590486189e97e10f77114
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-02-13T11:48:00+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/index/getMenu?signature=776a8773415590486189e97e10f77114
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-02-13T11:48:05+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/roles/getLists
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-02-13T11:48:05+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/admin/index
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-02-13T11:48:47+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/Banner/getbanner?signature=776a8773415590486189e97e10f77114
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-02-13T11:48:50+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/admin/index
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-02-13T11:48:50+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/roles/getLists
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]

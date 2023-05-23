@@ -1,0 +1,54 @@
+---------------------------------------------------------------
+[ 2023-04-10T08:50:52+08:00 ] 127.0.0.1 OPTIONS www.screenphp.com/index.php/admin/login/index
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-04-10T08:50:53+08:00 ] 127.0.0.1 OPTIONS www.screenphp.com/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-04-10T09:46:06+08:00 ] 127.0.0.1 OPTIONS www.screenphp.com/index.php/admin/login/index
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-04-10T09:46:06+08:00 ] 127.0.0.1 OPTIONS www.screenphp.com/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-04-10T09:47:54+08:00 ] 127.0.0.1 OPTIONS www.screenphp.com/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-04-10T09:49:05+08:00 ] 127.0.0.1 OPTIONS www.screenphp.com/index.php/admin/login/index
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-04-10T09:49:05+08:00 ] 127.0.0.1 OPTIONS www.screenphp.com/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-04-10T09:49:25+08:00 ] 127.0.0.1 OPTIONS www.screenphp.com/index.php/admin/user/index
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-04-10T09:49:27+08:00 ] 127.0.0.1 OPTIONS www.screenphp.com/index.php/admin/log/index
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-04-10T14:28:31+08:00 ] 127.0.0.1 OPTIONS www.screenphp.com/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-04-10T14:28:32+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ error ] [10305]用户在其它设备登录[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-04-10T14:30:07+08:00 ] 127.0.0.1 OPTIONS www.screenphp.com/index.php/admin/login/index
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-04-10T14:30:07+08:00 ] 127.0.0.1 OPTIONS www.screenphp.com/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-04-10T14:32:58+08:00 ] 127.0.0.1 OPTIONS www.screenphp.com/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-04-10T14:35:34+08:00 ] 127.0.0.1 OPTIONS www.screenphp.com/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-04-10T14:36:05+08:00 ] 127.0.0.1 OPTIONS www.screenphp.com/index.php/admin/login/index
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-04-10T14:36:05+08:00 ] 127.0.0.1 OPTIONS www.screenphp.com/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-04-10T14:38:52+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[ error ] [10305]用户在其它设备登录[D:\PHPTutorial\WWW\screenphp\application\common.php:182]

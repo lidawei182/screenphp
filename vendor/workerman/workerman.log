@@ -1,0 +1,167 @@
+2019-11-12 18:18:40 pid:1 Error: Class 'Workerman\MySQL\Connection' not found in D:\phpStudy\WWW\hardphp\application\push\Controller\Push.php:111
+Stack trace:
+#0 [internal function]: app\push\controller\Push->onWorkerStart(Object(Workerman\Worker))
+#1 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#2 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(1315): Workerman\Worker->run()
+#3 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#4 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#5 D:\phpStudy\WWW\hardphp\vendor\topthink\think-worker\src\Server.php(48): Workerman\Worker::runAll()
+#6 [internal function]: think\worker\Server->__construct()
+#7 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(359): ReflectionClass->newInstanceArgs(Array)
+#8 D:\phpStudy\WWW\hardphp\thinkphp\library\think\Loader.php(479): think\App::invokeClass('app\\push\\contro...')
+#9 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(580): think\Loader::controller('push', 'controller', false, 'Error')
+#10 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(456): think\App::module(Array, Array, true)
+#11 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(139): think\App::exec(Array, Array)
+#12 D:\phpStudy\WWW\hardphp\thinkphp\start.php(19): think\App::run()
+#13 D:\phpStudy\WWW\hardphp\server.php(8): require('D:\\phpStudy\\WWW...')
+#14 {main}
+2019-11-12 18:18:41 pid:1 Worker process terminated
+2019-11-12 18:47:44 pid:1 PDOException: SQL:SELECT * FROM `user` SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tp5qpi.user' doesn't exist in D:\phpStudy\WWW\hardphp\application\push\Controller\Connection.php:1770
+Stack trace:
+#0 D:\phpStudy\WWW\hardphp\application\push\Controller\Connection.php(1828): Workerman\MySQL\Connection->execute('SELECT * FROM `...', Array)
+#1 D:\phpStudy\WWW\hardphp\application\push\Controller\Push.php(113): Workerman\MySQL\Connection->query()
+#2 [internal function]: app\push\controller\Push->onWorkerStart(Object(Workerman\Worker))
+#3 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#4 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(1315): Workerman\Worker->run()
+#5 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#6 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#7 D:\phpStudy\WWW\hardphp\vendor\topthink\think-worker\src\Server.php(48): Workerman\Worker::runAll()
+#8 [internal function]: think\worker\Server->__construct()
+#9 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(359): ReflectionClass->newInstanceArgs(Array)
+#10 D:\phpStudy\WWW\hardphp\thinkphp\library\think\Loader.php(479): think\App::invokeClass('app\\push\\contro...')
+#11 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(580): think\Loader::controller('push', 'controller', false, 'Error')
+#12 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(456): think\App::module(Array, Array, true)
+#13 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(139): think\App::exec(Array, Array)
+#14 D:\phpStudy\WWW\hardphp\thinkphp\start.php(19): think\App::run()
+#15 D:\phpStudy\WWW\hardphp\server.php(8): require('D:\\phpStudy\\WWW...')
+#16 {main}
+2019-11-12 18:47:45 pid:1 Worker process terminated
+2019-11-13 14:22:10 pid:1 PDOException: SQL:SELECT * FROM `user` SQLSTATE[42S02]: Base table or view not found: 1146 Table 'tp5qpi.user' doesn't exist in D:\phpStudy\WWW\hardphp\application\push\Controller\Connection.php:1770
+Stack trace:
+#0 D:\phpStudy\WWW\hardphp\application\push\Controller\Connection.php(1828): Workerman\MySQL\Connection->execute('SELECT * FROM `...', Array)
+#1 D:\phpStudy\WWW\hardphp\application\push\Controller\Push.php(113): Workerman\MySQL\Connection->query()
+#2 [internal function]: app\push\controller\Push->onWorkerStart(Object(Workerman\Worker))
+#3 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#4 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(1315): Workerman\Worker->run()
+#5 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#6 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#7 D:\phpStudy\WWW\hardphp\vendor\topthink\think-worker\src\Server.php(48): Workerman\Worker::runAll()
+#8 [internal function]: think\worker\Server->__construct()
+#9 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(359): ReflectionClass->newInstanceArgs(Array)
+#10 D:\phpStudy\WWW\hardphp\thinkphp\library\think\Loader.php(479): think\App::invokeClass('app\\push\\contro...')
+#11 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(580): think\Loader::controller('push', 'controller', false, 'Error')
+#12 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(456): think\App::module(Array, Array, true)
+#13 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(139): think\App::exec(Array, Array)
+#14 D:\phpStudy\WWW\hardphp\thinkphp\start.php(19): think\App::run()
+#15 D:\phpStudy\WWW\hardphp\server.php(8): require('D:\\phpStudy\\WWW...')
+#16 {main}
+2019-11-13 14:22:11 pid:1 Worker process terminated
+2019-11-13 14:27:19 pid:1 Worker process terminated
+2019-11-13 14:33:52 pid:1 Worker process terminated
+2019-11-13 14:35:39 pid:1 Worker process terminated
+2019-11-13 14:38:51 pid:1 Worker process terminated
+2019-11-13 14:40:24 pid:1 think\exception\ErrorException: json_decode() expects parameter 1 to be string, array given in D:\phpStudy\WWW\hardphp\application\push\Controller\Push.php:115
+Stack trace:
+#0 [internal function]: think\Error::appError(2, 'json_decode() e...', 'D:\\phpStudy\\WWW...', 115, Array)
+#1 D:\phpStudy\WWW\hardphp\application\push\Controller\Push.php(115): json_decode(Array, true)
+#2 [internal function]: app\push\controller\Push->onWorkerStart(Object(Workerman\Worker))
+#3 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(2306): call_user_func(Array, Object(Workerman\Worker))
+#4 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(1315): Workerman\Worker->run()
+#5 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#6 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#7 D:\phpStudy\WWW\hardphp\vendor\topthink\think-worker\src\Server.php(48): Workerman\Worker::runAll()
+#8 [internal function]: think\worker\Server->__construct()
+#9 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(359): ReflectionClass->newInstanceArgs(Array)
+#10 D:\phpStudy\WWW\hardphp\thinkphp\library\think\Loader.php(479): think\App::invokeClass('app\\push\\contro...')
+#11 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(580): think\Loader::controller('push', 'controller', false, 'Error')
+#12 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(456): think\App::module(Array, Array, true)
+#13 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(139): think\App::exec(Array, Array)
+#14 D:\phpStudy\WWW\hardphp\thinkphp\start.php(19): think\App::run()
+#15 D:\phpStudy\WWW\hardphp\server.php(8): require('D:\\phpStudy\\WWW...')
+#16 {main}
+2019-11-13 14:40:25 pid:1 Worker process terminated
+2019-11-13 14:41:52 pid:1 Worker process terminated
+2019-11-13 14:42:53 pid:1 Worker process terminated
+2019-11-13 14:45:00 pid:1 Worker process terminated
+2019-11-13 14:46:10 pid:1 Worker process terminated
+2019-11-13 14:49:04 pid:1 Worker process terminated
+2019-11-13 14:50:33 pid:1 Worker process terminated
+2019-11-13 14:55:15 pid:1 Worker process terminated with ERROR: E_ERROR "Method Workerman\MySQL\Connection::__toString() must not throw an exception, caught Exception: type empty in D:\phpStudy\WWW\hardphp\application\push\Controller\Push.php on line 0"
+2019-11-13 14:55:41 pid:1 Worker process terminated with ERROR: E_ERROR "Method Workerman\MySQL\Connection::__toString() must not throw an exception, caught Exception: type empty in D:\phpStudy\WWW\hardphp\application\push\Controller\Push.php on line 0"
+2019-11-13 14:57:27 pid:1 Worker process terminated
+2019-11-13 14:58:35 pid:1 Worker process terminated
+2019-11-13 14:59:39 pid:1 Worker process terminated
+2019-11-14 11:51:05 pid:1 Worker process terminated
+2019-11-14 11:54:06 pid:1 Worker process terminated
+2019-11-14 11:55:28 pid:1 Worker process terminated
+2019-11-14 11:56:14 pid:1 Worker process terminated
+2019-11-14 11:57:00 pid:1 Worker process terminated
+2019-11-14 11:58:25 pid:1 Worker process terminated
+2019-11-14 11:58:58 pid:1 Worker process terminated
+2019-11-14 11:59:48 pid:1 Worker process terminated
+2019-11-14 12:00:30 pid:1 think\exception\ErrorException: Undefined index: REMOTE_ADDR in D:\phpStudy\WWW\hardphp\application\push\Controller\Push.php:41
+Stack trace:
+#0 D:\phpStudy\WWW\hardphp\application\push\Controller\Push.php(41): think\Error::appError(8, 'Undefined index...', 'D:\\phpStudy\\WWW...', 41, Array)
+#1 [internal function]: app\push\controller\Push->onMessage(Object(Workerman\Connection\TcpConnection), '{"type":"login"...')
+#2 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '{"type":"login"...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #59)
+#4 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#6 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(1315): Workerman\Worker->run()
+#7 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#8 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#9 D:\phpStudy\WWW\hardphp\vendor\topthink\think-worker\src\Server.php(48): Workerman\Worker::runAll()
+#10 [internal function]: think\worker\Server->__construct()
+#11 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(359): ReflectionClass->newInstanceArgs(Array)
+#12 D:\phpStudy\WWW\hardphp\thinkphp\library\think\Loader.php(479): think\App::invokeClass('app\\push\\contro...')
+#13 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(580): think\Loader::controller('push', 'controller', false, 'Error')
+#14 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(456): think\App::module(Array, Array, true)
+#15 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(139): think\App::exec(Array, Array)
+#16 D:\phpStudy\WWW\hardphp\thinkphp\start.php(19): think\App::run()
+#17 D:\phpStudy\WWW\hardphp\server.php(8): require('D:\\phpStudy\\WWW...')
+#18 {main}
+2019-11-14 12:00:30 pid:1 Worker process terminated
+2019-11-14 16:00:40 pid:1 think\exception\ErrorException: Undefined index: REMOTE_ADDR in D:\phpStudy\WWW\hardphp\application\push\Controller\Push.php:41
+Stack trace:
+#0 D:\phpStudy\WWW\hardphp\application\push\Controller\Push.php(41): think\Error::appError(8, 'Undefined index...', 'D:\\phpStudy\\WWW...', 41, Array)
+#1 [internal function]: app\push\controller\Push->onMessage(Object(Workerman\Connection\TcpConnection), '{"type":"login"...')
+#2 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '{"type":"login"...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #59)
+#4 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#6 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(1315): Workerman\Worker->run()
+#7 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#8 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#9 D:\phpStudy\WWW\hardphp\vendor\topthink\think-worker\src\Server.php(48): Workerman\Worker::runAll()
+#10 [internal function]: think\worker\Server->__construct()
+#11 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(359): ReflectionClass->newInstanceArgs(Array)
+#12 D:\phpStudy\WWW\hardphp\thinkphp\library\think\Loader.php(479): think\App::invokeClass('app\\push\\contro...')
+#13 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(580): think\Loader::controller('push', 'controller', false, 'Error')
+#14 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(456): think\App::module(Array, Array, true)
+#15 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(139): think\App::exec(Array, Array)
+#16 D:\phpStudy\WWW\hardphp\thinkphp\start.php(19): think\App::run()
+#17 D:\phpStudy\WWW\hardphp\server.php(8): require('D:\\phpStudy\\WWW...')
+#18 {main}
+2019-11-14 16:00:40 pid:1 Worker process terminated
+2019-11-14 17:20:06 pid:1 think\exception\ErrorException: Undefined index: text in D:\phpStudy\WWW\hardphp\application\push\Controller\Push.php:54
+Stack trace:
+#0 D:\phpStudy\WWW\hardphp\application\push\Controller\Push.php(54): think\Error::appError(8, 'Undefined index...', 'D:\\phpStudy\\WWW...', 54, Array)
+#1 [internal function]: app\push\controller\Push->onMessage(Object(Workerman\Connection\TcpConnection), '{"type":"login"...')
+#2 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '{"type":"login"...')
+#3 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #59)
+#4 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#5 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(2321): Workerman\Events\Select->loop()
+#6 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(1315): Workerman\Worker->run()
+#7 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(1258): Workerman\Worker::forkWorkersForWindows()
+#8 D:\phpStudy\WWW\hardphp\vendor\workerman\workerman\Worker.php(507): Workerman\Worker::forkWorkers()
+#9 D:\phpStudy\WWW\hardphp\vendor\topthink\think-worker\src\Server.php(48): Workerman\Worker::runAll()
+#10 [internal function]: think\worker\Server->__construct()
+#11 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(359): ReflectionClass->newInstanceArgs(Array)
+#12 D:\phpStudy\WWW\hardphp\thinkphp\library\think\Loader.php(479): think\App::invokeClass('app\\push\\contro...')
+#13 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(580): think\Loader::controller('push', 'controller', false, 'Error')
+#14 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(456): think\App::module(Array, Array, true)
+#15 D:\phpStudy\WWW\hardphp\thinkphp\library\think\App.php(139): think\App::exec(Array, Array)
+#16 D:\phpStudy\WWW\hardphp\thinkphp\start.php(19): think\App::run()
+#17 D:\phpStudy\WWW\hardphp\server.php(8): require('D:\\phpStudy\\WWW...')
+#18 {main}
+2019-11-14 17:20:06 pid:1 Worker process terminated

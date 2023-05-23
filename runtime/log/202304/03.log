@@ -1,0 +1,192 @@
+---------------------------------------------------------------
+[ 2023-04-03T12:05:26+08:00 ] 127.0.0.1 OPTIONS www.screenphp.com/index.php/admin/login/index
+[运行时间：0.093610s] [吞吐率：10.68req/s] [内存消耗：1,746.75kb] [文件加载：58]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-headers' => 'x-access-appid',
+  'access-control-request-method' => 'POST',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'www.screenphp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-04-03T12:05:26+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/login/index
+[运行时间：0.126019s] [吞吐率：7.94req/s] [内存消耗：2,764.00kb] [文件加载：73]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'x-access-appid' => '123456',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '73',
+  'connection' => 'close',
+  'host' => 'www.screenphp.com',
+)
+[ info ] [ PARAM ] array (
+  'userName' => 'admin',
+  'password' => '123456',
+  'signature' => '5c9dde2ed54c2625dcafa37e79314ea6',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\PHPTutorial\WWW\screenphp\application\admin\controller\Login.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-04-03T12:05:26+08:00 ] 127.0.0.1 OPTIONS www.screenphp.com/index.php/admin/admin/getuser
+[运行时间：0.037977s] [吞吐率：26.33req/s] [内存消耗：1,780.63kb] [文件加载：60]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'access-control-request-method' => 'POST',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'www.screenphp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-04-03T12:05:26+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/admin/getuser
+[运行时间：0.098696s] [吞吐率：10.13req/s] [内存消耗：2,795.63kb] [文件加载：72]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'x-access-appid' => '123456',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'x-access-token' => '05BAA71045C93FC54E9563990C2DE575MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qdFoiIeJt7KJZqmRltCImtBxpbRjiWmzjX5_gqOHbLbduK6VnZ-2tWSLrJzOnLGSvZNirolhobiPjoqJkXqvx5XeoImHcN3HZH_MirShdg',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '42',
+  'connection' => 'close',
+  'host' => 'www.screenphp.com',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\PHPTutorial\WWW\screenphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-04-03T12:05:34+08:00 ] 127.0.0.1 OPTIONS www.screenphp.com/index.php/admin/log/index
+[运行时间：0.037795s] [吞吐率：26.46req/s] [内存消耗：1,753.87kb] [文件加载：60]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'log',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'sec-fetch-mode' => 'cors',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'origin' => 'http://localhost:8080',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'access-control-request-method' => 'POST',
+  'accept' => '*/*',
+  'connection' => 'close',
+  'host' => 'www.screenphp.com',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-04-03T12:05:34+08:00 ] 127.0.0.1 POST www.screenphp.com/index.php/admin/log/index
+[运行时间：0.095276s] [吞吐率：10.50req/s] [内存消耗：2,737.56kb] [文件加载：72]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'log',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://localhost:8080/',
+  'origin' => 'http://localhost:8080',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'x-access-appid' => '123456',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36',
+  'x-access-token' => '05BAA71045C93FC54E9563990C2DE575MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qdFoiIeJt7KJZqmRltCImtBxpbRjiWmzjX5_gqOHbLbduK6VnZ-2tWSLrJzOnLGSvZNirolhobiPjoqJkXqvx5XeoImHcN3HZH_MirShdg',
+  'accept' => 'application/json, text/plain, */*',
+  'content-length' => '73',
+  'connection' => 'close',
+  'host' => 'www.screenphp.com',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'psize' => '10',
+  'uid' => '',
+  'userName' => '',
+  'signature' => '75a5bf712f7e183b7e3728bd83d07707',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Log->index[ D:\PHPTutorial\WWW\screenphp\application\admin\controller\Log.php ]
+[ info ] [ LOG ] INIT File

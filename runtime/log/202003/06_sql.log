@@ -1,0 +1,75 @@
+---------------------------------------------------------------
+[ 2020-03-06T16:05:33+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.067000s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.042000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.027000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.032000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2020-03-06T16:05:38+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/user/index' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.035000s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` `a` LIMIT 1 [ RunTime:0.002000s ]
+---------------------------------------------------------------
+[ 2020-03-06T16:07:40+08:00 ] 127.0.0.1 GET www.hardphp.com/index.php/admin/user/getinfo?id=3&signature=4ad264678314d9dc41e5ed8c18b8c82a
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.017000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.013000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/user/getinfo' LIMIT 1 [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.014000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_user` `a` WHERE  (   a.id = 3 ) LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2020-03-06T16:07:53+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` WHERE  (   a.isDel = 0 and a.userName =  'nameuser' ) LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2020-03-06T16:08:03+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.010000s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` WHERE  (   a.isDel = 0 and a.userName =  'nameuser' ) LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `tp_user`  SET `loginTime`=1583482083,`loginIp`='127.0.0.1'  WHERE  `id` = 3 [ RunTime:0.038000s ]
+---------------------------------------------------------------
+[ 2020-03-06T16:13:16+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025000s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` WHERE  (   a.isDel = 0 and a.userName =  'nameuser' ) LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `tp_user`  SET `loginTime`=1583482396,`loginIp`='127.0.0.1'  WHERE  `id` = 3 [ RunTime:0.037000s ]
+---------------------------------------------------------------
+[ 2020-03-06T16:14:02+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` WHERE  (   a.isDel = 0 and a.userName =  'nameuser' ) LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] UPDATE `tp_user`  SET `loginTime`=1583482442,`loginIp`='127.0.0.1'  WHERE  `id` = 3 [ RunTime:0.053000s ]
+---------------------------------------------------------------
+[ 2020-03-06T16:57:03+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.026000s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.007000s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` WHERE  (   a.isDel = 0 and a.userName =  'nameuser' ) LIMIT 1 [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `tp_user`  SET `loginTime`=1583485023,`loginIp`='127.0.0.1'  WHERE  `id` = 3 [ RunTime:0.043000s ]

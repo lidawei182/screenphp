@@ -1,0 +1,57 @@
+---------------------------------------------------------------
+[ 2019-11-08T09:30:42+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [8]未定义数组索引: createtime[D:\phpStudy\WWW\hardphp\application\admin\controller\Banner.php:108]
+---------------------------------------------------------------
+[ 2019-11-08T09:30:49+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [8]未定义数组索引: createtime[D:\phpStudy\WWW\hardphp\application\admin\controller\Banner.php:108]
+---------------------------------------------------------------
+[ 2019-11-08T09:30:58+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [8]未定义数组索引: createtime[D:\phpStudy\WWW\hardphp\application\admin\controller\Banner.php:108]
+---------------------------------------------------------------
+[ 2019-11-08T14:12:16+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[ error ] [8]未定义变量: realName[D:\phpStudy\WWW\hardphp\application\admin\controller\User.php:30]
+---------------------------------------------------------------
+[ 2019-11-08T14:12:18+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[ error ] [8]未定义变量: realName[D:\phpStudy\WWW\hardphp\application\admin\controller\User.php:30]
+---------------------------------------------------------------
+[ 2019-11-08T14:14:30+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[ error ] [8]未定义变量: realName[D:\phpStudy\WWW\hardphp\application\admin\controller\User.php:30]
+---------------------------------------------------------------
+[ 2019-11-08T14:17:09+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[ error ] [8]未定义变量: realName[D:\phpStudy\WWW\hardphp\application\admin\controller\User.php:30]
+---------------------------------------------------------------
+[ 2019-11-08T14:17:41+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[ error ] [8]未定义变量: realName[D:\phpStudy\WWW\hardphp\application\admin\controller\User.php:30]
+---------------------------------------------------------------
+[ 2019-11-08T14:17:57+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[ error ] [8]未定义变量: realName[D:\phpStudy\WWW\hardphp\application\admin\controller\User.php:30]
+---------------------------------------------------------------
+[ 2019-11-08T14:18:28+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[ error ] [8]未定义变量: uid[D:\phpStudy\WWW\hardphp\application\admin\model\User.php:44]
+---------------------------------------------------------------
+[ 2019-11-08T14:18:37+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[ error ] [8]未定义变量: uid[D:\phpStudy\WWW\hardphp\application\admin\controller\User.php:30]
+---------------------------------------------------------------
+[ 2019-11-08T14:18:48+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[ error ] [8]未定义变量: uid[D:\phpStudy\WWW\hardphp\application\admin\model\User.php:44]
+---------------------------------------------------------------
+[ 2019-11-08T16:22:19+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/save
+[ error ] [0]类不存在:app\common\validate\User[D:\phpStudy\WWW\hardphp\thinkphp\library\think\Loader.php:526]
+---------------------------------------------------------------
+[ 2019-11-08T16:22:26+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/save
+[ error ] [0]类不存在:app\common\validate\User[D:\phpStudy\WWW\hardphp\thinkphp\library\think\Loader.php:526]
+---------------------------------------------------------------
+[ 2019-11-08T16:22:46+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/save
+[ error ] [0]类不存在:app\common\validate\User[D:\phpStudy\WWW\hardphp\thinkphp\library\think\Loader.php:526]
+---------------------------------------------------------------
+[ 2019-11-08T16:24:22+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/save
+[ error ] [0]数据表字段不存在:[email][D:\phpStudy\WWW\hardphp\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-08T16:26:21+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/save
+[ error ] [0]数据表字段不存在:[email][D:\phpStudy\WWW\hardphp\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-08T16:29:36+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/save
+[ error ] [0]数据表字段不存在:[email][D:\phpStudy\WWW\hardphp\thinkphp\library\think\db\Builder.php:115]
+---------------------------------------------------------------
+[ 2019-11-08T17:49:20+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[ error ] [0]Wrong number of segments[D:\phpStudy\WWW\hardphp\vendor\firebase\php-jwt\src\JWT.php:79]

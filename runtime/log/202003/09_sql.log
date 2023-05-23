@@ -1,0 +1,15 @@
+---------------------------------------------------------------
+[ 2020-03-09T15:22:18+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003563s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.023115s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000938s ]
+---------------------------------------------------------------
+[ 2020-03-09T15:22:18+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010231s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.006680s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000400s ]
+---------------------------------------------------------------
+[ 2020-03-09T15:22:18+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010690s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.006885s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000595s ]

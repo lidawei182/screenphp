@@ -1,0 +1,36 @@
+---------------------------------------------------------------
+[ 2021-01-13T11:13:57+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/login/index
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2021-01-13T11:13:58+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2021-01-13T11:13:59+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/index/getTopMenu?signature=776a8773415590486189e97e10f77114
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2021-01-13T11:13:59+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/index/getMenu?signature=776a8773415590486189e97e10f77114
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2021-01-13T11:16:45+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2021-01-13T11:41:55+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/admin/index
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2021-01-13T11:41:55+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/roles/getLists
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2021-01-13T11:42:02+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/rules/index
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2021-01-13T11:42:07+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/roles/index
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2021-01-13T11:42:07+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/rules/getLists
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2021-01-13T11:42:10+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/log/index
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2021-01-13T11:42:23+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/Banner/getbanner?signature=776a8773415590486189e97e10f77114
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]

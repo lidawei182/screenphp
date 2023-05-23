@@ -1,0 +1,15 @@
+---------------------------------------------------------------
+[ 2021-07-08T13:55:38+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/login/index
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2021-07-08T13:55:40+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2021-07-08T13:55:45+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/user/index
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2021-07-08T13:58:25+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/log/index
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2021-07-08T13:58:29+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/user/index
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\hardphp\application\common.php:182]

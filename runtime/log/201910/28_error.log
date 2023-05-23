@@ -1,0 +1,6 @@
+---------------------------------------------------------------
+[ 2019-10-28T16:49:22+08:00 ] 127.0.0.1 POST api.hardphp.com/index.php/admin/login/index
+[ error ] [10303]用户密码错误[D:\phpStudy2016\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2019-10-28T17:40:41+08:00 ] 127.0.0.1 POST api.hardphp.com/index.php/admin/admin/getuser
+[ error ] [0]Wrong number of segments[D:\phpStudy2016\WWW\hardphp\vendor\firebase\php-jwt\src\JWT.php:79]

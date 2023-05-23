@@ -1,0 +1,1389 @@
+---------------------------------------------------------------
+[ 2020-03-30T10:49:40+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/login/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002740s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.043994s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.023608s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`title` FROM `tp_admin` `a` LEFT JOIN `tp_auth_group` `b` ON `a`.`groupId`=`b`.`id` WHERE  `userName` = 'admin' LIMIT 1 [ RunTime:0.011717s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.030873s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_login_log` [ RunTime:0.048208s ]
+[ sql ] [ SQL ] INSERT INTO `tp_login_log` (`uid` , `userName` , `roles` , `loginTime` , `loginIp`) VALUES (1 , 'admin' , '超级管理员' , 1585536580 , '127.0.0.1') [ RunTime:0.083699s ]
+[ sql ] [ SQL ] UPDATE `tp_admin`  SET `loginTime`=1585536580  WHERE  `id` = 1 [ RunTime:0.070792s ]
+---------------------------------------------------------------
+[ 2020-03-30T10:49:40+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011559s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.012073s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001258s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.020142s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001260s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.018707s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.013798s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.016148s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000550s ]
+---------------------------------------------------------------
+[ 2020-03-30T10:49:46+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011259s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.015117s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.033216s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000963s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.024243s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/user/index' LIMIT 1 [ RunTime:0.000630s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.014960s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` `a` LIMIT 1 [ RunTime:0.000806s ]
+---------------------------------------------------------------
+[ 2020-03-30T10:52:15+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001317s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.010191s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.009600s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.007582s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.010249s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000320s ]
+---------------------------------------------------------------
+[ 2020-03-30T10:52:19+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010027s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008569s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000534s ]
+---------------------------------------------------------------
+[ 2020-03-30T10:52:37+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010712s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008255s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000554s ]
+---------------------------------------------------------------
+[ 2020-03-30T10:52:39+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000840s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.019644s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000515s ]
+---------------------------------------------------------------
+[ 2020-03-30T10:52:59+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009861s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008272s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000584s ]
+---------------------------------------------------------------
+[ 2020-03-30T10:53:04+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000729s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009253s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000457s ]
+---------------------------------------------------------------
+[ 2020-03-30T10:58:03+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/getbanner
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010241s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008087s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.026557s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000538s ]
+---------------------------------------------------------------
+[ 2020-03-30T11:00:36+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/getbanner
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001069s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009802s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008922s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000503s ]
+---------------------------------------------------------------
+[ 2020-03-30T11:02:55+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010616s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.007372s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.008709s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` WHERE  (   a.isDel = 0 and a.userName =  'nameuser' ) LIMIT 1 [ RunTime:0.000574s ]
+[ sql ] [ SQL ] UPDATE `tp_user`  SET `loginTime`=1585537375,`loginIp`='127.0.0.1'  WHERE  `id` = 3 [ RunTime:0.070299s ]
+---------------------------------------------------------------
+[ 2020-03-30T11:19:20+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/login/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003458s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008940s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.009779s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`title` FROM `tp_admin` `a` LEFT JOIN `tp_auth_group` `b` ON `a`.`groupId`=`b`.`id` WHERE  `userName` = 'admin' LIMIT 1 [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.009461s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_login_log` [ RunTime:0.010586s ]
+[ sql ] [ SQL ] INSERT INTO `tp_login_log` (`uid` , `userName` , `roles` , `loginTime` , `loginIp`) VALUES (1 , 'admin' , '超级管理员' , 1585538360 , '127.0.0.1') [ RunTime:0.044295s ]
+[ sql ] [ SQL ] UPDATE `tp_admin`  SET `loginTime`=1585538360  WHERE  `id` = 1 [ RunTime:0.047179s ]
+---------------------------------------------------------------
+[ 2020-03-30T11:19:20+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008301s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000848s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.008777s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.009227s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.009647s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000465s ]
+---------------------------------------------------------------
+[ 2020-03-30T11:19:20+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000717s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.044257s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.008894s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.008722s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/user/index' LIMIT 1 [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.009168s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` `a` LIMIT 1 [ RunTime:0.000477s ]
+---------------------------------------------------------------
+[ 2020-03-30T11:33:34+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002013s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.022312s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.020739s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` WHERE  (   a.isDel = 0 and a.userName =  'nameuser' ) LIMIT 1 [ RunTime:0.000594s ]
+[ sql ] [ SQL ] UPDATE `tp_user`  SET `loginTime`=1585539214,`loginIp`='127.0.0.1'  WHERE  `id` = 3 [ RunTime:0.072642s ]
+---------------------------------------------------------------
+[ 2020-03-30T11:33:41+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011029s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.027351s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.021929s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` WHERE  (   a.isDel = 0 and a.userName =  'nameuser' ) LIMIT 1 [ RunTime:0.000712s ]
+[ sql ] [ SQL ] UPDATE `tp_user`  SET `loginTime`=1585539221,`loginIp`='127.0.0.1'  WHERE  `id` = 3 [ RunTime:0.074203s ]
+---------------------------------------------------------------
+[ 2020-03-30T11:34:40+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014940s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.023588s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.036098s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` WHERE  (   a.isDel = 0 and a.userName =  'nameuser' ) LIMIT 1 [ RunTime:0.000651s ]
+[ sql ] [ SQL ] UPDATE `tp_user`  SET `loginTime`=1585539280,`loginIp`='127.0.0.1'  WHERE  `id` = 3 [ RunTime:0.073266s ]
+---------------------------------------------------------------
+[ 2020-03-30T11:35:01+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002329s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008009s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.019552s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` WHERE  (   a.isDel = 0 and a.userName =  'nameuser' ) LIMIT 1 [ RunTime:0.000497s ]
+[ sql ] [ SQL ] UPDATE `tp_user`  SET `loginTime`=1585539301,`loginIp`='127.0.0.1'  WHERE  `id` = 3 [ RunTime:0.069459s ]
+---------------------------------------------------------------
+[ 2020-03-30T11:58:56+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002095s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.024173s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000491s ]
+---------------------------------------------------------------
+[ 2020-03-30T11:59:00+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000937s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.028787s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000451s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:00:17+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000935s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008950s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.011141s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000513s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:01:03+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/login/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012267s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017721s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.015013s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`title` FROM `tp_admin` `a` LEFT JOIN `tp_auth_group` `b` ON `a`.`groupId`=`b`.`id` WHERE  `userName` = 'admin' LIMIT 1 [ RunTime:0.002333s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.014838s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001542s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_login_log` [ RunTime:0.016571s ]
+[ sql ] [ SQL ] INSERT INTO `tp_login_log` (`uid` , `userName` , `roles` , `loginTime` , `loginIp`) VALUES (1 , 'admin' , '超级管理员' , 1585540863 , '127.0.0.1') [ RunTime:0.047497s ]
+[ sql ] [ SQL ] UPDATE `tp_admin`  SET `loginTime`=1585540863  WHERE  `id` = 1 [ RunTime:0.026820s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:01:06+08:00 ] 127.0.0.1 GET www.hardphp.com/index.php/admin/Banner/getbanner?signature=776a8773415590486189e97e10f77114
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000861s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.007722s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.009199s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.076237s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/banner/getbanner' LIMIT 1 [ RunTime:0.001135s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.017699s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000679s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:01:35+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001821s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009712s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.010451s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000333s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:02:05+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000657s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009091s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009753s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000481s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:02:08+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000979s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009210s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008822s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000381s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:04:09+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000794s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009013s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.010404s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000428s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:04:10+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000872s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.010618s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009620s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000364s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:04:10+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000717s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008328s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009781s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000326s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:04:10+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001852s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009662s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.011214s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000472s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:04:14+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000866s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009611s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.010626s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000430s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:04:57+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000813s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.010154s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.010242s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000370s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:08:08+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011184s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.024071s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009277s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000381s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:09:12+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000890s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009879s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009991s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000434s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:09:38+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000688s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008217s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008050s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000319s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:09:47+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000937s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.010198s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009977s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000386s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:13:34+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002119s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009791s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009237s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000430s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:14:38+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001036s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.033074s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000511s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.065900s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000384s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:16:04+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012293s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008121s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000445s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.030680s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000301s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:16:08+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000844s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.095738s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.010455s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000389s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:16:17+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000846s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.010395s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009578s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000438s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:16:24+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006046s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008562s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.008717s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` WHERE  (   a.isDel = 0 and a.userName =  'nameuser' ) LIMIT 1 [ RunTime:0.000518s ]
+[ sql ] [ SQL ] UPDATE `tp_user`  SET `loginTime`=1585541784,`loginIp`='127.0.0.1'  WHERE  `id` = 3 [ RunTime:0.043905s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:17:16+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000694s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.007649s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008221s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000385s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:17:22+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000799s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017316s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.019156s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000563s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:18:11+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010636s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.007862s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009169s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000386s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:18:51+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003360s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.020169s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.010147s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` WHERE  (   a.isDel = 0 and a.userName =  'nameuser' ) LIMIT 1 [ RunTime:0.000686s ]
+[ sql ] [ SQL ] UPDATE `tp_user`  SET `loginTime`=1585541931,`loginIp`='127.0.0.1'  WHERE  `id` = 3 [ RunTime:0.070801s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:33:33+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012101s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.033716s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000568s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:33:36+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000683s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000415s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:34:04+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010676s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.011014s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.016105s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000363s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:34:12+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000857s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009350s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.010222s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000548s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:34:39+08:00 ] 127.0.0.1 GET www.hardphp.com/index.php/api/banner/index?signature=776a8773415590486189e97e10f77114
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011065s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009758s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000499s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:34:41+08:00 ] 127.0.0.1 GET www.hardphp.com/index.php/api/banner/index?signature=776a8773415590486189e97e10f77114
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000861s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009267s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000557s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:34:55+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001047s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008667s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009638s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000656s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:34:59+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000858s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009560s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009714s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000388s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:35:44+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000849s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009281s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009278s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000368s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:36:02+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000777s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008661s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009647s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000318s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:36:06+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000658s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.011009s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000753s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.063582s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000395s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:36:10+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000761s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009410s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.010502s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000492s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:36:12+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000782s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.007687s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000613s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.008368s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` WHERE  (   a.isDel = 0 and a.userName =  'nameuser' ) LIMIT 1 [ RunTime:0.000632s ]
+[ sql ] [ SQL ] UPDATE `tp_user`  SET `loginTime`=1585542972,`loginIp`='127.0.0.1'  WHERE  `id` = 3 [ RunTime:0.053929s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:36:14+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011127s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008082s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009097s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000519s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:36:19+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001285s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.007815s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008264s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000473s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:36:23+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006846s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.007660s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.007921s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` WHERE  (   a.isDel = 0 and a.userName =  'nameuser' ) LIMIT 1 [ RunTime:0.000410s ]
+[ sql ] [ SQL ] UPDATE `tp_user`  SET `loginTime`=1585542983,`loginIp`='127.0.0.1'  WHERE  `id` = 3 [ RunTime:0.035312s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:36:25+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010861s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008344s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009735s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000736s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:36:50+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000816s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008446s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008867s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000399s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:36:58+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000727s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009391s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009101s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000486s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:37:11+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000833s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008114s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.007772s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000303s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:46:29+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001831s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008686s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009498s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000430s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:46:32+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000748s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008592s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009704s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000426s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:46:40+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000866s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.237257s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000995s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.014193s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` WHERE  (   a.isDel = 0 and a.userName =  'nameuser' ) LIMIT 1 [ RunTime:0.000686s ]
+[ sql ] [ SQL ] UPDATE `tp_user`  SET `loginTime`=1585543600,`loginIp`='127.0.0.1'  WHERE  `id` = 3 [ RunTime:0.135442s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:46:43+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000653s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.017722s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009214s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000338s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:47:35+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000856s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009878s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008589s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000338s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:47:41+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010145s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009300s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008069s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000483s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:47:44+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001085s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008949s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009745s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000436s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:47:51+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011375s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008607s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000773s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.008767s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.007992s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/user/index' LIMIT 1 [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.009774s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` `a` LIMIT 1 [ RunTime:0.000267s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:47:54+08:00 ] 127.0.0.1 GET www.hardphp.com/index.php/admin/user/getinfo?id=3&signature=4ad264678314d9dc41e5ed8c18b8c82a
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000689s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009678s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001885s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.012588s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001057s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.013337s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/user/getinfo' LIMIT 1 [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.015539s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_user` `a` WHERE  (   a.id = 3 ) LIMIT 1 [ RunTime:0.000678s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:48:05+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012790s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008087s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.008762s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` WHERE  (   a.isDel = 0 and a.userName =  'nameuser' ) LIMIT 1 [ RunTime:0.000426s ]
+[ sql ] [ SQL ] UPDATE `tp_user`  SET `loginTime`=1585543685,`loginIp`='127.0.0.1'  WHERE  `id` = 3 [ RunTime:0.045859s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:48:08+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000861s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008622s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008216s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000327s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:48:14+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000824s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009644s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009555s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000405s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:48:34+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009959s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009061s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.015897s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000370s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:49:02+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009827s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009352s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008516s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000480s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:49:05+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000845s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009250s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009846s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000467s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:49:15+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012033s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008669s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.008931s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` WHERE  (   a.isDel = 0 and a.userName =  'nameuser' ) LIMIT 1 [ RunTime:0.000607s ]
+[ sql ] [ SQL ] UPDATE `tp_user`  SET `loginTime`=1585543755,`loginIp`='127.0.0.1'  WHERE  `id` = 3 [ RunTime:0.037905s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:51:20+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016577s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008281s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.009248s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` WHERE  (   a.isDel = 0 and a.userName =  'nameuser' ) LIMIT 1 [ RunTime:0.000450s ]
+[ sql ] [ SQL ] UPDATE `tp_user`  SET `loginTime`=1585543880,`loginIp`='127.0.0.1'  WHERE  `id` = 3 [ RunTime:0.035508s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:51:25+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010571s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008288s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.061592s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000629s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:51:30+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010407s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.007807s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009184s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000459s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:52:39+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000779s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009193s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.010021s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000343s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:53:50+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010505s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.031967s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001092s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.017759s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000755s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:54:41+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001833s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008571s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009253s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000381s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:54:43+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000854s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009571s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.022251s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000409s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:56:41+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000740s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008704s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008229s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000363s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:56:48+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000827s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009087s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.023147s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000423s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:57:07+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000893s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009278s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008120s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000346s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:57:24+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000676s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008427s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008340s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000355s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:59:29+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009786s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009077s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.010942s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000511s ]
+---------------------------------------------------------------
+[ 2020-03-30T12:59:35+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000858s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009806s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009976s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000410s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:00:22+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011111s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.057671s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.008272s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.008505s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.009092s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000584s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:01:24+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000752s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.011547s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.007944s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000318s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:02:37+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001659s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.007815s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009050s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000357s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:02:47+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000769s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.010705s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009843s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000426s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:02:50+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000785s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009860s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009735s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000406s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:03:07+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000763s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.010373s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.010019s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000403s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:03:10+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000781s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.012375s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.010890s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000484s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:03:17+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011431s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009422s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000915s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.007755s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000303s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:05:16+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010521s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009746s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000473s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.009109s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` WHERE  (   a.isDel = 0 and a.userName =  'nameuser' ) LIMIT 1 [ RunTime:0.000422s ]
+[ sql ] [ SQL ] UPDATE `tp_user`  SET `loginTime`=1585544716,`loginIp`='127.0.0.1'  WHERE  `id` = 3 [ RunTime:0.045661s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:05:32+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009808s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008994s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.007753s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000306s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:06:10+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010481s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.007924s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.008272s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` WHERE  (   a.isDel = 0 and a.userName =  'nameuser' ) LIMIT 1 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] UPDATE `tp_user`  SET `loginTime`=1585544770,`loginIp`='127.0.0.1'  WHERE  `id` = 3 [ RunTime:0.056852s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:06:12+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000668s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.007948s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000820s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.007987s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000376s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:06:22+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001176s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.007793s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.008579s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` WHERE  (   a.isDel = 0 and a.userName =  'nameuser' ) LIMIT 1 [ RunTime:0.000590s ]
+[ sql ] [ SQL ] UPDATE `tp_user`  SET `loginTime`=1585544782,`loginIp`='127.0.0.1'  WHERE  `id` = 3 [ RunTime:0.047411s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:06:23+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.009994s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009985s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.007978s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000796s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:06:30+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010188s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008734s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008055s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000312s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:06:33+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012855s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.007762s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.008335s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` WHERE  (   a.isDel = 0 and a.userName =  'nameuser' ) LIMIT 1 [ RunTime:0.000684s ]
+[ sql ] [ SQL ] UPDATE `tp_user`  SET `loginTime`=1585544793,`loginIp`='127.0.0.1'  WHERE  `id` = 3 [ RunTime:0.059788s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:06:35+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010829s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008283s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009794s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000421s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:06:38+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010352s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008298s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001096s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008127s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000479s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:06:42+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010220s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.026467s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.007651s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000508s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:08:26+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001235s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.007865s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.007768s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000353s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:08:30+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010089s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009361s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008288s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000556s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:08:35+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000805s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009334s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009482s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000426s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:11:01+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001755s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008676s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008189s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000313s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:11:20+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000837s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.007738s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008956s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000301s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:11:25+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000744s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.010322s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000500s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009683s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000462s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:11:59+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000883s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008977s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008613s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000299s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:12:01+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000752s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009778s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000417s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.010162s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000429s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:13:21+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020021s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008025s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000442s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008179s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000324s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:13:32+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000877s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.010283s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.010569s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000395s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:13:34+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000851s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009483s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.010372s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000393s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:13:38+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010478s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009318s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000945s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008376s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000547s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:13:53+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006600s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.019286s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009471s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000329s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:13:55+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000866s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009660s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009205s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000390s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:13:57+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000771s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008938s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.007945s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000442s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:13:58+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011214s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008685s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.015142s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000493s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:14:01+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010348s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009012s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.007522s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000446s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:14:03+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001575s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008151s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008944s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000351s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:14:06+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010636s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008517s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000512s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009589s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000513s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:14:12+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000940s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.007681s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009809s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000329s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:16:36+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010274s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008863s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000799s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009902s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000326s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:16:43+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011699s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008648s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008723s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000337s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:16:53+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001100s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009647s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009893s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000377s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:17:47+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000894s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009067s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008149s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000280s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:17:49+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010438s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009532s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.011195s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000374s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:19:29+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002047s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009560s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009656s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000465s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:19:30+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011136s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009199s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000605s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008891s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000468s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:19:34+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011113s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009284s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008508s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000528s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:19:37+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011654s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009525s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009029s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000528s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:19:50+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011320s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008250s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.017471s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000451s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:20:00+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015408s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008142s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008409s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000335s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:20:03+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010254s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008254s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008480s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000693s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:20:22+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000709s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009207s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009371s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000403s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:20:25+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010936s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008739s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008897s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000575s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:20:30+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010691s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008253s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009636s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000419s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:20:35+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001009s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008818s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009476s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000311s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:21:36+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000817s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009064s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009428s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000383s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:21:44+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000840s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009555s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009510s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000391s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:22:01+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000917s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009024s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009086s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000451s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:22:10+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000785s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.044289s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.011367s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000403s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:22:30+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001077s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009365s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.010062s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000391s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:22:47+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000939s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009025s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009374s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000322s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:23:18+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000795s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009645s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009960s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000513s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:23:23+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011094s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.010890s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009107s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000442s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:23:27+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011559s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009886s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.007805s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000383s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:24:05+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000858s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009119s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000506s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009808s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000400s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:24:09+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001186s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009137s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009147s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000450s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:24:22+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010872s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008143s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009699s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000309s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:35:03+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002131s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.010553s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.010549s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000337s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:35:06+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011352s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009335s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.012024s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000515s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:35:17+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010760s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.031267s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000700s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.007893s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000574s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:35:20+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011381s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.010098s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.007772s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000477s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:35:24+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011088s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.010250s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009497s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000317s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:35:27+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001290s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009021s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009380s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000658s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:35:54+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000895s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008616s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008399s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000469s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:35:58+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000755s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009268s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009011s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000498s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:36:02+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000709s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.018226s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.008417s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000308s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:36:04+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010665s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009488s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009323s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000487s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:36:06+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000995s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008231s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009500s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000326s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:36:08+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000928s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008327s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009763s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000309s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:36:11+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000823s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009700s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.010556s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000466s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:36:19+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000798s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008281s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.010796s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000309s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:37:07+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/banner/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000802s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008538s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000470s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_banner` [ RunTime:0.009995s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_banner` [ RunTime:0.000386s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:37:45+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010755s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009305s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.010352s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.009387s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/user/index' LIMIT 1 [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.009387s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` `a` LIMIT 1 [ RunTime:0.000714s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:40:36+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012203s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009173s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.009751s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001042s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.009808s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/user/index' LIMIT 1 [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.010733s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` `a` LIMIT 1 [ RunTime:0.000424s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:40:51+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010059s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.008257s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000556s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.009547s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000496s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.009949s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/user/index' LIMIT 1 [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.009498s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` ORDER BY `a`.`id` ASC LIMIT 0,10 [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` `a` LIMIT 1 [ RunTime:0.000401s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:40:53+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001048s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009331s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.009812s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.022221s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/user/index' LIMIT 1 [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.008871s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` `a` LIMIT 1 [ RunTime:0.000485s ]
+---------------------------------------------------------------
+[ 2020-03-30T13:41:18+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/user/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010291s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009394s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.009035s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000476s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.010918s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/user/index' LIMIT 1 [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_user` [ RunTime:0.008720s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `tp_user` `a` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `tp_user` `a` LIMIT 1 [ RunTime:0.000530s ]
+---------------------------------------------------------------
+[ 2020-03-30T16:12:50+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003765s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.035987s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.010719s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.019101s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.008985s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000786s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000525s ]
+---------------------------------------------------------------
+[ 2020-03-30T16:14:17+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000962s ] mysql:host=127.0.0.1;dbname=tp5qpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_app` [ RunTime:0.009936s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_admin` [ RunTime:0.010776s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_rule` [ RunTime:0.010147s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `tp_auth_group` [ RunTime:0.009334s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_rule` WHERE  `id` IN (52,53,50,51,46,49,48,47,39,40,1,38,7,2)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT * FROM `tp_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000410s ]

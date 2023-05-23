@@ -1,0 +1,1077 @@
+---------------------------------------------------------------
+[ 2022-11-09T14:10:36+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/login/index
+[运行时间：1.098746s] [吞吐率：0.91req/s] [内存消耗：2,085.27kb] [文件加载：66]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'POST',
+  'access-control-request-headers' => 'x-access-appid',
+  'origin' => 'http://localhost:8181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:10:37+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/login/index
+[运行时间：1.116819s] [吞吐率：0.90req/s] [内存消耗：3,497.68kb] [文件加载：81]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '110',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'accept' => '*/*',
+  'origin' => 'http://localhost:8181',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'userName' => 'admin',
+  'password' => '123456',
+  'code' => '8957',
+  'redomStr' => '96121667974174920',
+  'signature' => 'ef3be0ca0b66dcf1a10b18b71f7b63f1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\PHPTutorial\WWW\hardphp\application\admin\controller\Login.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:10:37+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/login/index
+[运行时间：0.476100s] [吞吐率：2.10req/s] [内存消耗：3,497.68kb] [文件加载：81]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '110',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'accept' => '*/*',
+  'origin' => 'http://localhost:8181',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'userName' => 'admin',
+  'password' => '123456',
+  'code' => '8957',
+  'redomStr' => '96121667974174920',
+  'signature' => 'ef3be0ca0b66dcf1a10b18b71f7b63f1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\PHPTutorial\WWW\hardphp\application\admin\controller\Login.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:10:37+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.164959s] [吞吐率：6.06req/s] [内存消耗：2,144.72kb] [文件加载：68]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'POST',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:10:37+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.158951s] [吞吐率：6.29req/s] [内存消耗：2,144.72kb] [文件加载：68]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'POST',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:10:37+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.220431s] [吞吐率：4.54req/s] [内存消耗：3,010.95kb] [文件加载：77]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '42',
+  'x-access-token' => 'E81C6DD71E22A3AC631754692AA97C8EMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qdGxiKCn17FkZqmLu9SImtBxpbieeoe2a4Koimuxp8aruKKXZJ-qsqF7u4q5yJCamZhlxp1-isaRgWOBjn6vyqu8e4eseam6ZnbcibShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'accept' => '*/*',
+  'origin' => 'http://localhost:8181',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:10:37+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.377382s] [吞吐率：2.65req/s] [内存消耗：3,514.54kb] [文件加载：80]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '42',
+  'x-access-token' => '41591F0039954E88D6F42E717B6126A7MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qdGxiKCn17FkZqmLu9SIheBxpbuJoKi7kX5jiqaDo8q3wKSWZXmqvmSLt4e5prCMrKCIuIacnruAipaRpJ2Nv7jAfoCGiayxoIaYi7Shdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'accept' => '*/*',
+  'origin' => 'http://localhost:8181',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\PHPTutorial\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:10:42+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/login/index
+[运行时间：0.103387s] [吞吐率：9.67req/s] [内存消耗：2,085.27kb] [文件加载：66]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'POST',
+  'access-control-request-headers' => 'x-access-appid',
+  'origin' => 'http://localhost:8181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:10:43+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/login/index
+[运行时间：0.456801s] [吞吐率：2.19req/s] [内存消耗：3,497.68kb] [文件加载：81]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '110',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'accept' => '*/*',
+  'origin' => 'http://localhost:8181',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'userName' => 'admin',
+  'password' => '123456',
+  'code' => '8046',
+  'redomStr' => '30131667974240205',
+  'signature' => '1d35885470408585c78b9b6621315279',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\PHPTutorial\WWW\hardphp\application\admin\controller\Login.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:10:43+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.113002s] [吞吐率：8.85req/s] [内存消耗：2,144.72kb] [文件加载：68]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'POST',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:10:43+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.284631s] [吞吐率：3.51req/s] [内存消耗：3,514.46kb] [文件加载：80]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '42',
+  'x-access-token' => 'FBE035B6ECF4AEA844C34EC12623CEA6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qdGxiKCn17FkZqmLt6aHmtBxpcSJaaG6a459kmmlnrjOl6aXeIWzx2Vzt4q6qpGOrHVlr4p5aLNrjoCGkIOwvKrWrY1km9y4eIeojLShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'accept' => '*/*',
+  'origin' => 'http://localhost:8181',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\PHPTutorial\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:10:44+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/index/getTopMenu?signature=776a8773415590486189e97e10f77114
+[运行时间：0.091139s] [吞吐率：10.97req/s] [内存消耗：2,127.15kb] [文件加载：68]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getTopMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'GET',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:10:44+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/index/getMenu?signature=776a8773415590486189e97e10f77114
+[运行时间：0.100069s] [吞吐率：9.99req/s] [内存消耗：2,126.96kb] [文件加载：68]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'GET',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:10:44+08:00 ] 127.0.0.1 GET www.hardphp.com/index.php/admin/index/getTopMenu?signature=776a8773415590486189e97e10f77114
+[运行时间：0.215810s] [吞吐率：4.63req/s] [内存消耗：3,339.57kb] [文件加载：77]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getTopMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'x-access-token' => 'FBE035B6ECF4AEA844C34EC12623CEA6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qdGxiKCn17FkZqmLt6aHmtBxpcSJaaG6a459kmmlnrjOl6aXeIWzx2Vzt4q6qpGOrHVlr4p5aLNrjoCGkIOwvKrWrY1km9y4eIeojLShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-access-appid' => '123456',
+  'accept' => '*/*',
+  'origin' => 'http://localhost:8181',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->getTopMenu[ D:\PHPTutorial\WWW\hardphp\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:10:44+08:00 ] 127.0.0.1 GET www.hardphp.com/index.php/admin/index/getMenu?signature=776a8773415590486189e97e10f77114
+[运行时间：0.225468s] [吞吐率：4.44req/s] [内存消耗：3,352.16kb] [文件加载：77]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'x-access-token' => 'FBE035B6ECF4AEA844C34EC12623CEA6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qdGxiKCn17FkZqmLt6aHmtBxpcSJaaG6a459kmmlnrjOl6aXeIWzx2Vzt4q6qpGOrHVlr4p5aLNrjoCGkIOwvKrWrY1km9y4eIeojLShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=utf-8',
+  'accept' => '*/*',
+  'origin' => 'http://localhost:8181',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->getMenu[ D:\PHPTutorial\WWW\hardphp\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:10:54+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/admin/index
+[运行时间：0.201702s] [吞吐率：4.96req/s] [内存消耗：2,144.71kb] [文件加载：68]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'POST',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:10:54+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/roles/getLists
+[运行时间：0.207547s] [吞吐率：4.82req/s] [内存消耗：2,123.68kb] [文件加载：68]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'roles',
+    2 => 'getLists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'POST',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:10:54+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/index
+[运行时间：0.276496s] [吞吐率：3.62req/s] [内存消耗：3,482.10kb] [文件加载：80]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '118',
+  'x-access-token' => 'FBE035B6ECF4AEA844C34EC12623CEA6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qdGxiKCn17FkZqmLt6aHmtBxpcSJaaG6a459kmmlnrjOl6aXeIWzx2Vzt4q6qpGOrHVlr4p5aLNrjoCGkIOwvKrWrY1km9y4eIeojLShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'accept' => '*/*',
+  'origin' => 'http://localhost:8181',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'psize' => '10',
+  'isEnabled' => '-1',
+  'userName' => '',
+  'phone' => '',
+  'realName' => '',
+  'startTime' => '',
+  'endTime' => '',
+  'signature' => 'ea720ce6bff79f5c85434cc7ef1bd258',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->index[ D:\PHPTutorial\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:10:54+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/roles/getLists
+[运行时间：0.277464s] [吞吐率：3.60req/s] [内存消耗：3,431.82kb] [文件加载：80]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'roles',
+    2 => 'getLists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '42',
+  'x-access-token' => 'FBE035B6ECF4AEA844C34EC12623CEA6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qdGxiKCn17FkZqmLt6aHmtBxpcSJaaG6a459kmmlnrjOl6aXeIWzx2Vzt4q6qpGOrHVlr4p5aLNrjoCGkIOwvKrWrY1km9y4eIeojLShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'accept' => '*/*',
+  'origin' => 'http://localhost:8181',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Roles->getLists[ D:\PHPTutorial\WWW\hardphp\application\admin\controller\Roles.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:11:20+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/Banner/getbanner?signature=776a8773415590486189e97e10f77114
+[运行时间：0.175745s] [吞吐率：5.69req/s] [内存消耗：2,113.41kb] [文件加载：68]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Banner',
+    2 => 'getbanner',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'GET',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:11:20+08:00 ] 127.0.0.1 GET www.hardphp.com/index.php/admin/Banner/getbanner?signature=776a8773415590486189e97e10f77114
+[运行时间：0.315645s] [吞吐率：3.17req/s] [内存消耗：3,403.26kb] [文件加载：79]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Banner',
+    2 => 'getbanner',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'x-access-token' => 'FBE035B6ECF4AEA844C34EC12623CEA6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qdGxiKCn17FkZqmLt6aHmtBxpcSJaaG6a459kmmlnrjOl6aXeIWzx2Vzt4q6qpGOrHVlr4p5aLNrjoCGkIOwvKrWrY1km9y4eIeojLShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-access-appid' => '123456',
+  'accept' => '*/*',
+  'origin' => 'http://localhost:8181',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Banner->getbanner[ D:\PHPTutorial\WWW\hardphp\application\admin\controller\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:11:24+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/index/getMenu?signature=776a8773415590486189e97e10f77114
+[运行时间：0.103633s] [吞吐率：9.65req/s] [内存消耗：2,126.96kb] [文件加载：68]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'GET',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:11:24+08:00 ] 127.0.0.1 GET www.hardphp.com/index.php/admin/index/getMenu?signature=776a8773415590486189e97e10f77114
+[运行时间：0.199489s] [吞吐率：5.01req/s] [内存消耗：3,352.16kb] [文件加载：77]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'x-access-token' => 'FBE035B6ECF4AEA844C34EC12623CEA6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qdGxiKCn17FkZqmLt6aHmtBxpcSJaaG6a459kmmlnrjOl6aXeIWzx2Vzt4q6qpGOrHVlr4p5aLNrjoCGkIOwvKrWrY1km9y4eIeojLShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=utf-8',
+  'accept' => '*/*',
+  'origin' => 'http://localhost:8181',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->getMenu[ D:\PHPTutorial\WWW\hardphp\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:11:27+08:00 ] 127.0.0.1 GET www.hardphp.com/index.php/admin/index/getMenu?signature=776a8773415590486189e97e10f77114
+[运行时间：0.212551s] [吞吐率：4.70req/s] [内存消耗：3,352.16kb] [文件加载：77]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'x-access-token' => 'FBE035B6ECF4AEA844C34EC12623CEA6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qdGxiKCn17FkZqmLt6aHmtBxpcSJaaG6a459kmmlnrjOl6aXeIWzx2Vzt4q6qpGOrHVlr4p5aLNrjoCGkIOwvKrWrY1km9y4eIeojLShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=utf-8',
+  'accept' => '*/*',
+  'origin' => 'http://localhost:8181',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->getMenu[ D:\PHPTutorial\WWW\hardphp\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:11:33+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/Banner/getbanner?signature=776a8773415590486189e97e10f77114
+[运行时间：0.142656s] [吞吐率：7.01req/s] [内存消耗：2,113.41kb] [文件加载：68]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Banner',
+    2 => 'getbanner',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'GET',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:11:33+08:00 ] 127.0.0.1 GET www.hardphp.com/index.php/admin/Banner/getbanner?signature=776a8773415590486189e97e10f77114
+[运行时间：0.238010s] [吞吐率：4.20req/s] [内存消耗：3,403.26kb] [文件加载：79]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Banner',
+    2 => 'getbanner',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'x-access-token' => 'FBE035B6ECF4AEA844C34EC12623CEA6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qdGxiKCn17FkZqmLt6aHmtBxpcSJaaG6a459kmmlnrjOl6aXeIWzx2Vzt4q6qpGOrHVlr4p5aLNrjoCGkIOwvKrWrY1km9y4eIeojLShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-access-appid' => '123456',
+  'accept' => '*/*',
+  'origin' => 'http://localhost:8181',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Banner->getbanner[ D:\PHPTutorial\WWW\hardphp\application\admin\controller\Banner.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:11:35+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/index/getMenu?signature=776a8773415590486189e97e10f77114
+[运行时间：0.097159s] [吞吐率：10.29req/s] [内存消耗：2,126.96kb] [文件加载：68]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'GET',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:11:35+08:00 ] 127.0.0.1 GET www.hardphp.com/index.php/admin/index/getMenu?signature=776a8773415590486189e97e10f77114
+[运行时间：0.190027s] [吞吐率：5.26req/s] [内存消耗：3,352.16kb] [文件加载：77]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'getMenu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'x-access-token' => 'FBE035B6ECF4AEA844C34EC12623CEA6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qdGxiKCn17FkZqmLt6aHmtBxpcSJaaG6a459kmmlnrjOl6aXeIWzx2Vzt4q6qpGOrHVlr4p5aLNrjoCGkIOwvKrWrY1km9y4eIeojLShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=utf-8',
+  'accept' => '*/*',
+  'origin' => 'http://localhost:8181',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->getMenu[ D:\PHPTutorial\WWW\hardphp\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:11:39+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.104017s] [吞吐率：9.61req/s] [内存消耗：2,144.72kb] [文件加载：68]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'POST',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:11:39+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.207258s] [吞吐率：4.82req/s] [内存消耗：3,514.46kb] [文件加载：80]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '42',
+  'x-access-token' => 'FBE035B6ECF4AEA844C34EC12623CEA6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qdGxiKCn17FkZqmLt6aHmtBxpcSJaaG6a459kmmlnrjOl6aXeIWzx2Vzt4q6qpGOrHVlr4p5aLNrjoCGkIOwvKrWrY1km9y4eIeojLShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'accept' => '*/*',
+  'origin' => 'http://localhost:8181',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\PHPTutorial\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:11:45+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.094601s] [吞吐率：10.57req/s] [内存消耗：2,144.72kb] [文件加载：68]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'POST',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8181',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:11:45+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.213533s] [吞吐率：4.68req/s] [内存消耗：3,514.46kb] [文件加载：80]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '42',
+  'x-access-token' => 'FBE035B6ECF4AEA844C34EC12623CEA6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qdGxiKCn17FkZqmLt6aHmtBxpcSJaaG6a459kmmlnrjOl6aXeIWzx2Vzt4q6qpGOrHVlr4p5aLNrjoCGkIOwvKrWrY1km9y4eIeojLShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'accept' => '*/*',
+  'origin' => 'http://localhost:8181',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\PHPTutorial\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:11:46+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.221158s] [吞吐率：4.52req/s] [内存消耗：3,514.46kb] [文件加载：80]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '42',
+  'x-access-token' => 'FBE035B6ECF4AEA844C34EC12623CEA6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qdGxiKCn17FkZqmLt6aHmtBxpcSJaaG6a459kmmlnrjOl6aXeIWzx2Vzt4q6qpGOrHVlr4p5aLNrjoCGkIOwvKrWrY1km9y4eIeojLShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'accept' => '*/*',
+  'origin' => 'http://localhost:8181',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\PHPTutorial\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2022-11-09T14:11:47+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/admin/getuser
+[运行时间：0.235620s] [吞吐率：4.24req/s] [内存消耗：3,514.46kb] [文件加载：80]
+[ info ] [ LANG ] D:\PHPTutorial\WWW\hardphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.hardphp.com',
+  'connection' => 'keep-alive',
+  'content-length' => '42',
+  'x-access-token' => 'FBE035B6ECF4AEA844C34EC12623CEA6MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vHZJ3Ynau-moXTqGG4nZSnyX-ohIONk4a7qdGxiKCn17FkZqmLt6aHmtBxpcSJaaG6a459kmmlnrjOl6aXeIWzx2Vzt4q6qpGOrHVlr4p5aLNrjoCGkIOwvKrWrY1km9y4eIeojLShdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.198 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'accept' => '*/*',
+  'origin' => 'http://localhost:8181',
+  'referer' => 'http://localhost:8181/avue-admin/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ D:\PHPTutorial\WWW\hardphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File

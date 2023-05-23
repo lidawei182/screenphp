@@ -1,0 +1,102 @@
+---------------------------------------------------------------
+[ 2019-11-07T14:52:32+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [10102]接口签名验证失败[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2019-11-07T14:53:44+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [10102]接口签名验证失败[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2019-11-07T15:31:20+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [10102]接口签名验证失败[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2019-11-07T15:31:50+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [10102]接口签名验证失败[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2019-11-07T15:31:56+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [10102]接口签名验证失败[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2019-11-07T15:32:14+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [10102]接口签名验证失败[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2019-11-07T15:33:20+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [10102]接口签名验证失败[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2019-11-07T15:39:18+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [10102]接口签名验证失败[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2019-11-07T15:39:52+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [10102]接口签名验证失败[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2019-11-07T15:40:25+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [10102]接口签名验证失败[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2019-11-07T15:42:32+08:00 ] 127.0.0.1 GET www.hardphp.com/index.php/admin/Banner/getbanner?signature=776a8773415590486189e97e10f77114
+[ error ] [0]语法解析错误: syntax error, unexpected '$res' (T_VARIABLE)[D:\phpStudy\WWW\hardphp\application\admin\controller\Banner.php:100]
+---------------------------------------------------------------
+[ 2019-11-07T15:42:50+08:00 ] 127.0.0.1 GET www.hardphp.com/index.php/admin/Banner/getbanner?signature=776a8773415590486189e97e10f77114
+[ error ] [0]语法解析错误: syntax error, unexpected '$res' (T_VARIABLE)[D:\phpStudy\WWW\hardphp\application\admin\controller\Banner.php:100]
+---------------------------------------------------------------
+[ 2019-11-07T15:43:17+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [10102]接口签名验证失败[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2019-11-07T15:53:34+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [10102]接口签名验证失败[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2019-11-07T15:53:40+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [10102]接口签名验证失败[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2019-11-07T15:58:08+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [10102]接口签名验证失败[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2019-11-07T16:39:49+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [8]未定义变量: res[D:\phpStudy\WWW\hardphp\application\admin\logic\Banner.php:121]
+---------------------------------------------------------------
+[ 2019-11-07T17:35:57+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [10102]接口签名验证失败[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2019-11-07T17:36:38+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [10102]接口签名验证失败[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2019-11-07T17:37:36+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [10102]接口签名验证失败[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2019-11-07T17:38:36+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [10102]接口签名验证失败[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2019-11-07T17:40:50+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [10102]接口签名验证失败[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2019-11-07T17:43:42+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [10102]接口签名验证失败[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2019-11-07T17:47:09+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [10102]接口签名验证失败[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2019-11-07T17:50:58+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [2]Illegal string offset 'url'[D:\phpStudy\WWW\hardphp\application\admin\controller\Banner.php:107]
+---------------------------------------------------------------
+[ 2019-11-07T18:09:33+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [8]未定义数组索引: createtime[D:\phpStudy\WWW\hardphp\application\admin\controller\Banner.php:108]
+---------------------------------------------------------------
+[ 2019-11-07T18:09:41+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [8]未定义数组索引: createtime[D:\phpStudy\WWW\hardphp\application\admin\controller\Banner.php:108]
+---------------------------------------------------------------
+[ 2019-11-07T18:17:47+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [8]未定义数组下标: 0[D:\phpStudy\WWW\hardphp\application\admin\controller\Banner.php:107]
+---------------------------------------------------------------
+[ 2019-11-07T18:17:56+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [8]未定义数组下标: 0[D:\phpStudy\WWW\hardphp\application\admin\controller\Banner.php:107]
+---------------------------------------------------------------
+[ 2019-11-07T18:18:02+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [8]未定义数组下标: 0[D:\phpStudy\WWW\hardphp\application\admin\controller\Banner.php:107]
+---------------------------------------------------------------
+[ 2019-11-07T18:18:10+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [8]未定义数组下标: 0[D:\phpStudy\WWW\hardphp\application\admin\controller\Banner.php:107]
+---------------------------------------------------------------
+[ 2019-11-07T18:18:51+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [8]未定义数组下标: 0[D:\phpStudy\WWW\hardphp\application\admin\controller\Banner.php:107]
+---------------------------------------------------------------
+[ 2019-11-07T18:19:15+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [8]未定义数组下标: 0[D:\phpStudy\WWW\hardphp\application\admin\controller\Banner.php:107]
+---------------------------------------------------------------
+[ 2019-11-07T18:20:44+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/admin/Banner/save
+[ error ] [8]未定义数组下标: 0[D:\phpStudy\WWW\hardphp\application\admin\controller\Banner.php:107]

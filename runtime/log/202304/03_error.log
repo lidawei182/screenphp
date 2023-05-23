@@ -1,0 +1,9 @@
+---------------------------------------------------------------
+[ 2023-04-03T12:05:26+08:00 ] 127.0.0.1 OPTIONS www.screenphp.com/index.php/admin/login/index
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-04-03T12:05:26+08:00 ] 127.0.0.1 OPTIONS www.screenphp.com/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2023-04-03T12:05:34+08:00 ] 127.0.0.1 OPTIONS www.screenphp.com/index.php/admin/log/index
+[ error ] [10103]appid不存在[D:\PHPTutorial\WWW\screenphp\application\common.php:182]

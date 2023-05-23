@@ -1,0 +1,219 @@
+---------------------------------------------------------------
+[ 2020-03-04T11:58:01+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/login/index
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T11:58:01+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T11:58:14+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/Banner/getbanner?signature=776a8773415590486189e97e10f77114
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T11:58:19+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/Banner/del?signature=776a8773415590486189e97e10f77114
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T11:58:29+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/Banner/del?id=0&signature=120d0cb20903a0abc836ff0a78e09b02
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T11:58:41+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/Banner/del?id=0&signature=120d0cb20903a0abc836ff0a78e09b02
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T11:58:54+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/user/index
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T11:58:55+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/user/getinfo?id=4&signature=eb0e77d10152b1172d36eb1e15cf7e35
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T11:59:32+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/user/index
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T13:16:49+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T13:17:00+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/banner/getbanner
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T13:30:10+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/user/getinfo?id=4&signature=eb0e77d10152b1172d36eb1e15cf7e35
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T13:30:21+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/user/getinfo?id=3&signature=4ad264678314d9dc41e5ed8c18b8c82a
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T13:30:29+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/login/index2
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T13:30:29+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index2
+[ error ] [10303]用户密码错误[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T13:30:36+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/login/index2
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T13:40:04+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/user/getinfo?id=3&signature=4ad264678314d9dc41e5ed8c18b8c82a
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T13:40:17+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/login/index
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T13:40:17+08:00 ] 127.0.0.1 POST www.hardphp.com/index.php/api/login/index
+[ error ] [8]未定义数组索引: userName[D:\phpStudy\WWW\hardphp\application\api\controller\Login.php:28]
+---------------------------------------------------------------
+[ 2020-03-04T13:58:13+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/login/index2
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T13:59:53+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/user/getinfo?id=1&signature=87495664d26339aacda755a9e6f857bb
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:00:03+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/admin/index
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:00:04+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/roles/getLists
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:00:14+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/roles/index
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:00:15+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/rules/getLists
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:00:17+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/roles/getinfo?id=2&signature=ff9a445a0502d3a418d2c12046d7665a
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:09:48+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/user/index
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:09:52+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:10:11+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/login/index
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:10:50+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/login/index
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:10:51+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:11:28+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/user/index
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:11:30+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/user/getinfo?id=3&signature=4ad264678314d9dc41e5ed8c18b8c82a
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:11:37+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/user/getinfo?id=3&signature=4ad264678314d9dc41e5ed8c18b8c82a
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:11:46+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/login/index2
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:11:46+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/banner/getbanner
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:13:37+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/banner/getbanner
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:13:44+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/login/index2
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:13:44+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/banner/getbanner
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:14:28+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/login/index2
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:14:28+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/banner/getbanner
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:14:32+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/banner/getbanner
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:21:42+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/login/index2
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:21:42+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/banner/getbanner
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:21:47+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/banner/getbanner
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:21:58+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/banner/getbanner
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:22:03+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/banner/getbanner
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:22:05+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/banner/getbanner
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:23:11+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/banner/getbanner
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:27:21+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/banner/getbanner
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:27:51+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/banner/getbanner
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:28:10+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/login/index2
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:28:10+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/banner/getbanner
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:28:57+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/banner/getbanner
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:30:21+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/banner/getbanner
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:36:03+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/banner/getbanner
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:36:24+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/login/index2
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:36:24+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/banner/getbanner
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:40:37+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/banner/getbanner
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:40:47+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/login/index2
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:40:47+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/banner/getbanner
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:41:20+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/banner/getbanner
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:41:25+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/login/index2
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:41:25+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/banner/getbanner
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:42:19+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/banner/getbanner
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:42:21+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/banner/getbanner
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:42:41+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/login/index2
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:51:00+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/api/login/index2
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:56:27+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:56:28+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/user/index
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T14:58:52+08:00 ] 127.0.0.1 GET www.hardphp.com/index.php/api/login/index2
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T15:30:24+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/admin/getuser
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
+---------------------------------------------------------------
+[ 2020-03-04T15:30:25+08:00 ] 127.0.0.1 OPTIONS www.hardphp.com/index.php/admin/user/index
+[ error ] [10103]appid不存在[D:\phpStudy\WWW\hardphp\application\common.php:182]
