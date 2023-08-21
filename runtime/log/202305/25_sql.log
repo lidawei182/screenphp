@@ -1,0 +1,427 @@
+---------------------------------------------------------------
+[ 2023-05-25T20:50:02+08:00 ] 112.41.71.149 POST www.mmcall.net:7002/index.php/admin/login/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003906s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `userName` = 'neimeng' LIMIT 1 [ RunTime:0.001954s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:50:02+08:00 ] 112.41.71.149 POST www.mmcall.net:7002/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002929s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_tree` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT `b`.`UnitNo`,`a`.* FROM `t_tree` `a` LEFT JOIN `customer` `b` ON `a`.`jdno`=`b`.`jdParent` WHERE  `UnitNo` = '80492e8b8c104cc9a81645e9b3ffd80f' LIMIT 1 [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,11)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT `b`.`UnitNo`,`a`.* FROM `t_tree` `a` LEFT JOIN `customer` `b` ON `a`.`jdno`=`b`.`jdParent` WHERE  `UnitNo` = '80492e8b8c104cc9a81645e9b3ffd80f' LIMIT 1 [ RunTime:0.001954s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:50:03+08:00 ] 112.41.71.149 GET www.mmcall.net:7002/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F25%5C%22,%5C%222023%2F4%2F28%5C%22],[%5C%222023%2F4%2F29%5C%22,%5C%222023%2F5%2F2%5C%22],[%5C%222023%2F5%2F3%5C%22,%5C%222023%2F5%2F6%5C%22],[%5C%222023%2F5%2F7%5C%22,%5C%222023%2F5%2F10%5C%22],[%5C%222023%2F5%2F11%5C%22,%5C%222023%2F5%2F14%5C%22],[%5C%222023%2F5%2F15%5C%22,%5C%222023%2F5%2F18%5C%22],[%5C%222023%2F5%2F19%5C%22,%5C%222023%2F5%2F22%5C%22],[%5C%222023%2F5%2F23%5C%22,%5C%222023%2F5%2F25%5C%22]]%22%7D&signature=e2ac79da70af24159bf6e90ee92ba47d
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003906s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.004882s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/index/dataintegration' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_tree` [ RunTime:0.004882s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `a`.`jdName`,`c`.`No`,`c`.`oldmanname`,`c`.`Contact`,`c`.`Address`,`c`.`birthday`,`c`.`sex`,`c`.`identity_card`,`c`.`deviceno`,`c`.`Residence_state`,`c`.`oldman_type`,`c`.`marital_status`,`c`.`pathography`,`c`.`Children_situation`,`c`.`anaphylactic`,`c`.`Healthy`,`c`.`remark`,`c`.`lianxiren1`,`c`.`lianxiren2`,`c`.`lianxiren3`,`c`.`lianxiren4`,`c`.`lianxiren5`,`c`.`lianxiren6`,`c`.`lianxiren7`,`c`.`lianxiren8`,`c`.`longitude1`,`c`.`latitude1`,`c`.`clientno` FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_people` `c` ON `b`.`deviceid`=`c`.`deviceno` WHERE  (   a.jdno = 88 ) [ RunTime:0.081055s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `c`.*,`d`.`No`,`d`.`oldmanname`,`d`.`Address` FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` LEFT JOIN `t_people` `d` ON `c`.`deviceid`=`d`.`deviceno` WHERE  (   a.jdno = 88 and c.status <> '挂断'  )  AND (  `c`.`status` = '<>' OR `c`.`status` <> '' ) ORDER BY `c`.`id` DESC LIMIT 0,10 [ RunTime:0.063477s ]
+[ sql ] [ SQL ] SELECT DISTINCT  COUNT(*) AS tp_count FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` LEFT JOIN `t_people` `d` ON `c`.`deviceid`=`d`.`deviceno` WHERE  (   a.jdno = 88 and c.status <> '挂断'  )  AND (  `c`.`status` = '<>' OR `c`.`status` <> '' ) LIMIT 1 [ RunTime:0.011718s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/4/25' and  c.calltime <= '2023-04-29' ) LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/4/29' and  c.calltime <= '2023-05-03' ) LIMIT 1 [ RunTime:0.012696s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/3' and  c.calltime <= '2023-05-07' ) LIMIT 1 [ RunTime:0.014648s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/7' and  c.calltime <= '2023-05-11' ) LIMIT 1 [ RunTime:0.012696s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/11' and  c.calltime <= '2023-05-15' ) LIMIT 1 [ RunTime:0.012695s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/15' and  c.calltime <= '2023-05-19' ) LIMIT 1 [ RunTime:0.014648s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/19' and  c.calltime <= '2023-05-23' ) LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/23' and  c.calltime <= '2023-05-26' ) LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/4/25' and  c.calltime <= '2023-04-29' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.013672s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/4/29' and  c.calltime <= '2023-05-03' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.014648s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/3' and  c.calltime <= '2023-05-07' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.013672s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/7' and  c.calltime <= '2023-05-11' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.013671s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/11' and  c.calltime <= '2023-05-15' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.012695s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/15' and  c.calltime <= '2023-05-19' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.013672s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/19' and  c.calltime <= '2023-05-23' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.013672s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/23' and  c.calltime <= '2023-05-26' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.019531s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:50:03+08:00 ] 112.41.71.149 POST www.mmcall.net:7002/index.php/admin/Index/mapIntegration
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004883s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/index/mapintegration' LIMIT 1 [ RunTime:0.003907s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_tree` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `a`.`jdName`,`c`.`No`,`c`.`oldmanname`,`c`.`Contact`,`c`.`Address`,`c`.`birthday`,`c`.`sex`,`c`.`identity_card`,`c`.`deviceno`,`c`.`Residence_state`,`c`.`oldman_type`,`c`.`marital_status`,`c`.`pathography`,`c`.`Children_situation`,`c`.`anaphylactic`,`c`.`Healthy`,`c`.`remark`,`c`.`lianxiren1`,`c`.`lianxiren2`,`c`.`lianxiren3`,`c`.`lianxiren4`,`c`.`lianxiren5`,`c`.`lianxiren6`,`c`.`lianxiren7`,`c`.`lianxiren8`,`c`.`longitude1`,`c`.`latitude1`,`c`.`clientno`,`d`.`isonline` FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_people` `c` ON `b`.`deviceid`=`c`.`deviceno` LEFT JOIN `t_callno` `d` ON `c`.`deviceno`=`d`.`callno` WHERE  (   a.jdno = 88 ) [ RunTime:0.043946s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:52:05+08:00 ] 112.41.71.149 GET www.mmcall.net:7002/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E5%B9%B4%22,%22themoonarraylist%22:[[%222022-06%22,%222022-07%22],[%222022-07%22,%222022-08%22],[%222022-08%22,%222022-09%22],[%222022-09%22,%222022-10%22],[%222022-10%22,%222022-11%22],[%222022-11%22,%222022-12%22],[%222022-12%22,%222023-01%22],[%222023-01%22,%222023-02%22],[%222023-02%22,%222023-03%22],[%222023-03%22,%222023-04%22],[%222023-04%22,%222023-05%22],[%222023-05%22,%222023-06%22]]%7D&signature=217f49b6559947777cf0bb252f4d2d67
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012696s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/index/dataintegration' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_tree` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `a`.`jdName`,`c`.`No`,`c`.`oldmanname`,`c`.`Contact`,`c`.`Address`,`c`.`birthday`,`c`.`sex`,`c`.`identity_card`,`c`.`deviceno`,`c`.`Residence_state`,`c`.`oldman_type`,`c`.`marital_status`,`c`.`pathography`,`c`.`Children_situation`,`c`.`anaphylactic`,`c`.`Healthy`,`c`.`remark`,`c`.`lianxiren1`,`c`.`lianxiren2`,`c`.`lianxiren3`,`c`.`lianxiren4`,`c`.`lianxiren5`,`c`.`lianxiren6`,`c`.`lianxiren7`,`c`.`lianxiren8`,`c`.`longitude1`,`c`.`latitude1`,`c`.`clientno` FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_people` `c` ON `b`.`deviceid`=`c`.`deviceno` WHERE  (   a.jdno = 88 ) [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `c`.*,`d`.`No`,`d`.`oldmanname`,`d`.`Address` FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` LEFT JOIN `t_people` `d` ON `c`.`deviceid`=`d`.`deviceno` WHERE  (   a.jdno = 88 and c.status <> '挂断'  )  AND (  `c`.`status` = '<>' OR `c`.`status` <> '' ) ORDER BY `c`.`id` DESC LIMIT 0,10 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT DISTINCT  COUNT(*) AS tp_count FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` LEFT JOIN `t_people` `d` ON `c`.`deviceid`=`d`.`deviceno` WHERE  (   a.jdno = 88 and c.status <> '挂断'  )  AND (  `c`.`status` = '<>' OR `c`.`status` <> '' ) LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-06' and  c.calltime <= '2022-07' ) LIMIT 1 [ RunTime:0.016602s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-07' and  c.calltime <= '2022-08' ) LIMIT 1 [ RunTime:0.014649s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-08' and  c.calltime <= '2022-09' ) LIMIT 1 [ RunTime:0.014648s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-09' and  c.calltime <= '2022-10' ) LIMIT 1 [ RunTime:0.016602s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-10' and  c.calltime <= '2022-11' ) LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-11' and  c.calltime <= '2022-12' ) LIMIT 1 [ RunTime:0.019531s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-12' and  c.calltime <= '2023-01' ) LIMIT 1 [ RunTime:0.016602s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023-01' and  c.calltime <= '2023-02' ) LIMIT 1 [ RunTime:0.014648s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023-02' and  c.calltime <= '2023-03' ) LIMIT 1 [ RunTime:0.013672s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023-03' and  c.calltime <= '2023-04' ) LIMIT 1 [ RunTime:0.014648s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023-04' and  c.calltime <= '2023-05' ) LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023-05' and  c.calltime <= '2023-06' ) LIMIT 1 [ RunTime:0.018555s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-06' and  c.calltime <= '2022-07' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.020507s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-07' and  c.calltime <= '2022-08' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-08' and  c.calltime <= '2022-09' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.014649s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-09' and  c.calltime <= '2022-10' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.016601s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-10' and  c.calltime <= '2022-11' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.021484s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-11' and  c.calltime <= '2022-12' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-12' and  c.calltime <= '2023-01' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023-01' and  c.calltime <= '2023-02' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.014649s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023-02' and  c.calltime <= '2023-03' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.016601s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023-03' and  c.calltime <= '2023-04' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.017578s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023-04' and  c.calltime <= '2023-05' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.014649s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023-05' and  c.calltime <= '2023-06' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.014648s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:52:18+08:00 ] 112.41.71.149 GET www.mmcall.net:7002/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F25%5C%22,%5C%222023%2F4%2F28%5C%22],[%5C%222023%2F4%2F29%5C%22,%5C%222023%2F5%2F2%5C%22],[%5C%222023%2F5%2F3%5C%22,%5C%222023%2F5%2F6%5C%22],[%5C%222023%2F5%2F7%5C%22,%5C%222023%2F5%2F10%5C%22],[%5C%222023%2F5%2F11%5C%22,%5C%222023%2F5%2F14%5C%22],[%5C%222023%2F5%2F15%5C%22,%5C%222023%2F5%2F18%5C%22],[%5C%222023%2F5%2F19%5C%22,%5C%222023%2F5%2F22%5C%22],[%5C%222023%2F5%2F23%5C%22,%5C%222023%2F5%2F25%5C%22]]%22%7D&signature=e2ac79da70af24159bf6e90ee92ba47d
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003906s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/index/dataintegration' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_tree` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `a`.`jdName`,`c`.`No`,`c`.`oldmanname`,`c`.`Contact`,`c`.`Address`,`c`.`birthday`,`c`.`sex`,`c`.`identity_card`,`c`.`deviceno`,`c`.`Residence_state`,`c`.`oldman_type`,`c`.`marital_status`,`c`.`pathography`,`c`.`Children_situation`,`c`.`anaphylactic`,`c`.`Healthy`,`c`.`remark`,`c`.`lianxiren1`,`c`.`lianxiren2`,`c`.`lianxiren3`,`c`.`lianxiren4`,`c`.`lianxiren5`,`c`.`lianxiren6`,`c`.`lianxiren7`,`c`.`lianxiren8`,`c`.`longitude1`,`c`.`latitude1`,`c`.`clientno` FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_people` `c` ON `b`.`deviceid`=`c`.`deviceno` WHERE  (   a.jdno = 88 ) [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `c`.*,`d`.`No`,`d`.`oldmanname`,`d`.`Address` FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` LEFT JOIN `t_people` `d` ON `c`.`deviceid`=`d`.`deviceno` WHERE  (   a.jdno = 88 and c.status <> '挂断'  )  AND (  `c`.`status` = '<>' OR `c`.`status` <> '' ) ORDER BY `c`.`id` DESC LIMIT 0,10 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT DISTINCT  COUNT(*) AS tp_count FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` LEFT JOIN `t_people` `d` ON `c`.`deviceid`=`d`.`deviceno` WHERE  (   a.jdno = 88 and c.status <> '挂断'  )  AND (  `c`.`status` = '<>' OR `c`.`status` <> '' ) LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/4/25' and  c.calltime <= '2023-04-29' ) LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/4/29' and  c.calltime <= '2023-05-03' ) LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/3' and  c.calltime <= '2023-05-07' ) LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/7' and  c.calltime <= '2023-05-11' ) LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/11' and  c.calltime <= '2023-05-15' ) LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/15' and  c.calltime <= '2023-05-19' ) LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/19' and  c.calltime <= '2023-05-23' ) LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/23' and  c.calltime <= '2023-05-26' ) LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/4/25' and  c.calltime <= '2023-04-29' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.014648s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/4/29' and  c.calltime <= '2023-05-03' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/3' and  c.calltime <= '2023-05-07' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.014649s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/7' and  c.calltime <= '2023-05-11' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.014648s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/11' and  c.calltime <= '2023-05-15' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.014648s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/15' and  c.calltime <= '2023-05-19' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.014649s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/19' and  c.calltime <= '2023-05-23' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.014648s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/23' and  c.calltime <= '2023-05-26' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.014649s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:52:26+08:00 ] 112.41.71.149 GET www.mmcall.net:7002/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E5%B9%B4%22,%22themoonarraylist%22:[[%222022-06%22,%222022-07%22],[%222022-07%22,%222022-08%22],[%222022-08%22,%222022-09%22],[%222022-09%22,%222022-10%22],[%222022-10%22,%222022-11%22],[%222022-11%22,%222022-12%22],[%222022-12%22,%222023-01%22],[%222023-01%22,%222023-02%22],[%222023-02%22,%222023-03%22],[%222023-03%22,%222023-04%22],[%222023-04%22,%222023-05%22],[%222023-05%22,%222023-06%22]]%7D&signature=217f49b6559947777cf0bb252f4d2d67
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002929s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/index/dataintegration' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_tree` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `a`.`jdName`,`c`.`No`,`c`.`oldmanname`,`c`.`Contact`,`c`.`Address`,`c`.`birthday`,`c`.`sex`,`c`.`identity_card`,`c`.`deviceno`,`c`.`Residence_state`,`c`.`oldman_type`,`c`.`marital_status`,`c`.`pathography`,`c`.`Children_situation`,`c`.`anaphylactic`,`c`.`Healthy`,`c`.`remark`,`c`.`lianxiren1`,`c`.`lianxiren2`,`c`.`lianxiren3`,`c`.`lianxiren4`,`c`.`lianxiren5`,`c`.`lianxiren6`,`c`.`lianxiren7`,`c`.`lianxiren8`,`c`.`longitude1`,`c`.`latitude1`,`c`.`clientno` FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_people` `c` ON `b`.`deviceid`=`c`.`deviceno` WHERE  (   a.jdno = 88 ) [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `c`.*,`d`.`No`,`d`.`oldmanname`,`d`.`Address` FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` LEFT JOIN `t_people` `d` ON `c`.`deviceid`=`d`.`deviceno` WHERE  (   a.jdno = 88 and c.status <> '挂断'  )  AND (  `c`.`status` = '<>' OR `c`.`status` <> '' ) ORDER BY `c`.`id` DESC LIMIT 0,10 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT DISTINCT  COUNT(*) AS tp_count FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` LEFT JOIN `t_people` `d` ON `c`.`deviceid`=`d`.`deviceno` WHERE  (   a.jdno = 88 and c.status <> '挂断'  )  AND (  `c`.`status` = '<>' OR `c`.`status` <> '' ) LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-06' and  c.calltime <= '2022-07' ) LIMIT 1 [ RunTime:0.013672s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-07' and  c.calltime <= '2022-08' ) LIMIT 1 [ RunTime:0.013672s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-08' and  c.calltime <= '2022-09' ) LIMIT 1 [ RunTime:0.012696s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-09' and  c.calltime <= '2022-10' ) LIMIT 1 [ RunTime:0.016601s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-10' and  c.calltime <= '2022-11' ) LIMIT 1 [ RunTime:0.014649s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-11' and  c.calltime <= '2022-12' ) LIMIT 1 [ RunTime:0.019531s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-12' and  c.calltime <= '2023-01' ) LIMIT 1 [ RunTime:0.016601s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023-01' and  c.calltime <= '2023-02' ) LIMIT 1 [ RunTime:0.013672s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023-02' and  c.calltime <= '2023-03' ) LIMIT 1 [ RunTime:0.012696s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023-03' and  c.calltime <= '2023-04' ) LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023-04' and  c.calltime <= '2023-05' ) LIMIT 1 [ RunTime:0.013672s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023-05' and  c.calltime <= '2023-06' ) LIMIT 1 [ RunTime:0.018554s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-06' and  c.calltime <= '2022-07' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.013672s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-07' and  c.calltime <= '2022-08' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.014648s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-08' and  c.calltime <= '2022-09' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.013672s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-09' and  c.calltime <= '2022-10' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.014648s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-10' and  c.calltime <= '2022-11' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.014648s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-11' and  c.calltime <= '2022-12' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.014649s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2022-12' and  c.calltime <= '2023-01' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.013672s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023-01' and  c.calltime <= '2023-02' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.013672s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023-02' and  c.calltime <= '2023-03' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.014648s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023-03' and  c.calltime <= '2023-04' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023-04' and  c.calltime <= '2023-05' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.014649s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023-05' and  c.calltime <= '2023-06' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.013671s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:52:30+08:00 ] 112.41.71.149 POST www.mmcall.net:7002/index.php/admin/Index/dateCallsList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/index/datecallslist' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_tree` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `c`.*,`d`.`No`,`d`.`oldmanname`,`d`.`Address` FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` LEFT JOIN `t_people` `d` ON `c`.`deviceid`=`d`.`deviceno` WHERE  (   a.jdno = 88 and c.status <> '挂断'  )  AND (  `c`.`status` = '<>' OR `c`.`status` <> '' ) ORDER BY `c`.`id` DESC LIMIT 0,10 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT DISTINCT  COUNT(*) AS tp_count FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` LEFT JOIN `t_people` `d` ON `c`.`deviceid`=`d`.`deviceno` WHERE  (   a.jdno = 88 and c.status <> '挂断'  )  AND (  `c`.`status` = '<>' OR `c`.`status` <> '' ) LIMIT 1 [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:52:32+08:00 ] 112.41.71.149 POST www.mmcall.net:7002/index.php/admin/Index/getPeopleList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003906s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/index/getpeoplelist' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_tree` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `a`.`jdName`,`c`.* FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_people` `c` ON `b`.`deviceid`=`c`.`deviceno` WHERE  (   a.jdno = 88 ) ORDER BY `c`.`deviceno` DESC LIMIT 0,10 [ RunTime:0.040039s ]
+[ sql ] [ SQL ] SELECT DISTINCT  COUNT(*) AS tp_count FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_people` `c` ON `b`.`deviceid`=`c`.`deviceno` WHERE  (   a.jdno = 88 ) LIMIT 1 [ RunTime:0.017578s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:52:57+08:00 ] 112.41.71.149 POST www.mmcall.net:7002/index.php/admin/Index/dateCallsList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003906s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.004882s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/index/datecallslist' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_tree` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `c`.*,`d`.`No`,`d`.`oldmanname`,`d`.`Address` FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` LEFT JOIN `t_people` `d` ON `c`.`deviceid`=`d`.`deviceno` WHERE  (   a.jdno = 88 and c.status <> '挂断'  )  AND (  `c`.`status` = '<>' OR `c`.`status` <> '' ) ORDER BY `c`.`id` DESC LIMIT 0,10 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT DISTINCT  COUNT(*) AS tp_count FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` LEFT JOIN `t_people` `d` ON `c`.`deviceid`=`d`.`deviceno` WHERE  (   a.jdno = 88 and c.status <> '挂断'  )  AND (  `c`.`status` = '<>' OR `c`.`status` <> '' ) LIMIT 1 [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:52:58+08:00 ] 112.41.71.149 POST www.mmcall.net:7002/index.php/admin/Index/historyCallsList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004883s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/index/historycallslist' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_tree` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `c`.*,`d`.`No`,`d`.`oldmanname`,`d`.`Address` FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` LEFT JOIN `t_people` `d` ON `c`.`deviceid`=`d`.`deviceno` WHERE  (   a.jdno = 88 ) LIMIT 0,10 [ RunTime:0.021484s ]
+[ sql ] [ SQL ] SELECT DISTINCT  COUNT(*) AS tp_count FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` LEFT JOIN `t_people` `d` ON `c`.`deviceid`=`d`.`deviceno` WHERE  (   a.jdno = 88 )  AND (   a.jdno = 88 ) LIMIT 1 [ RunTime:0.370118s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:53:05+08:00 ] 112.41.71.149 POST www.mmcall.net:7002/index.php/admin/Index/historyCallsList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004883s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/index/historycallslist' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_tree` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `c`.*,`d`.`No`,`d`.`oldmanname`,`d`.`Address` FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` LEFT JOIN `t_people` `d` ON `c`.`deviceid`=`d`.`deviceno` WHERE  (   a.jdno = 88 ) LIMIT 10,10 [ RunTime:0.041992s ]
+[ sql ] [ SQL ] SELECT DISTINCT  COUNT(*) AS tp_count FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` LEFT JOIN `t_people` `d` ON `c`.`deviceid`=`d`.`deviceno` WHERE  (   a.jdno = 88 )  AND (   a.jdno = 88 ) LIMIT 1 [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:53:14+08:00 ] 112.41.71.149 POST www.mmcall.net:7002/index.php/admin/Index/historyCallsList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004883s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/index/historycallslist' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_tree` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `c`.*,`d`.`No`,`d`.`oldmanname`,`d`.`Address` FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` LEFT JOIN `t_people` `d` ON `c`.`deviceid`=`d`.`deviceno` WHERE  (   a.jdno = 88 ) LIMIT 0,10 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT DISTINCT  COUNT(*) AS tp_count FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` LEFT JOIN `t_people` `d` ON `c`.`deviceid`=`d`.`deviceno` WHERE  (   a.jdno = 88 )  AND (   a.jdno = 88 ) LIMIT 1 [ RunTime:0.002929s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:53:19+08:00 ] 112.41.71.149 POST www.mmcall.net:7002/index.php/admin/admin/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/admin/index' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`jdName` FROM `t_admin` `a` LEFT JOIN `customer` `b` ON `a`.`UnitNo`=`b`.`UnitNo` LEFT JOIN `t_tree` `c` ON `b`.`jdParent`=`c`.`jdno` WHERE  (  1 and a.UnitNo = '80492e8b8c104cc9a81645e9b3ffd80f'  and c.jdName = '内蒙古东江物业居家养老呼叫机项目'  ) ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_admin` `a` LEFT JOIN `customer` `b` ON `a`.`UnitNo`=`b`.`UnitNo` LEFT JOIN `t_tree` `c` ON `b`.`jdParent`=`c`.`jdno` LIMIT 1 [ RunTime:0.004883s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:53:19+08:00 ] 112.41.71.149 POST www.mmcall.net:7002/index.php/admin/roles/getLists
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.009766s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/getlists' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_group` `a` WHERE  (  1 and a.status =  1 ) ORDER BY `a`.`id` ASC [ RunTime:0.002929s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:53:21+08:00 ] 112.41.71.149 GET www.mmcall.net:7002/index.php/admin/admin/getinfo?id=12&signature=3f4050a120fc53689e8408fc0e8c6954
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/admin/getinfo' LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`jdName` FROM `t_admin` `a` LEFT JOIN `customer` `b` ON `a`.`UnitNo`=`b`.`UnitNo` LEFT JOIN `t_tree` `c` ON `b`.`jdParent`=`c`.`jdno` WHERE  (   a.id = 12 ) LIMIT 1 [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:53:30+08:00 ] 112.41.71.149 POST www.mmcall.net:7002/index.php/admin/rules/getLists
+[ sql ] [ DB ] CONNECT:[ UseTime:0.018555s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.009766s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.004882s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.010742s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/rules/getlists' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_rule` `a` WHERE  (  1 and a.status =  1 ) ORDER BY `a`.`id` DESC [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:53:30+08:00 ] 112.41.71.149 POST www.mmcall.net:7002/index.php/admin/rules/getLists
+[ sql ] [ DB ] CONNECT:[ UseTime:0.017578s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/rules/getlists' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_rule` `a` WHERE  (  1 and a.status =  1 ) ORDER BY `a`.`id` DESC [ RunTime:0.003906s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:53:30+08:00 ] 112.41.71.149 POST www.mmcall.net:7002/index.php/admin/roles/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004883s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.012696s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/index' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` WHERE  `jdParent` = '内蒙古东江物业居家养老呼叫机项目' [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:53:32+08:00 ] 112.41.71.149 POST www.mmcall.net:7002/index.php/admin/admin/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004883s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/admin/index' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT `a`.*,`c`.`jdName` FROM `t_admin` `a` LEFT JOIN `customer` `b` ON `a`.`UnitNo`=`b`.`UnitNo` LEFT JOIN `t_tree` `c` ON `b`.`jdParent`=`c`.`jdno` WHERE  (  1 and a.UnitNo = '80492e8b8c104cc9a81645e9b3ffd80f'  and c.jdName = '内蒙古东江物业居家养老呼叫机项目'  ) ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_admin` `a` LEFT JOIN `customer` `b` ON `a`.`UnitNo`=`b`.`UnitNo` LEFT JOIN `t_tree` `c` ON `b`.`jdParent`=`c`.`jdno` LIMIT 1 [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:53:32+08:00 ] 112.41.71.149 POST www.mmcall.net:7002/index.php/admin/roles/getLists
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004883s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/getlists' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_group` `a` WHERE  (  1 and a.status =  1 ) ORDER BY `a`.`id` ASC [ RunTime:0.002929s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:54:58+08:00 ] 112.41.71.149 POST www.mmcall.net:7002/index.php/admin/rules/getLists
+[ sql ] [ DB ] CONNECT:[ UseTime:0.016601s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/rules/getlists' LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_rule` `a` WHERE  (  1 and a.status =  1 ) ORDER BY `a`.`id` DESC [ RunTime:0.002929s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:54:58+08:00 ] 112.41.71.149 POST www.mmcall.net:7002/index.php/admin/roles/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/index' LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` WHERE  `jdParent` = '内蒙古东江物业居家养老呼叫机项目' [ RunTime:0.005859s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:54:58+08:00 ] 112.41.71.149 POST www.mmcall.net:7002/index.php/admin/rules/getLists
+[ sql ] [ DB ] CONNECT:[ UseTime:0.015625s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/rules/getlists' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_rule` `a` WHERE  (  1 and a.status =  1 ) ORDER BY `a`.`id` DESC [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:55:01+08:00 ] 112.41.71.149 POST www.mmcall.net:7002/index.php/admin/Index/historyCallsList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/index/historycallslist' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_tree` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `c`.*,`d`.`No`,`d`.`oldmanname`,`d`.`Address` FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` LEFT JOIN `t_people` `d` ON `c`.`deviceid`=`d`.`deviceno` WHERE  (   a.jdno = 88 ) LIMIT 0,10 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT DISTINCT  COUNT(*) AS tp_count FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` LEFT JOIN `t_people` `d` ON `c`.`deviceid`=`d`.`deviceno` WHERE  (   a.jdno = 88 )  AND (   a.jdno = 88 ) LIMIT 1 [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:55:03+08:00 ] 112.41.71.149 POST www.mmcall.net:7002/index.php/admin/Index/dateCallsList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/index/datecallslist' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_tree` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `c`.*,`d`.`No`,`d`.`oldmanname`,`d`.`Address` FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` LEFT JOIN `t_people` `d` ON `c`.`deviceid`=`d`.`deviceno` WHERE  (   a.jdno = 88 and c.status <> '挂断'  )  AND (  `c`.`status` = '<>' OR `c`.`status` <> '' ) ORDER BY `c`.`id` DESC LIMIT 0,10 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT DISTINCT  COUNT(*) AS tp_count FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` LEFT JOIN `t_people` `d` ON `c`.`deviceid`=`d`.`deviceno` WHERE  (   a.jdno = 88 and c.status <> '挂断'  )  AND (  `c`.`status` = '<>' OR `c`.`status` <> '' ) LIMIT 1 [ RunTime:0.002929s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:55:05+08:00 ] 112.41.71.149 POST www.mmcall.net:7002/index.php/admin/Index/getPeopleList
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/index/getpeoplelist' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_tree` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `a`.`jdName`,`c`.* FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_people` `c` ON `b`.`deviceid`=`c`.`deviceno` WHERE  (   a.jdno = 88 ) ORDER BY `c`.`deviceno` DESC LIMIT 0,10 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT DISTINCT  COUNT(*) AS tp_count FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_people` `c` ON `b`.`deviceid`=`c`.`deviceno` WHERE  (   a.jdno = 88 ) LIMIT 1 [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:55:06+08:00 ] 112.41.71.149 GET www.mmcall.net:7002/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F25%5C%22,%5C%222023%2F4%2F28%5C%22],[%5C%222023%2F4%2F29%5C%22,%5C%222023%2F5%2F2%5C%22],[%5C%222023%2F5%2F3%5C%22,%5C%222023%2F5%2F6%5C%22],[%5C%222023%2F5%2F7%5C%22,%5C%222023%2F5%2F10%5C%22],[%5C%222023%2F5%2F11%5C%22,%5C%222023%2F5%2F14%5C%22],[%5C%222023%2F5%2F15%5C%22,%5C%222023%2F5%2F18%5C%22],[%5C%222023%2F5%2F19%5C%22,%5C%222023%2F5%2F22%5C%22],[%5C%222023%2F5%2F23%5C%22,%5C%222023%2F5%2F25%5C%22]]%22%7D&signature=e2ac79da70af24159bf6e90ee92ba47d
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004883s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/index/dataintegration' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_tree` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `a`.`jdName`,`c`.`No`,`c`.`oldmanname`,`c`.`Contact`,`c`.`Address`,`c`.`birthday`,`c`.`sex`,`c`.`identity_card`,`c`.`deviceno`,`c`.`Residence_state`,`c`.`oldman_type`,`c`.`marital_status`,`c`.`pathography`,`c`.`Children_situation`,`c`.`anaphylactic`,`c`.`Healthy`,`c`.`remark`,`c`.`lianxiren1`,`c`.`lianxiren2`,`c`.`lianxiren3`,`c`.`lianxiren4`,`c`.`lianxiren5`,`c`.`lianxiren6`,`c`.`lianxiren7`,`c`.`lianxiren8`,`c`.`longitude1`,`c`.`latitude1`,`c`.`clientno` FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_people` `c` ON `b`.`deviceid`=`c`.`deviceno` WHERE  (   a.jdno = 88 ) [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `c`.*,`d`.`No`,`d`.`oldmanname`,`d`.`Address` FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` LEFT JOIN `t_people` `d` ON `c`.`deviceid`=`d`.`deviceno` WHERE  (   a.jdno = 88 and c.status <> '挂断'  )  AND (  `c`.`status` = '<>' OR `c`.`status` <> '' ) ORDER BY `c`.`id` DESC LIMIT 0,10 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT DISTINCT  COUNT(*) AS tp_count FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` LEFT JOIN `t_people` `d` ON `c`.`deviceid`=`d`.`deviceno` WHERE  (   a.jdno = 88 and c.status <> '挂断'  )  AND (  `c`.`status` = '<>' OR `c`.`status` <> '' ) LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/4/25' and  c.calltime <= '2023-04-29' ) LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/4/29' and  c.calltime <= '2023-05-03' ) LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/3' and  c.calltime <= '2023-05-07' ) LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/7' and  c.calltime <= '2023-05-11' ) LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/11' and  c.calltime <= '2023-05-15' ) LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/15' and  c.calltime <= '2023-05-19' ) LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/19' and  c.calltime <= '2023-05-23' ) LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/23' and  c.calltime <= '2023-05-26' ) LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/4/25' and  c.calltime <= '2023-04-29' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.014649s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/4/29' and  c.calltime <= '2023-05-03' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.014648s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/3' and  c.calltime <= '2023-05-07' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/7' and  c.calltime <= '2023-05-11' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.019532s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/11' and  c.calltime <= '2023-05-15' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.014648s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/15' and  c.calltime <= '2023-05-19' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.014648s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/19' and  c.calltime <= '2023-05-23' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.020508s ]
+[ sql ] [ SQL ] SELECT COUNT(c.calltime) AS counts,c.calltime as ctime FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_calllist_voice` `c` ON `b`.`deviceid`=`c`.`deviceid` WHERE  (   a.jdno = 88 and c.status = '挂断' and  c.calltime >= '2023/5/23' and  c.calltime <= '2023-05-26' )  AND (  `c`.`taketime` IS NULL OR `c`.`taketime` = '' )  AND (  `c`.`endtime` IS NULL OR `c`.`endtime` = '' ) LIMIT 1 [ RunTime:0.024414s ]
+---------------------------------------------------------------
+[ 2023-05-25T20:55:06+08:00 ] 112.41.71.149 POST www.mmcall.net:7002/index.php/admin/Index/mapIntegration
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003906s ] mysql:host=47.104.10.49;dbname=yunmmcall_big;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 12 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/index/mapintegration' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_tree` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT DISTINCT  `a`.`jdName`,`c`.`No`,`c`.`oldmanname`,`c`.`Contact`,`c`.`Address`,`c`.`birthday`,`c`.`sex`,`c`.`identity_card`,`c`.`deviceno`,`c`.`Residence_state`,`c`.`oldman_type`,`c`.`marital_status`,`c`.`pathography`,`c`.`Children_situation`,`c`.`anaphylactic`,`c`.`Healthy`,`c`.`remark`,`c`.`lianxiren1`,`c`.`lianxiren2`,`c`.`lianxiren3`,`c`.`lianxiren4`,`c`.`lianxiren5`,`c`.`lianxiren6`,`c`.`lianxiren7`,`c`.`lianxiren8`,`c`.`longitude1`,`c`.`latitude1`,`c`.`clientno`,`d`.`isonline` FROM `t_tree` `a` LEFT JOIN `t_tree_device` `b` ON `a`.`jdno`=`b`.`jdparent` LEFT JOIN `t_people` `c` ON `b`.`deviceid`=`c`.`deviceno` LEFT JOIN `t_callno` `d` ON `c`.`deviceno`=`d`.`callno` WHERE  (   a.jdno = 88 ) [ RunTime:0.040039s ]

@@ -8,7 +8,7 @@ use app\common\util\JwtUtil;
 use \think\Db;
 
 /**
- * 管理员相关操作
+ * 首页相关操作
  */
 class Index extends Model
 {
@@ -16,15 +16,15 @@ class Index extends Model
     /** 数据可视化
      * @param jdno 关联id themoonarraylist 日期数组 dateValue 月-年
      */
-    public function dataIntegration($jdno,$themoonarraylist,$dateValue)
+    public function dataIntegration($jdno,$code,$themoonarraylist,$dateValue)
     {
-        return my_model('People', 'model', 'admin')->dataIntegration($jdno,$themoonarraylist,$dateValue);
+        return my_model('People', 'model', 'admin')->dataIntegration($jdno,$code,$themoonarraylist,$dateValue);
     }
     /** 地图数据可视化
      * @param jdno 关联id
      */
-    public function mapIntegration($jdno){
-        return my_model('People', 'model', 'admin')->mapIntegration($jdno);
+    public function mapIntegration($code){
+        return my_model('People', 'model', 'admin')->mapIntegration($code);
     }
     /** 地图数据可视化定位
      * @param $id,$lng,$lat,$zoom
@@ -47,45 +47,53 @@ class Index extends Model
     /** 呼叫
      * @param jdno 关联id
      */
-    public function dateCallsList($jdno, $id, $oldmanname, $page, $psize)
+    public function dateCallsList($jdno, $id, $oldmanname, $calltime, $endcalltime,  $sort, $page, $psize)
     {
-        return my_model('People', 'model', 'admin')->dateCallsList($jdno, $id, $oldmanname, $page, $psize);
+        return my_model('People', 'model', 'admin')->dateCallsList($jdno, $id, $oldmanname, $calltime, $endcalltime,  $sort, $page, $psize);
     }
     /** 呼叫
      * @param jdno 关联id
      */
-    public function dateCallsListTotal($jdno, $id, $oldmanname)
+    public function dateCallsListTotal($jdno, $id, $oldmanname, $calltime, $endcalltime)
     {
-        return my_model('People', 'model', 'admin')->dateCallsListTotal($jdno, $id, $oldmanname);
+        return my_model('People', 'model', 'admin')->dateCallsListTotal($jdno, $id, $oldmanname, $calltime, $endcalltime);
     }
     /** 历史
      * @param jdno 关联id
      */
-    public function historyCallsList($jdno, $id, $oldmanname, $page, $psize)
+    public function historyCallsList($jdno, $id, $oldmanname, $calltime, $endTime, $page, $psize) 
     {
-        return my_model('People', 'model', 'admin')->historyCallsList($jdno, $id, $oldmanname, $page, $psize);
+        return my_model('People', 'model', 'admin')->historyCallsList($jdno, $id, $oldmanname, $calltime, $endTime, $page, $psize);
     }
     /** 历史
      * @param jdno 关联id
      */
-    public function historyCallsListTotal($jdno, $id, $oldmanname)
+    public function historyCallsListTotal($jdno, $id, $oldmanname, $calltime, $endTime)
     {
-        return my_model('People', 'model', 'admin')->historyCallsListTotal($jdno, $id, $oldmanname);
+        return my_model('People', 'model', 'admin')->historyCallsListTotal($jdno, $id, $oldmanname, $calltime, $endTime);
     }
 
     /** 用户
      * @param jdno 关联id
      */
-    public function getPeopleList($jdno, $deviceno, $oldmanname, $myorder = 'c.deviceno desc', $page, $psize)
+    public function getPeopleList($code, $deviceno, $oldmanname, $contact, $identityCard, $myorder = 'a.deviceno desc', $page, $psize)
     {
-        return my_model('People', 'model', 'admin')->getPeopleList($jdno,$deviceno, $oldmanname, $myorder, $page, $psize);
+        return my_model('People', 'model', 'admin')->getPeopleList($code,$deviceno, $oldmanname, $contact, $identityCard, $myorder, $page, $psize);
     }
     /** 用户
      * @param jdno 关联id
      */
-    public function getPeopleListTotal($jdno, $deviceno, $oldmanname)
+    public function getPeopleListTotal($code, $deviceno, $oldmanname, $contact, $identityCard)
     {
-        return my_model('People', 'model', 'admin')->getPeopleListTotal($jdno, $deviceno, $oldmanname);
+        return my_model('People', 'model', 'admin')->getPeopleListTotal($code, $deviceno, $oldmanname, $contact, $identityCard);
+    }
+
+    /** 用户have
+     * @param code 关联deviceno
+     */
+    public function havePeopleList($code)
+    {
+        return my_model('People', 'model', 'admin')->havePeopleList($code);
     }
 
 }

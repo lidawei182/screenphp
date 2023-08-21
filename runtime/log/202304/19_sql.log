@@ -1,0 +1,807 @@
+---------------------------------------------------------------
+[ 2023-04-19T09:42:42+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/login/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020509s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.009766s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`title` FROM `t_admin` `a` LEFT JOIN `t_auth_group` `b` ON `a`.`groupId`=`b`.`id` WHERE  `userName` = 'admin' LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.003907s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_login_log` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] INSERT INTO `t_login_log` (`uid` , `userName` , `roles` , `loginTime` , `loginIp`) VALUES (1 , 'admin' , '超级管理员' , 1681868562 , '175.168.84.92') [ RunTime:0.006836s ]
+[ sql ] [ SQL ] UPDATE `t_admin`  SET `loginTime`=1681868562  WHERE  `id` = 1 [ RunTime:0.003906s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:42:43+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003906s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:42:49+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/user/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.132818s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.038087s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.006837s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/user/index' LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.024415s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_user` `a` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.093754s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_user` `a` LIMIT 1 [ RunTime:0.002929s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:42:51+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/admin/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004883s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.006837s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/admin/index' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`title` FROM `t_admin` `a` LEFT JOIN `t_auth_group` `b` ON `a`.`groupId`=`b`.`id` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_admin` `a` LEFT JOIN `t_auth_group` `b` ON `a`.`groupId`=`b`.`id` LIMIT 1 [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:42:51+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/roles/getLists
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004883s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/getlists' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_group` `a` WHERE  (  1 and a.status =  1 ) ORDER BY `a`.`id` ASC [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:42:55+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/rules/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004883s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.006837s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/rules/index' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_rule` `a` [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:42:57+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/rules/getLists
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007813s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.008790s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.010742s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/rules/getlists' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_rule` `a` WHERE  (  1 and a.status =  1 ) ORDER BY `a`.`id` DESC [ RunTime:0.002929s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:42:57+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/roles/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.037111s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.006837s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/index' LIMIT 1 [ RunTime:0.009766s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` LIMIT 0,10 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_auth_group` LIMIT 1 [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:50:25+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/login/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004883s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`title` FROM `t_admin` `a` LEFT JOIN `t_auth_group` `b` ON `a`.`groupId`=`b`.`id` WHERE  `userName` = 'admin' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_login_log` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] INSERT INTO `t_login_log` (`uid` , `userName` , `roles` , `loginTime` , `loginIp`) VALUES (1 , 'admin' , '超级管理员' , 1681869025 , '175.168.84.92') [ RunTime:0.005860s ]
+[ sql ] [ SQL ] UPDATE `t_admin`  SET `loginTime`=1681869025  WHERE  `id` = 1 [ RunTime:0.005860s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:50:25+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012696s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001954s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:50:31+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/user/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013673s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006837s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/user/index' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_user` `a` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_user` `a` LIMIT 1 [ RunTime:0.002929s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:50:33+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/log/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.044924s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.010743s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.015625s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.021486s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/log/index' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_login_log` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_login_log` `a` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_login_log` `a` LIMIT 1 [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:50:34+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/log/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.003907s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/log/index' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_login_log` [ RunTime:0.006837s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_login_log` `a` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_login_log` `a` LIMIT 1 [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:50:36+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/admin/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.014649s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/admin/index' LIMIT 1 [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`title` FROM `t_admin` `a` LEFT JOIN `t_auth_group` `b` ON `a`.`groupId`=`b`.`id` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_admin` `a` LEFT JOIN `t_auth_group` `b` ON `a`.`groupId`=`b`.`id` LIMIT 1 [ RunTime:0.005860s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:50:36+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/roles/getLists
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012696s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.009766s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.008790s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/getlists' LIMIT 1 [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_group` `a` WHERE  (  1 and a.status =  1 ) ORDER BY `a`.`id` ASC [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:50:39+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/rules/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/rules/index' LIMIT 1 [ RunTime:0.001954s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_rule` `a` [ RunTime:0.002929s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:50:41+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/rules/getLists
+[ sql ] [ DB ] CONNECT:[ UseTime:0.022462s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.024415s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.009766s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.011719s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/rules/getlists' LIMIT 1 [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_rule` `a` WHERE  (  1 and a.status =  1 ) ORDER BY `a`.`id` DESC [ RunTime:0.006836s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:50:41+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/roles/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004883s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.025392s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.010742s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/index' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` LIMIT 0,10 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_auth_group` LIMIT 1 [ RunTime:0.001954s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:51:06+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:51:06+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/roles/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006836s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006837s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/index' LIMIT 1 [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` LIMIT 0,10 [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_auth_group` LIMIT 1 [ RunTime:0.003907s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:51:06+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/rules/getLists
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011719s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.008790s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/rules/getlists' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_rule` `a` WHERE  (  1 and a.status =  1 ) ORDER BY `a`.`id` DESC [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:51:09+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/log/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012696s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/log/index' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_login_log` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_login_log` `a` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_login_log` `a` LIMIT 1 [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:51:11+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004883s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.006837s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:51:11+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/log/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011720s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/log/index' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_login_log` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_login_log` `a` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_login_log` `a` LIMIT 1 [ RunTime:0.002929s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:51:14+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003907s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:51:15+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/log/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012696s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/log/index' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_login_log` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_login_log` `a` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_login_log` `a` LIMIT 1 [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:51:16+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/user/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013672s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.003907s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.003907s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/user/index' LIMIT 1 [ RunTime:0.003907s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_user` `a` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_user` `a` LIMIT 1 [ RunTime:0.003906s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:51:18+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010743s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.006837s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2023-04-19T09:51:18+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/user/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012696s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005860s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.007813s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/user/index' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_user` `a` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_user` `a` LIMIT 1 [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:15:43+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.061520s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.016601s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.012695s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.010742s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:15:48+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/admin/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013671s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.006835s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/admin/index' LIMIT 1 [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`title` FROM `t_admin` `a` LEFT JOIN `t_auth_group` `b` ON `a`.`groupId`=`b`.`id` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_admin` `a` LEFT JOIN `t_auth_group` `b` ON `a`.`groupId`=`b`.`id` LIMIT 1 [ RunTime:0.005859s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:15:48+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/roles/getLists
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004882s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006835s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/getlists' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_group` `a` WHERE  (  1 and a.status =  1 ) ORDER BY `a`.`id` ASC [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:15:51+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/rules/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005859s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.008788s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/rules/index' LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_rule` `a` [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:15:53+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/roles/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.041989s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.011718s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/index' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.012694s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` LIMIT 0,10 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_auth_group` LIMIT 1 [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:15:53+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/rules/getLists
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011718s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.011718s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.010741s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/rules/getlists' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_rule` `a` WHERE  (  1 and a.status =  1 ) ORDER BY `a`.`id` DESC [ RunTime:0.004882s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:16:22+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/roles/getLists
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007812s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/getlists' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_group` `a` WHERE  (  1 and a.status =  1 ) ORDER BY `a`.`id` ASC [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:16:22+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/admin/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006835s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.008788s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/admin/index' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`title` FROM `t_admin` `a` LEFT JOIN `t_auth_group` `b` ON `a`.`groupId`=`b`.`id` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_admin` `a` LEFT JOIN `t_auth_group` `b` ON `a`.`groupId`=`b`.`id` LIMIT 1 [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:16:24+08:00 ] 175.168.84.92 GET www.mmcall.net:7002/index.php/admin/admin/getinfo?id=5&signature=c39f7462fbeac2c0365ad8eaaf307964
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004883s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/admin/getinfo' LIMIT 1 [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`title` FROM `t_admin` `a` LEFT JOIN `t_auth_group` `b` ON `a`.`groupId`=`b`.`id` WHERE  (   a.id = 5 ) LIMIT 1 [ RunTime:0.004883s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:16:54+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/roles/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004883s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006835s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.006835s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/index' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` LIMIT 0,10 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_auth_group` LIMIT 1 [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:16:54+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/rules/getLists
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003906s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.006835s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.006835s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/rules/getlists' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_rule` `a` WHERE  (  1 and a.status =  1 ) ORDER BY `a`.`id` DESC [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:17:16+08:00 ] 175.168.84.92 GET www.mmcall.net:7002/index.php/admin/roles/getinfo?id=1&signature=87495664d26339aacda755a9e6f857bb
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004883s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.010741s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/getinfo' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.007812s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:18:04+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/admin/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.026365s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.010741s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/admin/index' LIMIT 1 [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`title` FROM `t_admin` `a` LEFT JOIN `t_auth_group` `b` ON `a`.`groupId`=`b`.`id` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_admin` `a` LEFT JOIN `t_auth_group` `b` ON `a`.`groupId`=`b`.`id` LIMIT 1 [ RunTime:0.010742s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:18:04+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/roles/getLists
+[ sql ] [ DB ] CONNECT:[ UseTime:0.012695s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.016601s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.006835s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.011718s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/getlists' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_group` `a` WHERE  (  1 and a.status =  1 ) ORDER BY `a`.`id` ASC [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:18:10+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/rules/getLists
+[ sql ] [ DB ] CONNECT:[ UseTime:0.024412s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/rules/getlists' LIMIT 1 [ RunTime:0.010742s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_rule` `a` WHERE  (  1 and a.status =  1 ) ORDER BY `a`.`id` DESC [ RunTime:0.004883s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:18:10+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/roles/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010741s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.011718s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.012695s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/index' LIMIT 1 [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.004882s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` LIMIT 0,10 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_auth_group` LIMIT 1 [ RunTime:0.002929s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:19:02+08:00 ] 175.168.84.92 GET www.mmcall.net:7002/index.php/admin/roles/getinfo?id=1&signature=87495664d26339aacda755a9e6f857bb
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005859s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/getinfo' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.006835s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.003906s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:19:05+08:00 ] 175.168.84.92 GET www.mmcall.net:7002/index.php/admin/roles/getinfo?id=4&signature=eb0e77d10152b1172d36eb1e15cf7e35
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008788s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.011718s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.006835s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.006835s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/getinfo' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.003906s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:19:36+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/admin/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004883s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/admin/index' LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`title` FROM `t_admin` `a` LEFT JOIN `t_auth_group` `b` ON `a`.`groupId`=`b`.`id` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_admin` `a` LEFT JOIN `t_auth_group` `b` ON `a`.`groupId`=`b`.`id` LIMIT 1 [ RunTime:0.005859s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:19:36+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/roles/getLists
+[ sql ] [ DB ] CONNECT:[ UseTime:0.020506s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/getlists' LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.010741s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_group` `a` WHERE  (  1 and a.status =  1 ) ORDER BY `a`.`id` ASC [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:21:31+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/rules/getLists
+[ sql ] [ DB ] CONNECT:[ UseTime:0.025389s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.004882s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.006835s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/rules/getlists' LIMIT 1 [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_rule` `a` WHERE  (  1 and a.status =  1 ) ORDER BY `a`.`id` DESC [ RunTime:0.002929s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:21:31+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/roles/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007812s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.006835s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.006835s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/index' LIMIT 1 [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` LIMIT 0,10 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_auth_group` LIMIT 1 [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:22:22+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/admin/getuser
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004883s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006835s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/admin/getuser' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `id` IN (1,2,3,4,5,6,7,8,9,10,11)  AND `status` = 1 ORDER BY `sorts` [ RunTime:0.004882s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002929s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:22:22+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/rules/getLists
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021483s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/rules/getlists' LIMIT 1 [ RunTime:0.004882s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_rule` `a` WHERE  (  1 and a.status =  1 ) ORDER BY `a`.`id` DESC [ RunTime:0.006836s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:22:22+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/roles/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008788s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.011718s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.010741s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.010742s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/index' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` LIMIT 0,10 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_auth_group` LIMIT 1 [ RunTime:0.002929s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:23:59+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/user/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013671s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/user/index' LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_user` [ RunTime:0.012695s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_user` `a` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_user` `a` LIMIT 1 [ RunTime:0.002929s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:24:01+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/log/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008788s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006835s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.006835s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/log/index' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_login_log` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_login_log` `a` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_login_log` `a` LIMIT 1 [ RunTime:0.002929s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:24:03+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/log/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005859s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006835s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.006835s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.006835s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/log/index' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_login_log` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_login_log` `a` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.004882s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_login_log` `a` LIMIT 1 [ RunTime:0.003906s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:24:05+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/admin/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.026365s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.004882s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.012695s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/admin/index' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`title` FROM `t_admin` `a` LEFT JOIN `t_auth_group` `b` ON `a`.`groupId`=`b`.`id` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.010742s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_admin` `a` LEFT JOIN `t_auth_group` `b` ON `a`.`groupId`=`b`.`id` LIMIT 1 [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:24:05+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/roles/getLists
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003906s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.008788s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.010742s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/getlists' LIMIT 1 [ RunTime:0.006835s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_group` `a` WHERE  (  1 and a.status =  1 ) ORDER BY `a`.`id` ASC [ RunTime:0.004882s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:28:35+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/rules/getLists
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004882s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006835s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.004882s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.008788s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/rules/getlists' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_rule` `a` WHERE  (  1 and a.status =  1 ) ORDER BY `a`.`id` DESC [ RunTime:0.002929s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:28:35+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/roles/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.021483s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/index' LIMIT 1 [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` LIMIT 0,10 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_auth_group` LIMIT 1 [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:30:40+08:00 ] 175.168.84.92 GET www.mmcall.net:7002/index.php/admin/roles/getinfo?id=1&signature=87495664d26339aacda755a9e6f857bb
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004882s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/getinfo' LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.007812s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:30:49+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/roles/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002929s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.011718s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001953s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/index' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.008788s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` LIMIT 0,10 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_auth_group` LIMIT 1 [ RunTime:0.001953s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:31:04+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/roles/save
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004882s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.011718s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/save' LIMIT 1 [ RunTime:0.002929s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:31:13+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/roles/save
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013671s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.008788s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/save' LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT `id` FROM `t_auth_group` WHERE  `title` = '项目1' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] INSERT INTO `t_auth_group` (`title` , `status` , `rules` , `updateTime`) VALUES ('项目1' , 1 , '7,8' , 1681896673) [ RunTime:0.013671s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:31:17+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/roles/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013671s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/index' LIMIT 1 [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` LIMIT 0,10 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_auth_group` LIMIT 1 [ RunTime:0.003906s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:31:27+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/admin/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.030271s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.006836s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.006835s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.014648s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.012695s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/admin/index' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SELECT `a`.*,`b`.`title` FROM `t_admin` `a` LEFT JOIN `t_auth_group` `b` ON `a`.`groupId`=`b`.`id` ORDER BY `a`.`id` DESC LIMIT 0,10 [ RunTime:0.004882s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_admin` `a` LEFT JOIN `t_auth_group` `b` ON `a`.`groupId`=`b`.`id` LIMIT 1 [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:31:27+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/roles/getLists
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003906s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.008788s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.004882s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.008788s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.014648s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/getlists' LIMIT 1 [ RunTime:0.003906s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.004882s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_group` `a` WHERE  (  1 and a.status =  1 ) ORDER BY `a`.`id` ASC [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:31:38+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/rules/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.013671s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/rules/index' LIMIT 1 [ RunTime:0.004883s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_rule` `a` [ RunTime:0.002930s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:31:40+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/roles/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.007812s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.029295s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.009765s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.007812s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/roles/index' LIMIT 1 [ RunTime:0.002930s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_group` [ RunTime:0.017577s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_group` LIMIT 0,10 [ RunTime:0.008789s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `t_auth_group` LIMIT 1 [ RunTime:0.003906s ]
+---------------------------------------------------------------
+[ 2023-04-19T17:31:40+08:00 ] 175.168.84.92 POST www.mmcall.net:7002/index.php/admin/rules/getLists
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008789s ] mysql:host=47.104.10.49;dbname=screenqpi;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_app` [ RunTime:0.012695s ]
+[ sql ] [ SQL ] SELECT * FROM `t_app` WHERE  `appId` = '123456' LIMIT 1 [ RunTime:0.004882s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_admin` [ RunTime:0.005859s ]
+[ sql ] [ SQL ] SELECT * FROM `t_admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.006835s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `t_auth_rule` [ RunTime:0.010742s ]
+[ sql ] [ SQL ] SELECT * FROM `t_auth_rule` WHERE  `name` = 'admin/rules/getlists' LIMIT 1 [ RunTime:0.002929s ]
+[ sql ] [ SQL ] SELECT `a`.* FROM `t_auth_rule` `a` WHERE  (  1 and a.status =  1 ) ORDER BY `a`.`id` DESC [ RunTime:0.004883s ]

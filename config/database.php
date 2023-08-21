@@ -13,13 +13,13 @@ return [
     // 数据库类型
     'type'            => 'mysql',
     // 服务器地址 127.0.0.1 - 47.104.10.49
-    'hostname'        => '127.0.0.1',
+    'hostname'        => '47.104.10.49',
     // 数据库名
     'database'        => 'yunmmcall_big',
     // 用户名
     'username'        => 'root',
     // 密码 root - 3a1A2110-AcDe+4C3a-944e?3fe4af7fabD2
-    'password'        => 'root',
+    'password'        => '3a1A2110-AcDe+4C3a-944e?3fe4af7fabD2',
     // 端口
     'hostport'        => '',
     // 连接dsn

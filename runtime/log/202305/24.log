@@ -1,0 +1,1503 @@
+---------------------------------------------------------------
+[ 2023-05-24T08:34:11+08:00 ] 175.164.87.219 OPTIONS www.mmcall.net:7002/index.php/admin/login/index
+[运行时间：0.093750s] [吞吐率：10.67req/s] [内存消耗：2,146.92kb] [文件加载：58]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'POST',
+  'access-control-request-headers' => 'x-access-appid',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:34:11+08:00 ] 175.164.87.219 POST www.mmcall.net:7002/index.php/admin/login/index
+[运行时间：0.085938s] [吞吐率：11.64req/s] [内存消耗：3,470.30kb] [文件加载：69]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'content-length' => '75',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'origin' => 'http://localhost:8080',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'userName' => 'neimeng',
+  'password' => '123456',
+  'signature' => 'a313a25cc3f84441f290571c93acc734',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:34:12+08:00 ] 175.164.87.219 OPTIONS www.mmcall.net:7002/index.php/admin/admin/getuser
+[运行时间：0.030274s] [吞吐率：33.03req/s] [内存消耗：2,174.34kb] [文件加载：60]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'POST',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:34:12+08:00 ] 175.164.87.219 POST www.mmcall.net:7002/index.php/admin/admin/getuser
+[运行时间：0.089844s] [吞吐率：11.13req/s] [内存消耗：3,476.58kb] [文件加载：72]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'content-length' => '42',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'EB6A388244ECB6BCEA3094219236A4B7MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7J5aqmS3aaIjquJZa6finu7fn5_iGylfMqp0qWWd6rcuYqd1onMlX6FlqioxGWgir1pkpyHfqmOs8_WqIhkaKm9jH_dmc-5dg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'origin' => 'http://localhost:8080',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:34:12+08:00 ] 175.164.87.219 OPTIONS www.mmcall.net:7002/index.php/admin/rules/getLists
+[运行时间：0.035156s] [吞吐率：28.44req/s] [内存消耗：2,154.15kb] [文件加载：60]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'rules',
+    2 => 'getLists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'POST',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:34:12+08:00 ] 175.164.87.219 OPTIONS www.mmcall.net:7002/index.php/admin/rules/getLists
+[运行时间：0.043945s] [吞吐率：22.76req/s] [内存消耗：2,154.15kb] [文件加载：60]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'rules',
+    2 => 'getLists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'POST',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:34:12+08:00 ] 175.164.87.219 OPTIONS www.mmcall.net:7002/index.php/admin/roles/index
+[运行时间：0.036133s] [吞吐率：27.68req/s] [内存消耗：2,159.23kb] [文件加载：60]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'roles',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'POST',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:34:12+08:00 ] 175.164.87.219 POST www.mmcall.net:7002/index.php/admin/rules/getLists
+[运行时间：0.104493s] [吞吐率：9.57req/s] [内存消耗：3,363.18kb] [文件加载：70]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'rules',
+    2 => 'getLists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'content-length' => '42',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'EB6A388244ECB6BCEA3094219236A4B7MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7J5aqmS3aaIjquJZa6finu7fn5_iGylfMqp0qWWd6rcuYqd1onMlX6FlqioxGWgir1pkpyHfqmOs8_WqIhkaKm9jH_dmc-5dg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'origin' => 'http://localhost:8080',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Rules->getLists[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Rules.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:34:12+08:00 ] 175.164.87.219 POST www.mmcall.net:7002/index.php/admin/rules/getLists
+[运行时间：0.106446s] [吞吐率：9.39req/s] [内存消耗：3,363.18kb] [文件加载：70]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'rules',
+    2 => 'getLists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'content-length' => '42',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'EB6A388244ECB6BCEA3094219236A4B7MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7J5aqmS3aaIjquJZa6finu7fn5_iGylfMqp0qWWd6rcuYqd1onMlX6FlqioxGWgir1pkpyHfqmOs8_WqIhkaKm9jH_dmc-5dg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'origin' => 'http://localhost:8080',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Rules->getLists[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Rules.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:34:12+08:00 ] 175.164.87.219 POST www.mmcall.net:7002/index.php/admin/roles/index
+[运行时间：0.096679s] [吞吐率：10.34req/s] [内存消耗：3,412.06kb] [文件加载：71]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'roles',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'content-length' => '229',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'EB6A388244ECB6BCEA3094219236A4B7MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7J5aqmS3aaIjquJZa6finu7fn5_iGylfMqp0qWWd6rcuYqd1onMlX6FlqioxGWgir1pkpyHfqmOs8_WqIhkaKm9jH_dmc-5dg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'origin' => 'http://localhost:8080',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'psize' => '10',
+  'status' => '1',
+  'jdName' => '',
+  'jdParent' => '内蒙古东江物业居家养老呼叫机项目',
+  'signature' => '4809e1f43bed0e139ea9b9409e0d8b02',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Roles->index[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Roles.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:34:16+08:00 ] 175.164.87.219 OPTIONS www.mmcall.net:7002/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F24%5C%22,%5C%222023%2F4%2F27%5C%22],[%5C%222023%2F4%2F28%5C%22,%5C%222023%2F5%2F1%5C%22],[%5C%222023%2F5%2F2%5C%22,%5C%222023%2F5%2F5%5C%22],[%5C%222023%2F5%2F6%5C%22,%5C%222023%2F5%2F9%5C%22],[%5C%222023%2F5%2F10%5C%22,%5C%222023%2F5%2F13%5C%22],[%5C%222023%2F5%2F14%5C%22,%5C%222023%2F5%2F17%5C%22],[%5C%222023%2F5%2F18%5C%22,%5C%222023%2F5%2F21%5C%22],[%5C%222023%2F5%2F22%5C%22,%5C%222023%2F5%2F24%5C%22]]%22%7D&signature=2bea6aa385ae24c121d9502feb26ffc1
+[运行时间：0.035156s] [吞吐率：28.44req/s] [内存消耗：2,151.40kb] [文件加载：60]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'dataIntegration',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'GET',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"jdno":88,"dateValue":"月","themoonarraylist":"[[\\"2023/4/24\\",\\"2023/4/27\\"],[\\"2023/4/28\\",\\"2023/5/1\\"],[\\"2023/5/2\\",\\"2023/5/5\\"],[\\"2023/5/6\\",\\"2023/5/9\\"],[\\"2023/5/10\\",\\"2023/5/13\\"],[\\"2023/5/14\\",\\"2023/5/17\\"],[\\"2023/5/18\\",\\"2023/5/21\\"],[\\"2023/5/22\\",\\"2023/5/24\\"]]"}',
+  'signature' => '2bea6aa385ae24c121d9502feb26ffc1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:34:16+08:00 ] 175.164.87.219 OPTIONS www.mmcall.net:7002/index.php/admin/Index/getMapPositioning
+[运行时间：0.035156s] [吞吐率：28.44req/s] [内存消耗：2,147.74kb] [文件加载：60]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getMapPositioning',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'POST',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:34:16+08:00 ] 175.164.87.219 POST www.mmcall.net:7002/index.php/admin/Index/getMapPositioning
+[运行时间：0.093750s] [吞吐率：10.67req/s] [内存消耗：3,370.82kb] [文件加载：72]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getMapPositioning',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'content-length' => '48',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'EB6A388244ECB6BCEA3094219236A4B7MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7J5aqmS3aaIjquJZa6finu7fn5_iGylfMqp0qWWd6rcuYqd1onMlX6FlqioxGWgir1pkpyHfqmOs8_WqIhkaKm9jH_dmc-5dg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'origin' => 'http://localhost:8080',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12',
+  'signature' => '3f4050a120fc53689e8408fc0e8c6954',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:34:16+08:00 ] 175.164.87.219 OPTIONS www.mmcall.net:7002/index.php/admin/Index/mapIntegration
+[运行时间：0.032226s] [吞吐率：31.03req/s] [内存消耗：2,147.63kb] [文件加载：60]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'mapIntegration',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'POST',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:34:16+08:00 ] 175.164.87.219 GET www.mmcall.net:7002/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F24%5C%22,%5C%222023%2F4%2F27%5C%22],[%5C%222023%2F4%2F28%5C%22,%5C%222023%2F5%2F1%5C%22],[%5C%222023%2F5%2F2%5C%22,%5C%222023%2F5%2F5%5C%22],[%5C%222023%2F5%2F6%5C%22,%5C%222023%2F5%2F9%5C%22],[%5C%222023%2F5%2F10%5C%22,%5C%222023%2F5%2F13%5C%22],[%5C%222023%2F5%2F14%5C%22,%5C%222023%2F5%2F17%5C%22],[%5C%222023%2F5%2F18%5C%22,%5C%222023%2F5%2F21%5C%22],[%5C%222023%2F5%2F22%5C%22,%5C%222023%2F5%2F24%5C%22]]%22%7D&signature=2bea6aa385ae24c121d9502feb26ffc1
+[运行时间：0.499024s] [吞吐率：2.00req/s] [内存消耗：3,584.74kb] [文件加载：72]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'dataIntegration',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'EB6A388244ECB6BCEA3094219236A4B7MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7J5aqmS3aaIjquJZa6finu7fn5_iGylfMqp0qWWd6rcuYqd1onMlX6FlqioxGWgir1pkpyHfqmOs8_WqIhkaKm9jH_dmc-5dg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'origin' => 'http://localhost:8080',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"jdno":88,"dateValue":"月","themoonarraylist":"[[\\"2023/4/24\\",\\"2023/4/27\\"],[\\"2023/4/28\\",\\"2023/5/1\\"],[\\"2023/5/2\\",\\"2023/5/5\\"],[\\"2023/5/6\\",\\"2023/5/9\\"],[\\"2023/5/10\\",\\"2023/5/13\\"],[\\"2023/5/14\\",\\"2023/5/17\\"],[\\"2023/5/18\\",\\"2023/5/21\\"],[\\"2023/5/22\\",\\"2023/5/24\\"]]"}',
+  'signature' => '2bea6aa385ae24c121d9502feb26ffc1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->dataIntegration[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:34:16+08:00 ] 175.164.87.219 POST www.mmcall.net:7002/index.php/admin/Index/mapIntegration
+[运行时间：0.123047s] [吞吐率：8.13req/s] [内存消耗：3,527.30kb] [文件加载：72]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'mapIntegration',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'content-length' => '50',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'EB6A388244ECB6BCEA3094219236A4B7MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7J5aqmS3aaIjquJZa6finu7fn5_iGylfMqp0qWWd6rcuYqd1onMlX6FlqioxGWgir1pkpyHfqmOs8_WqIhkaKm9jH_dmc-5dg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'origin' => 'http://localhost:8080',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'jdno' => '88',
+  'signature' => '76c340d11d30f3764a08c67a37e90fe9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->mapIntegration[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:34:25+08:00 ] 175.164.87.219 OPTIONS www.mmcall.net:7002/index.php/admin/admin/getuser
+[运行时间：0.029297s] [吞吐率：34.13req/s] [内存消耗：2,174.34kb] [文件加载：60]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'POST',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:34:25+08:00 ] 175.164.87.219 POST www.mmcall.net:7002/index.php/admin/admin/getuser
+[运行时间：0.089843s] [吞吐率：11.13req/s] [内存消耗：3,476.58kb] [文件加载：72]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'content-length' => '42',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'EB6A388244ECB6BCEA3094219236A4B7MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7J5aqmS3aaIjquJZa6finu7fn5_iGylfMqp0qWWd6rcuYqd1onMlX6FlqioxGWgir1pkpyHfqmOs8_WqIhkaKm9jH_dmc-5dg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'origin' => 'http://localhost:8080',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:34:27+08:00 ] 175.164.87.219 OPTIONS www.mmcall.net:7002/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F24%5C%22,%5C%222023%2F4%2F27%5C%22],[%5C%222023%2F4%2F28%5C%22,%5C%222023%2F5%2F1%5C%22],[%5C%222023%2F5%2F2%5C%22,%5C%222023%2F5%2F5%5C%22],[%5C%222023%2F5%2F6%5C%22,%5C%222023%2F5%2F9%5C%22],[%5C%222023%2F5%2F10%5C%22,%5C%222023%2F5%2F13%5C%22],[%5C%222023%2F5%2F14%5C%22,%5C%222023%2F5%2F17%5C%22],[%5C%222023%2F5%2F18%5C%22,%5C%222023%2F5%2F21%5C%22],[%5C%222023%2F5%2F22%5C%22,%5C%222023%2F5%2F24%5C%22]]%22%7D&signature=2bea6aa385ae24c121d9502feb26ffc1
+[运行时间：0.031250s] [吞吐率：32.00req/s] [内存消耗：2,151.40kb] [文件加载：60]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'dataIntegration',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'GET',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"jdno":88,"dateValue":"月","themoonarraylist":"[[\\"2023/4/24\\",\\"2023/4/27\\"],[\\"2023/4/28\\",\\"2023/5/1\\"],[\\"2023/5/2\\",\\"2023/5/5\\"],[\\"2023/5/6\\",\\"2023/5/9\\"],[\\"2023/5/10\\",\\"2023/5/13\\"],[\\"2023/5/14\\",\\"2023/5/17\\"],[\\"2023/5/18\\",\\"2023/5/21\\"],[\\"2023/5/22\\",\\"2023/5/24\\"]]"}',
+  'signature' => '2bea6aa385ae24c121d9502feb26ffc1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:34:27+08:00 ] 175.164.87.219 OPTIONS www.mmcall.net:7002/index.php/admin/Index/getMapPositioning
+[运行时间：0.032226s] [吞吐率：31.03req/s] [内存消耗：2,147.74kb] [文件加载：60]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getMapPositioning',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'POST',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:34:27+08:00 ] 175.164.87.219 POST www.mmcall.net:7002/index.php/admin/Index/getMapPositioning
+[运行时间：0.079102s] [吞吐率：12.64req/s] [内存消耗：3,370.82kb] [文件加载：72]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getMapPositioning',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'content-length' => '48',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'EB6A388244ECB6BCEA3094219236A4B7MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7J5aqmS3aaIjquJZa6finu7fn5_iGylfMqp0qWWd6rcuYqd1onMlX6FlqioxGWgir1pkpyHfqmOs8_WqIhkaKm9jH_dmc-5dg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'origin' => 'http://localhost:8080',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'id' => '12',
+  'signature' => '3f4050a120fc53689e8408fc0e8c6954',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:34:27+08:00 ] 175.164.87.219 GET www.mmcall.net:7002/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F24%5C%22,%5C%222023%2F4%2F27%5C%22],[%5C%222023%2F4%2F28%5C%22,%5C%222023%2F5%2F1%5C%22],[%5C%222023%2F5%2F2%5C%22,%5C%222023%2F5%2F5%5C%22],[%5C%222023%2F5%2F6%5C%22,%5C%222023%2F5%2F9%5C%22],[%5C%222023%2F5%2F10%5C%22,%5C%222023%2F5%2F13%5C%22],[%5C%222023%2F5%2F14%5C%22,%5C%222023%2F5%2F17%5C%22],[%5C%222023%2F5%2F18%5C%22,%5C%222023%2F5%2F21%5C%22],[%5C%222023%2F5%2F22%5C%22,%5C%222023%2F5%2F24%5C%22]]%22%7D&signature=2bea6aa385ae24c121d9502feb26ffc1
+[运行时间：0.219727s] [吞吐率：4.55req/s] [内存消耗：3,584.74kb] [文件加载：72]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'dataIntegration',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'EB6A388244ECB6BCEA3094219236A4B7MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7J5aqmS3aaIjquJZa6finu7fn5_iGylfMqp0qWWd6rcuYqd1onMlX6FlqioxGWgir1pkpyHfqmOs8_WqIhkaKm9jH_dmc-5dg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'origin' => 'http://localhost:8080',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"jdno":88,"dateValue":"月","themoonarraylist":"[[\\"2023/4/24\\",\\"2023/4/27\\"],[\\"2023/4/28\\",\\"2023/5/1\\"],[\\"2023/5/2\\",\\"2023/5/5\\"],[\\"2023/5/6\\",\\"2023/5/9\\"],[\\"2023/5/10\\",\\"2023/5/13\\"],[\\"2023/5/14\\",\\"2023/5/17\\"],[\\"2023/5/18\\",\\"2023/5/21\\"],[\\"2023/5/22\\",\\"2023/5/24\\"]]"}',
+  'signature' => '2bea6aa385ae24c121d9502feb26ffc1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->dataIntegration[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:34:28+08:00 ] 175.164.87.219 OPTIONS www.mmcall.net:7002/index.php/admin/Index/mapIntegration
+[运行时间：0.025391s] [吞吐率：39.38req/s] [内存消耗：2,147.63kb] [文件加载：60]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'mapIntegration',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'POST',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:34:28+08:00 ] 175.164.87.219 POST www.mmcall.net:7002/index.php/admin/Index/mapIntegration
+[运行时间：0.116211s] [吞吐率：8.61req/s] [内存消耗：3,527.30kb] [文件加载：72]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'mapIntegration',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'content-length' => '50',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'EB6A388244ECB6BCEA3094219236A4B7MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7J5aqmS3aaIjquJZa6finu7fn5_iGylfMqp0qWWd6rcuYqd1onMlX6FlqioxGWgir1pkpyHfqmOs8_WqIhkaKm9jH_dmc-5dg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'origin' => 'http://localhost:8080',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'jdno' => '88',
+  'signature' => '76c340d11d30f3764a08c67a37e90fe9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->mapIntegration[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:38:27+08:00 ] 175.164.87.219 OPTIONS www.mmcall.net:7002/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F24%5C%22,%5C%222023%2F4%2F27%5C%22],[%5C%222023%2F4%2F28%5C%22,%5C%222023%2F5%2F1%5C%22],[%5C%222023%2F5%2F2%5C%22,%5C%222023%2F5%2F5%5C%22],[%5C%222023%2F5%2F6%5C%22,%5C%222023%2F5%2F9%5C%22],[%5C%222023%2F5%2F10%5C%22,%5C%222023%2F5%2F13%5C%22],[%5C%222023%2F5%2F14%5C%22,%5C%222023%2F5%2F17%5C%22],[%5C%222023%2F5%2F18%5C%22,%5C%222023%2F5%2F21%5C%22],[%5C%222023%2F5%2F22%5C%22,%5C%222023%2F5%2F24%5C%22]]%22%7D&signature=2bea6aa385ae24c121d9502feb26ffc1
+[运行时间：0.028320s] [吞吐率：35.31req/s] [内存消耗：2,151.40kb] [文件加载：60]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'dataIntegration',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'GET',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"jdno":88,"dateValue":"月","themoonarraylist":"[[\\"2023/4/24\\",\\"2023/4/27\\"],[\\"2023/4/28\\",\\"2023/5/1\\"],[\\"2023/5/2\\",\\"2023/5/5\\"],[\\"2023/5/6\\",\\"2023/5/9\\"],[\\"2023/5/10\\",\\"2023/5/13\\"],[\\"2023/5/14\\",\\"2023/5/17\\"],[\\"2023/5/18\\",\\"2023/5/21\\"],[\\"2023/5/22\\",\\"2023/5/24\\"]]"}',
+  'signature' => '2bea6aa385ae24c121d9502feb26ffc1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:38:27+08:00 ] 175.164.87.219 GET www.mmcall.net:7002/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F24%5C%22,%5C%222023%2F4%2F27%5C%22],[%5C%222023%2F4%2F28%5C%22,%5C%222023%2F5%2F1%5C%22],[%5C%222023%2F5%2F2%5C%22,%5C%222023%2F5%2F5%5C%22],[%5C%222023%2F5%2F6%5C%22,%5C%222023%2F5%2F9%5C%22],[%5C%222023%2F5%2F10%5C%22,%5C%222023%2F5%2F13%5C%22],[%5C%222023%2F5%2F14%5C%22,%5C%222023%2F5%2F17%5C%22],[%5C%222023%2F5%2F18%5C%22,%5C%222023%2F5%2F21%5C%22],[%5C%222023%2F5%2F22%5C%22,%5C%222023%2F5%2F24%5C%22]]%22%7D&signature=2bea6aa385ae24c121d9502feb26ffc1
+[运行时间：0.224609s] [吞吐率：4.45req/s] [内存消耗：3,584.74kb] [文件加载：72]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'dataIntegration',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'EB6A388244ECB6BCEA3094219236A4B7MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7J5aqmS3aaIjquJZa6finu7fn5_iGylfMqp0qWWd6rcuYqd1onMlX6FlqioxGWgir1pkpyHfqmOs8_WqIhkaKm9jH_dmc-5dg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'origin' => 'http://localhost:8080',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"jdno":88,"dateValue":"月","themoonarraylist":"[[\\"2023/4/24\\",\\"2023/4/27\\"],[\\"2023/4/28\\",\\"2023/5/1\\"],[\\"2023/5/2\\",\\"2023/5/5\\"],[\\"2023/5/6\\",\\"2023/5/9\\"],[\\"2023/5/10\\",\\"2023/5/13\\"],[\\"2023/5/14\\",\\"2023/5/17\\"],[\\"2023/5/18\\",\\"2023/5/21\\"],[\\"2023/5/22\\",\\"2023/5/24\\"]]"}',
+  'signature' => '2bea6aa385ae24c121d9502feb26ffc1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->dataIntegration[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:39:29+08:00 ] 175.164.87.219 OPTIONS www.mmcall.net:7002/index.php/admin/Index/mapIntegration
+[运行时间：0.025390s] [吞吐率：39.39req/s] [内存消耗：2,147.63kb] [文件加载：60]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'mapIntegration',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'POST',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:39:29+08:00 ] 175.164.87.219 POST www.mmcall.net:7002/index.php/admin/Index/mapIntegration
+[运行时间：0.117187s] [吞吐率：8.53req/s] [内存消耗：3,527.30kb] [文件加载：72]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'mapIntegration',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'content-length' => '50',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'EB6A388244ECB6BCEA3094219236A4B7MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7J5aqmS3aaIjquJZa6finu7fn5_iGylfMqp0qWWd6rcuYqd1onMlX6FlqioxGWgir1pkpyHfqmOs8_WqIhkaKm9jH_dmc-5dg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'origin' => 'http://localhost:8080',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'jdno' => '88',
+  'signature' => '76c340d11d30f3764a08c67a37e90fe9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->mapIntegration[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:42:27+08:00 ] 175.164.87.219 OPTIONS www.mmcall.net:7002/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F24%5C%22,%5C%222023%2F4%2F27%5C%22],[%5C%222023%2F4%2F28%5C%22,%5C%222023%2F5%2F1%5C%22],[%5C%222023%2F5%2F2%5C%22,%5C%222023%2F5%2F5%5C%22],[%5C%222023%2F5%2F6%5C%22,%5C%222023%2F5%2F9%5C%22],[%5C%222023%2F5%2F10%5C%22,%5C%222023%2F5%2F13%5C%22],[%5C%222023%2F5%2F14%5C%22,%5C%222023%2F5%2F17%5C%22],[%5C%222023%2F5%2F18%5C%22,%5C%222023%2F5%2F21%5C%22],[%5C%222023%2F5%2F22%5C%22,%5C%222023%2F5%2F24%5C%22]]%22%7D&signature=2bea6aa385ae24c121d9502feb26ffc1
+[运行时间：0.029297s] [吞吐率：34.13req/s] [内存消耗：2,151.40kb] [文件加载：60]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'dataIntegration',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'GET',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"jdno":88,"dateValue":"月","themoonarraylist":"[[\\"2023/4/24\\",\\"2023/4/27\\"],[\\"2023/4/28\\",\\"2023/5/1\\"],[\\"2023/5/2\\",\\"2023/5/5\\"],[\\"2023/5/6\\",\\"2023/5/9\\"],[\\"2023/5/10\\",\\"2023/5/13\\"],[\\"2023/5/14\\",\\"2023/5/17\\"],[\\"2023/5/18\\",\\"2023/5/21\\"],[\\"2023/5/22\\",\\"2023/5/24\\"]]"}',
+  'signature' => '2bea6aa385ae24c121d9502feb26ffc1',
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:42:27+08:00 ] 175.164.87.219 GET www.mmcall.net:7002/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F24%5C%22,%5C%222023%2F4%2F27%5C%22],[%5C%222023%2F4%2F28%5C%22,%5C%222023%2F5%2F1%5C%22],[%5C%222023%2F5%2F2%5C%22,%5C%222023%2F5%2F5%5C%22],[%5C%222023%2F5%2F6%5C%22,%5C%222023%2F5%2F9%5C%22],[%5C%222023%2F5%2F10%5C%22,%5C%222023%2F5%2F13%5C%22],[%5C%222023%2F5%2F14%5C%22,%5C%222023%2F5%2F17%5C%22],[%5C%222023%2F5%2F18%5C%22,%5C%222023%2F5%2F21%5C%22],[%5C%222023%2F5%2F22%5C%22,%5C%222023%2F5%2F24%5C%22]]%22%7D&signature=2bea6aa385ae24c121d9502feb26ffc1
+[运行时间：0.222657s] [吞吐率：4.49req/s] [内存消耗：3,584.74kb] [文件加载：72]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'dataIntegration',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'EB6A388244ECB6BCEA3094219236A4B7MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7J5aqmS3aaIjquJZa6finu7fn5_iGylfMqp0qWWd6rcuYqd1onMlX6FlqioxGWgir1pkpyHfqmOs8_WqIhkaKm9jH_dmc-5dg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'origin' => 'http://localhost:8080',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"jdno":88,"dateValue":"月","themoonarraylist":"[[\\"2023/4/24\\",\\"2023/4/27\\"],[\\"2023/4/28\\",\\"2023/5/1\\"],[\\"2023/5/2\\",\\"2023/5/5\\"],[\\"2023/5/6\\",\\"2023/5/9\\"],[\\"2023/5/10\\",\\"2023/5/13\\"],[\\"2023/5/14\\",\\"2023/5/17\\"],[\\"2023/5/18\\",\\"2023/5/21\\"],[\\"2023/5/22\\",\\"2023/5/24\\"]]"}',
+  'signature' => '2bea6aa385ae24c121d9502feb26ffc1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->dataIntegration[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:44:29+08:00 ] 175.164.87.219 OPTIONS www.mmcall.net:7002/index.php/admin/Index/mapIntegration
+[运行时间：0.028321s] [吞吐率：35.31req/s] [内存消耗：2,147.63kb] [文件加载：60]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'mapIntegration',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'accept' => '*/*',
+  'access-control-request-method' => 'POST',
+  'access-control-request-headers' => 'x-access-appid,x-access-token',
+  'origin' => 'http://localhost:8080',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'sec-fetch-mode' => 'cors',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T08:44:29+08:00 ] 175.164.87.219 POST www.mmcall.net:7002/index.php/admin/Index/mapIntegration
+[运行时间：0.126953s] [吞吐率：7.88req/s] [内存消耗：3,527.30kb] [文件加载：72]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'mapIntegration',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'content-length' => '50',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'EB6A388244ECB6BCEA3094219236A4B7MDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7J5aqmS3aaIjquJZa6finu7fn5_iGylfMqp0qWWd6rcuYqd1onMlX6FlqioxGWgir1pkpyHfqmOs8_WqIhkaKm9jH_dmc-5dg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'origin' => 'http://localhost:8080',
+  'referer' => 'http://localhost:8080/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'jdno' => '88',
+  'signature' => '76c340d11d30f3764a08c67a37e90fe9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->mapIntegration[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T17:17:56+08:00 ] 175.164.87.219 POST www.mmcall.net:7002/index.php/admin/login/index
+[运行时间：0.160157s] [吞吐率：6.24req/s] [内存消耗：3,470.41kb] [文件加载：69]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'content-length' => '75',
+  'accept' => 'application/json, text/plain, */*',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'origin' => 'http://www.mmcall.net:7002',
+  'referer' => 'http://www.mmcall.net:7002/datafication/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+)
+[ info ] [ PARAM ] array (
+  'userName' => 'neimeng',
+  'password' => '123456',
+  'signature' => 'a313a25cc3f84441f290571c93acc734',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Login->index[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Login.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T17:17:56+08:00 ] 175.164.87.219 POST www.mmcall.net:7002/index.php/admin/admin/getuser
+[运行时间：0.091797s] [吞吐率：10.89req/s] [内存消耗：3,478.70kb] [文件加载：72]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'content-length' => '42',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'origin' => 'http://www.mmcall.net:7002',
+  'referer' => 'http://www.mmcall.net:7002/datafication/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T17:17:57+08:00 ] 175.164.87.219 POST www.mmcall.net:7002/index.php/admin/Index/mapIntegration
+[运行时间：0.149414s] [吞吐率：6.69req/s] [内存消耗：3,529.42kb] [文件加载：72]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'mapIntegration',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'content-length' => '50',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'origin' => 'http://www.mmcall.net:7002',
+  'referer' => 'http://www.mmcall.net:7002/datafication/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+)
+[ info ] [ PARAM ] array (
+  'jdno' => '88',
+  'signature' => '76c340d11d30f3764a08c67a37e90fe9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->mapIntegration[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T17:17:57+08:00 ] 175.164.87.219 GET www.mmcall.net:7002/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F24%5C%22,%5C%222023%2F4%2F27%5C%22],[%5C%222023%2F4%2F28%5C%22,%5C%222023%2F5%2F1%5C%22],[%5C%222023%2F5%2F2%5C%22,%5C%222023%2F5%2F5%5C%22],[%5C%222023%2F5%2F6%5C%22,%5C%222023%2F5%2F9%5C%22],[%5C%222023%2F5%2F10%5C%22,%5C%222023%2F5%2F13%5C%22],[%5C%222023%2F5%2F14%5C%22,%5C%222023%2F5%2F17%5C%22],[%5C%222023%2F5%2F18%5C%22,%5C%222023%2F5%2F21%5C%22],[%5C%222023%2F5%2F22%5C%22,%5C%222023%2F5%2F24%5C%22]]%22%7D&signature=2bea6aa385ae24c121d9502feb26ffc1
+[运行时间：0.457031s] [吞吐率：2.19req/s] [内存消耗：3,586.63kb] [文件加载：72]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'dataIntegration',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'referer' => 'http://www.mmcall.net:7002/datafication/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"jdno":88,"dateValue":"月","themoonarraylist":"[[\\"2023/4/24\\",\\"2023/4/27\\"],[\\"2023/4/28\\",\\"2023/5/1\\"],[\\"2023/5/2\\",\\"2023/5/5\\"],[\\"2023/5/6\\",\\"2023/5/9\\"],[\\"2023/5/10\\",\\"2023/5/13\\"],[\\"2023/5/14\\",\\"2023/5/17\\"],[\\"2023/5/18\\",\\"2023/5/21\\"],[\\"2023/5/22\\",\\"2023/5/24\\"]]"}',
+  'signature' => '2bea6aa385ae24c121d9502feb26ffc1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->dataIntegration[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T17:18:04+08:00 ] 175.164.87.219 POST www.mmcall.net:7002/index.php/admin/Index/getPeopleList
+[运行时间：0.142578s] [吞吐率：7.01req/s] [内存消耗：3,445.01kb] [文件加载：72]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'getPeopleList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'content-length' => '105',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'origin' => 'http://www.mmcall.net:7002',
+  'referer' => 'http://www.mmcall.net:7002/datafication/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'psize' => '10',
+  'sort' => '+deviceno',
+  'jdno' => '88',
+  'deviceno' => '',
+  'oldmanname' => '',
+  'signature' => '66d1bfeddaf608da7eaadf0218eb0a83',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->getPeopleList[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T17:18:07+08:00 ] 175.164.87.219 POST www.mmcall.net:7002/index.php/admin/Index/dateCallsList
+[运行时间：0.090821s] [吞吐率：11.01req/s] [内存消耗：3,428.04kb] [文件加载：72]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'dateCallsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'content-length' => '73',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'origin' => 'http://www.mmcall.net:7002',
+  'referer' => 'http://www.mmcall.net:7002/datafication/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+)
+[ info ] [ PARAM ] array (
+  'jdno' => '88',
+  'id' => '',
+  'oldmanname' => '',
+  'page' => '1',
+  'signature' => 'ddc4eee07d0bd73bb99aa5f8de192b04',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->dateCallsList[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T17:18:09+08:00 ] 175.164.87.219 POST www.mmcall.net:7002/index.php/admin/Index/historyCallsList
+[运行时间：0.547851s] [吞吐率：1.83req/s] [内存消耗：3,429.24kb] [文件加载：72]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'historyCallsList',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'content-length' => '73',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'origin' => 'http://www.mmcall.net:7002',
+  'referer' => 'http://www.mmcall.net:7002/datafication/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+)
+[ info ] [ PARAM ] array (
+  'jdno' => '88',
+  'id' => '',
+  'oldmanname' => '',
+  'page' => '1',
+  'signature' => 'ddc4eee07d0bd73bb99aa5f8de192b04',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->historyCallsList[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T17:18:11+08:00 ] 175.164.87.219 POST www.mmcall.net:7002/index.php/admin/roles/getLists
+[运行时间：0.092773s] [吞吐率：10.78req/s] [内存消耗：3,414.96kb] [文件加载：72]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'roles',
+    2 => 'getLists',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'content-length' => '42',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'origin' => 'http://www.mmcall.net:7002',
+  'referer' => 'http://www.mmcall.net:7002/datafication/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Roles->getLists[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Roles.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T17:18:11+08:00 ] 175.164.87.219 POST www.mmcall.net:7002/index.php/admin/admin/index
+[运行时间：0.103516s] [吞吐率：9.66req/s] [内存消耗：3,448.65kb] [文件加载：72]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'content-length' => '310',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'origin' => 'http://www.mmcall.net:7002',
+  'referer' => 'http://www.mmcall.net:7002/datafication/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+)
+[ info ] [ PARAM ] array (
+  'page' => '1',
+  'psize' => '10',
+  'isEnabled' => '-1',
+  'userName' => '',
+  'phone' => '',
+  'realName' => '',
+  'startTime' => '',
+  'endTime' => '',
+  'jdName' => '内蒙古东江物业居家养老呼叫机项目',
+  'UnitNo' => '80492e8b8c104cc9a81645e9b3ffd80f',
+  'signature' => '9a4ca3425e7a938c79873e28bbac53bd',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->index[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T17:18:15+08:00 ] 175.164.87.219 GET www.mmcall.net:7002/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F24%5C%22,%5C%222023%2F4%2F27%5C%22],[%5C%222023%2F4%2F28%5C%22,%5C%222023%2F5%2F1%5C%22],[%5C%222023%2F5%2F2%5C%22,%5C%222023%2F5%2F5%5C%22],[%5C%222023%2F5%2F6%5C%22,%5C%222023%2F5%2F9%5C%22],[%5C%222023%2F5%2F10%5C%22,%5C%222023%2F5%2F13%5C%22],[%5C%222023%2F5%2F14%5C%22,%5C%222023%2F5%2F17%5C%22],[%5C%222023%2F5%2F18%5C%22,%5C%222023%2F5%2F21%5C%22],[%5C%222023%2F5%2F22%5C%22,%5C%222023%2F5%2F24%5C%22]]%22%7D&signature=2bea6aa385ae24c121d9502feb26ffc1
+[运行时间：0.272461s] [吞吐率：3.67req/s] [内存消耗：3,586.63kb] [文件加载：72]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'dataIntegration',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'referer' => 'http://www.mmcall.net:7002/datafication/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"jdno":88,"dateValue":"月","themoonarraylist":"[[\\"2023/4/24\\",\\"2023/4/27\\"],[\\"2023/4/28\\",\\"2023/5/1\\"],[\\"2023/5/2\\",\\"2023/5/5\\"],[\\"2023/5/6\\",\\"2023/5/9\\"],[\\"2023/5/10\\",\\"2023/5/13\\"],[\\"2023/5/14\\",\\"2023/5/17\\"],[\\"2023/5/18\\",\\"2023/5/21\\"],[\\"2023/5/22\\",\\"2023/5/24\\"]]"}',
+  'signature' => '2bea6aa385ae24c121d9502feb26ffc1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->dataIntegration[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T17:18:15+08:00 ] 175.164.87.219 POST www.mmcall.net:7002/index.php/admin/Index/mapIntegration
+[运行时间：0.116211s] [吞吐率：8.61req/s] [内存消耗：3,529.42kb] [文件加载：72]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'mapIntegration',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'content-length' => '50',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'origin' => 'http://www.mmcall.net:7002',
+  'referer' => 'http://www.mmcall.net:7002/datafication/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+)
+[ info ] [ PARAM ] array (
+  'jdno' => '88',
+  'signature' => '76c340d11d30f3764a08c67a37e90fe9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->mapIntegration[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T17:18:23+08:00 ] 175.164.87.219 POST www.mmcall.net:7002/index.php/admin/admin/getuser
+[运行时间：0.094726s] [吞吐率：10.56req/s] [内存消耗：3,478.70kb] [文件加载：72]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'getuser',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'content-length' => '42',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'origin' => 'http://www.mmcall.net:7002',
+  'referer' => 'http://www.mmcall.net:7002/datafication/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+)
+[ info ] [ PARAM ] array (
+  'signature' => '776a8773415590486189e97e10f77114',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Admin->getuser[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Admin.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T17:18:24+08:00 ] 175.164.87.219 GET www.mmcall.net:7002/index.php/admin/Index/dataIntegration?data=%7B%22jdno%22:88,%22dateValue%22:%22%E6%9C%88%22,%22themoonarraylist%22:%22[[%5C%222023%2F4%2F24%5C%22,%5C%222023%2F4%2F27%5C%22],[%5C%222023%2F4%2F28%5C%22,%5C%222023%2F5%2F1%5C%22],[%5C%222023%2F5%2F2%5C%22,%5C%222023%2F5%2F5%5C%22],[%5C%222023%2F5%2F6%5C%22,%5C%222023%2F5%2F9%5C%22],[%5C%222023%2F5%2F10%5C%22,%5C%222023%2F5%2F13%5C%22],[%5C%222023%2F5%2F14%5C%22,%5C%222023%2F5%2F17%5C%22],[%5C%222023%2F5%2F18%5C%22,%5C%222023%2F5%2F21%5C%22],[%5C%222023%2F5%2F22%5C%22,%5C%222023%2F5%2F24%5C%22]]%22%7D&signature=2bea6aa385ae24c121d9502feb26ffc1
+[运行时间：0.225586s] [吞吐率：4.43req/s] [内存消耗：3,586.63kb] [文件加载：72]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'dataIntegration',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'referer' => 'http://www.mmcall.net:7002/datafication/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+)
+[ info ] [ PARAM ] array (
+  'data' => '{"jdno":88,"dateValue":"月","themoonarraylist":"[[\\"2023/4/24\\",\\"2023/4/27\\"],[\\"2023/4/28\\",\\"2023/5/1\\"],[\\"2023/5/2\\",\\"2023/5/5\\"],[\\"2023/5/6\\",\\"2023/5/9\\"],[\\"2023/5/10\\",\\"2023/5/13\\"],[\\"2023/5/14\\",\\"2023/5/17\\"],[\\"2023/5/18\\",\\"2023/5/21\\"],[\\"2023/5/22\\",\\"2023/5/24\\"]]"}',
+  'signature' => '2bea6aa385ae24c121d9502feb26ffc1',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->dataIntegration[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2023-05-24T17:18:24+08:00 ] 175.164.87.219 POST www.mmcall.net:7002/index.php/admin/Index/mapIntegration
+[运行时间：0.125977s] [吞吐率：7.94req/s] [内存消耗：3,529.42kb] [文件加载：72]
+[ info ] [ LANG ] C:\PHP\Apache\Apache24\htdocs\screenphp\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Index',
+    2 => 'mapIntegration',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'www.mmcall.net:7002',
+  'connection' => 'keep-alive',
+  'content-length' => '50',
+  'accept' => 'application/json, text/plain, */*',
+  'x-access-token' => 'B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36',
+  'x-access-appid' => '123456',
+  'content-type' => 'application/x-www-form-urlencoded;charset=UTF-8',
+  'origin' => 'http://www.mmcall.net:7002',
+  'referer' => 'http://www.mmcall.net:7002/datafication/',
+  'accept-encoding' => 'gzip, deflate',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'cookie' => 'Admin-Token=B4D26C56059B2CEEBEC2116354F09CDCMDAwMDAwMDAwML6Mna-FqrqSib2cgMOHoIC7o36CkY6xfLjQzqGGZIXVuGadr4u5um-LunZ_w4efabGmjmWDo3-gu5SsqIhkp6vJiamoi9GyooXTgqe7n6iHyICCiIaQpYjGzruxiGKJt7KJYrmZ3baIndKfZa6bYXrGbIKmlX6Hnr65sH-Cip-8snyd1YS7pm-LvHmot2Sge7ykhoKEjaWNv5XNaYeJq8u2n2q9jJTPdg',
+)
+[ info ] [ PARAM ] array (
+  'jdno' => '88',
+  'signature' => '76c340d11d30f3764a08c67a37e90fe9',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ RUN ] app\admin\controller\Index->mapIntegration[ C:\PHP\Apache\Apache24\htdocs\screenphp\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File

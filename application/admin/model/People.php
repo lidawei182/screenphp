@@ -6,31 +6,22 @@ use \think\Model;
 use \think\Db;
 
 /**
- * 管理员相关操作
+ * 首页相关操作
  */
 class People extends Model
 {
     /** 大数据
      * @param $jdno 关联id , $themoonarraylist 日期数组 , $dateValue 月-年
      */
-    public function dataIntegration($jdno,$themoonarraylist,$dateValue)
+    public function dataIntegration($jdno,$code,$themoonarraylist,$dateValue)
     {
-        $where = " a.jdno = " . $jdno;
 
-        $data['tree'] = Db::name('tree')
-        ->alias('a')
-        ->field('a.jdName,c.No,c.oldmanname,c.Contact,c.Address,c.birthday,c.sex,
-            c.identity_card,c.deviceno,c.Residence_state,c.oldman_type,c.marital_status,
-            c.pathography,c.Children_situation,c.anaphylactic,c.Healthy,c.remark,
-            c.lianxiren1,c.lianxiren2,c.lianxiren3,c.lianxiren4,c.lianxiren5,c.lianxiren6,
-            c.lianxiren7,c.lianxiren8,c.longitude1,c.latitude1,c.clientno')
-        ->join('tree_device b', 'a.jdno = b.jdparent', 'left')
-        ->join('people c', 'b.deviceid = c.deviceno', 'left')
-        ->where($where)
-        ->distinct(true)
-        ->select();
+        $data['tree'] = Db::table('t_people')
+            ->where('deviceno', 'IN', function ($query) use ($code) {
+            $query->table('t_otherwebservice')->where('ClientNo',$code)->field('deviceno');
+        })->select();
 
-        $where1 = " a.jdno = " . $jdno . " and c.status <> '挂断' ";
+        $where1 = " a.jdno = " . $jdno . " and c.status <> '挂断' " . " and d.oldmanname <> ''";
         $calllist = Db::name('tree')
         ->alias('a')
         ->field('c.*,d.No,d.oldmanname,d.Address')
@@ -41,7 +32,7 @@ class People extends Model
         ->where(function($query){
             $query->where('c.status' ,'<>', NULL)->whereOr('c.status' ,'<>', '');
         })->distinct(true)
-        ->order('c.id desc')
+        ->order('c.id ASC')
         ->page(1, 10)
         ->select();
 
@@ -52,7 +43,7 @@ class People extends Model
         ->join('t_calllist_voice c', 'b.deviceid = c.deviceid', 'left')
         ->join('people d', 'c.deviceid = d.deviceno', 'left')
         ->where($where1)
-       ->where(function($query){
+        ->where(function($query){
             $query->where('c.status' ,'<>', NULL)->whereOr('c.status' ,'<>', '');
         })->distinct(true)
         ->count();
@@ -102,18 +93,11 @@ class People extends Model
 
         $where2 = true;
 
-        $where2 = " a.jdno = " . $jdno ;
+        $where2 = " a.jdno = " . $jdno ." and c.calltime IS NOT NULL and  d.oldmanname IS NOT NULL";
 
-        $where2 .= " and c.status = " . "'$status'";
-        
         $where2 .= " and  c.calltime >= " ."'$calltime1'";
 
         $where2 .= " and  c.calltime <= " ."'$calltime2'";
-
-        // $whereOr = [ 
-        //     'c.taketime' => NULL,
-        //     'c.taketime' => ''
-        // ];
 
         if($taketime == 1){
             return Db::name('tree')
@@ -121,43 +105,46 @@ class People extends Model
                 ->field('COUNT(c.calltime) AS counts,c.calltime as ctime')
                 ->join('tree_device b', 'a.jdno = b.jdparent', 'left')
                 ->join('t_calllist_voice c', 'b.deviceid = c.deviceid', 'left')
+                ->join('people d', 'c.deviceid = d.deviceno', 'left')
                 ->where($where2)
+                ->where(function($query){
+                    $query->where('c.calltime' ,'<>', NULL)->whereOr('c.calltime' ,'<>', '');
+                })
                 ->find();
         }
         if($taketime == 0){
-            //$where2 .= " and  c.endtime IS NULL ";
+            $where2 .= " and c.status = " . "'$status'";
+            $where2 .= " and c.taketime IS NULL";
             return Db::name('tree')
                 ->alias('a')
                 ->field('COUNT(c.calltime) AS counts,c.calltime as ctime')
                 ->join('tree_device b', 'a.jdno = b.jdparent', 'left')
                 ->join('t_calllist_voice c', 'b.deviceid = c.deviceid', 'left')
+                ->join('people d', 'c.deviceid = d.deviceno', 'left')
                 ->where($where2)
                 ->where(function($query){
-                    $query->where(['c.taketime' => NULL])->whereOr(['c.taketime' => '']);
-                })->where(function($query){
-                    $query->where(['c.endtime' => NULL])->whereOr(['c.endtime' => '']);
-                })->find();
+                    $query->where('c.calltime' ,'<>', NULL)->whereOr('c.calltime' ,'<>', '');
+                })
+                ->find();
         }
 
     }
     /** 地图大数据
      * @param $jdno 关联id
      */
-    public function mapIntegration($jdno){
-        $where = " a.jdno = " . $jdno;
-        $data['tree'] = Db::name('tree')
-        ->alias('a')
-        ->field('a.jdName,c.No,c.oldmanname,c.Contact,c.Address,c.birthday,c.sex,
-            c.identity_card,c.deviceno,c.Residence_state,c.oldman_type,c.marital_status,
-            c.pathography,c.Children_situation,c.anaphylactic,c.Healthy,c.remark,
-            c.lianxiren1,c.lianxiren2,c.lianxiren3,c.lianxiren4,c.lianxiren5,c.lianxiren6,
-            c.lianxiren7,c.lianxiren8,c.longitude1,c.latitude1,c.clientno,d.isonline')
-        ->join('tree_device b', 'a.jdno = b.jdparent', 'left')
-        ->join('people c', 'b.deviceid = c.deviceno', 'left')
-        ->join('callno d', 'c.deviceno = d.callno', 'left')
-        ->where($where)
-        ->distinct(true)
-        ->select();
+    public function mapIntegration($code){
+
+        if($code){
+            $data['tree'] = Db::table('t_people')
+                ->alias('a')
+                ->field('a.*,b.isonline')
+                ->join('callno b', 'a.deviceno = b.callno', 'left')
+                ->where('deviceno', 'IN', function ($query) use ($code) {
+                $query->table('t_otherwebservice')->where('ClientNo',$code)->field('deviceno');
+            })->select();
+        }else{
+            $data['tree'] = [];
+        }
         return $data;
     }
 
@@ -165,11 +152,11 @@ class People extends Model
     /** 呼叫
      * @param $jdno 关联id
      */
-    public function dateCallsList($jdno, $id, $oldmanname, $page, $psize)
+    public function dateCallsList($jdno, $id, $oldmanname, $calltime, $endcalltime,  $sort, $page, $psize)
     {
         $where = true;
 
-        $where = " a.jdno = " . $jdno . " and c.status <> '挂断' ";
+        $where = " a.jdno = " . $jdno . " and c.status <> '挂断' " . " and d.oldmanname <> ''";
 
         if ($id) {
             $where .= " and c.id = " . $id;
@@ -177,6 +164,24 @@ class People extends Model
         
         if ($oldmanname) {
             $where .= " and d.oldmanname like '%" . $oldmanname . "%' ";
+        }
+
+        if ($calltime) {
+            $where .= " and  c.calltime >= " . "'$calltime'";
+        }
+
+        if ($endcalltime) {
+            $where .= " and  c.calltime <= " . "'$endcalltime'";
+        }
+
+        $ordersort = 'c.calltime DESC';
+
+        if($sort){
+            if($sort == 'ASC'){
+                $ordersort = 'c.calltime ASC';
+            }else{
+                $ordersort = 'c.calltime DESC';
+            }
         }
 
         $data = Db::name('tree')
@@ -189,7 +194,7 @@ class People extends Model
             ->where(function($query){
                 $query->where('c.status' ,'<>', NULL)->whereOr('c.status' ,'<>', '');
             })->distinct(true)
-            ->order('c.id desc')
+            ->order($ordersort)
             ->page($page, $psize)
             ->select();
 
@@ -198,11 +203,11 @@ class People extends Model
     /** 呼叫
      * @param $jdno 关联id
      */
-    public function dateCallsListTotal($jdno, $id, $oldmanname)
+    public function dateCallsListTotal($jdno, $id, $oldmanname, $calltime, $endcalltime)
     {
         $where = true;
 
-        $where = " a.jdno = " . $jdno . " and c.status <> '挂断' ";
+        $where = " a.jdno = " . $jdno . " and c.status <> '挂断' " . " and d.oldmanname <> ''";
 
         if ($id) {
             $where .= " and c.id = " . $id;
@@ -210,6 +215,14 @@ class People extends Model
         
         if ($oldmanname) {
             $where .= " and d.oldmanname like '%" . $oldmanname . "%' ";
+        }
+
+        if ($calltime) {
+            $where .= " and  c.calltime >= " . "'$calltime'";
+        }
+        
+        if ($endcalltime) {
+            $where .= " and  c.calltime <= " . "'$endcalltime'";
         }
 
         return Db::name('tree')
@@ -228,57 +241,80 @@ class People extends Model
     /** 历史
      * @param $jdno 关联id
      */
-    public function historyCallsList($jdno, $id, $oldmanname, $page, $psize)
+    public function historyCallsList($jdno, $id, $oldmanname, $calltime, $endTime, $page, $psize)
     {
         $where = true;
 
-        $where = " a.jdno = " . $jdno;
+        $where = " a.jdparent = " . $jdno;
 
         if ($id) {
             $where .= " and c.id = " . $id;
         }
         
         if ($oldmanname) {
-            $where .= " and d.oldmanname like '%" . $oldmanname . "%' ";
+            $where .= " and c.oldmanname like '%" . $oldmanname . "%' ";
         }
 
-        $exp = new \think\Db\Expression('c.id desc');
+        if ($calltime) {
+            $where .= " and  b.calltime >= " . "'$calltime'";
+        }
+        if ($endTime) {
+            $historytime2 = strtotime($endTime) + 86400;
+            $historytime2 = date('Y-m-d', $historytime2);
+            $where .= " and  b.calltime <= " . "'$historytime2'";
+        }
 
-        return Db::name('tree')
-                ->alias('a')
-                ->field('c.*,d.No,d.oldmanname,d.Address')
-                ->join('tree_device b', 'a.jdno = b.jdparent', 'left')
-                ->join('calllist_voice c', 'b.deviceid = c.deviceid', 'left')
-                ->join('people d', 'c.deviceid = d.deviceno', 'left')
-                ->where($where)
-                ->distinct(true)
-                ->page($page, $psize)
-                ->select();
+        $where .= " and  c.oldmanname IS NOT NULL ";
+
+        $data['calltime'] = $calltime;
+        $data['endTime'] = $endTime;
+     
+        $data['list'] =  Db::name('tree_device')
+            ->alias('a')
+            ->field('b.*,c.oldmanname,c.Address,c.remark')
+            ->join('calllist_voice b', 'a.deviceid = b.deviceid', 'left')
+            ->join('people c', 'b.deviceid = c.deviceno', 'left')
+            ->where($where)
+            ->distinct(true)
+            ->order('b.calltime','desc')
+            ->page($page, $psize)
+            ->select();
+
+        return $data;
     }
     /** 历史
      * @param $jdno 关联id
      */
-    public function historyCallsListTotal($jdno, $id, $oldmanname)
+    public function historyCallsListTotal($jdno, $id, $oldmanname, $calltime, $endTime)
     {
         $where = true;
 
-        $where = " a.jdno = " . $jdno;
+        $where = " a.jdparent = " . $jdno;
 
         if ($id) {
             $where .= " and c.id = " . $id;
         }
         
         if ($oldmanname) {
-            $where .= " and d.oldmanname like '%" . $oldmanname . "%' ";
+            $where .= " and c.oldmanname like '%" . $oldmanname . "%' ";
         }
 
-        return Db::name('tree')
+        if ($calltime) {
+            $where .= " and  b.calltime >= " . "'$calltime'";
+        }
+        if ($endTime) {
+            $historytime2 = strtotime($endTime) + 86400;
+            $historytime2 = date('Y-m-d', $historytime2);
+            $where .= " and  b.calltime <= " . "'$historytime2'";
+        }
+
+        $where .= " and  c.oldmanname IS NOT NULL";
+
+        return Db::name('tree_device')
                 ->alias('a')
-                ->field('c.*,d.No,d.oldmanname,d.Address')
-                ->join('tree_device b', 'a.jdno = b.jdparent', 'left')
-                ->join('t_calllist_voice c', 'b.deviceid = c.deviceid', 'left')
-                ->join('people d', 'c.deviceid = d.deviceno', 'left')
-                ->where($where)
+                ->field('b.*,c.oldmanname')
+                ->join('calllist_voice b', 'a.deviceid = b.deviceid', 'left')
+                ->join('people c', 'b.deviceid = c.deviceno', 'left')
                 ->where($where)
                 ->distinct(true)
                 ->count();
@@ -287,58 +323,89 @@ class People extends Model
     /** 用户
      * @param $jdno 关联id
      */
-    public function getPeopleList($jdno, $deviceno, $oldmanname, $myorder, $page, $psize)
+    public function getPeopleList($code, $deviceno, $oldmanname, $contact, $identityCard, $myorder, $page, $psize)
     {
         $where = true;
 
-        $where = " a.jdno = " . $jdno;
-
         if ($deviceno) {
-            $where .= " and c.deviceno = " . "'$deviceno'";
+            $where .= " and a.deviceno = " . "'$deviceno'";
         }
         
         if ($oldmanname) {
-            $where .= " and c.oldmanname like '%" . $oldmanname . "%' ";
+            $where .= " and a.oldmanname like '%" . $oldmanname . "%' ";
         }
 
-        $data = Db::name('tree')
-                ->alias('a')
-                ->field('a.jdName,c.*')
-                ->join('tree_device b', 'a.jdno = b.jdparent', 'left')
-                ->join('people c', 'b.deviceid = c.deviceno', 'left')
-                ->where($where)
-                ->order($myorder)
-                ->distinct(true)
-                ->page($page, $psize)
-                ->select();
+        if ($contact) {
+            $where .= " and a.Contact like '%" . $contact . "%' ";
+        }
+
+        if ($identityCard) {
+            $where .= " and a.identity_card like '%" . $identityCard . "%' ";
+        }
+
+        $data['list'] = Db::table('t_people')
+            ->alias('a')
+            ->field('a.*,b.isonline')
+            ->join('callno b', 'a.deviceno = b.callno', 'left')
+            ->where('deviceno', 'IN', function ($query) use ($code) {
+                $query->table('t_otherwebservice')->where('ClientNo',$code)->field('deviceno');
+            })
+            ->where($where)
+            ->order($myorder)
+            ->page($page, $psize)
+            ->select();
 
         return $data;
     }
     /** 用户
      * @param $jdno 关联id
      */
-    public function getPeopleListTotal($jdno, $deviceno, $oldmanname)
+    public function getPeopleListTotal($code, $deviceno, $oldmanname, $contact, $identityCard)
     {
         $where = true;
 
-        $where = " a.jdno = " . $jdno;
-
         if ($deviceno) {
-            $where .= " and c.deviceno = " . "'$deviceno'";
+            $where .= " and a.deviceno = " . "'$deviceno'";
         }
         
         if ($oldmanname) {
-            $where .= " and c.oldmanname like '%" . $oldmanname . "%' ";
+            $where .= " and a.oldmanname like '%" . $oldmanname . "%' ";
         }
 
-        return Db::name('tree')
-                ->alias('a')
-                ->field('a.jdName,c.*')
-                ->join('tree_device b', 'a.jdno = b.jdparent', 'left')
-                ->join('people c', 'b.deviceid = c.deviceno', 'left')
-                ->where($where)
-                ->distinct(true)
-                ->count();
+        if ($contact) {
+            $where .= " and a.Contact like '%" . $contact . "%' ";
+        }
+
+        if ($identityCard) {
+            $where .= " and a.identity_card like '%" . $identityCard . "%' ";
+        }
+
+        return Db::table('t_people')
+            ->alias('a')
+            ->field('a.*,b.isonline')
+            ->join('callno b', 'a.deviceno = b.callno', 'left')
+            ->where('deviceno', 'IN', function ($query) use ($code) {
+                $query->table('t_otherwebservice')->where('ClientNo',$code)->field('deviceno');
+            })
+            ->where($where)
+            ->count();
+    }
+
+    /** 用户
+     * @param $jdno 关联id
+     */
+    public function havePeopleList($code)
+    {
+        $data['have'] = Db::table('t_people')
+            ->alias('a')
+            ->field('b.isonline,count(b.isonline) have')
+            ->join('callno b', 'a.deviceno = b.callno', 'left')
+            ->where('deviceno', 'IN', function ($query) use ($code) {
+                $query->table('t_otherwebservice')->where('ClientNo',$code)->field('deviceno');
+            })
+            ->group('b.isonline')
+            ->select();
+        return $data;
     }
 
 }

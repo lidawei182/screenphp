@@ -11,7 +11,14 @@ require_once("Connection.php");
 
 class Push extends Server
 {
-    protected $socket = 'websocket://127.0.0.1:2346';
+
+    //protected $socket = 'websocket://www.mmcall.test.net:7003';
+
+    //protected $socket = 'websocket://www.mmcall.net:7003';
+    
+    protected $socket = 'websocket://0.0.0.0:7003';
+
+    public $messagepush = '';
 
     /**
      * @param $connection
@@ -22,31 +29,17 @@ class Push extends Server
     {
         // 客户端传递的是json数据
         $message_data = json_decode($data, true);
+
+        $this->messagepush = json_decode($data, true);
+
         if(!$message_data)
         {
             return ;
         }
         // 根据类型执行不同的业务
         switch($message_data['type'])
-        {
-            // 客户端回应服务端的心跳
-            case 'pong':
-                $worker = $this->worker;
-                    foreach($worker->connections as $conn)
-                    {
-            $message_data['text'] ? $message_type['data']['text'] = $message_data['text'] : $message_type['data']['text'] = '';
-                        $message_type['data']['client_name'] = $message_data['client_name'];
-                        $message_type['data']['room_id'] = $message_data['room_id'];
-                        $message_type['data']['avatar'] = $message_data['avatar'];
-                        $message_type['type'] = 'pong';
-                        $message_type['status'] = "ok";
-                        $message_type['list'] = [];
-                        $message_type['msg'] = "成功";
-                        $conn->send(json_encode($message_type));
-                    }
-                return ;        
-            
-            // 客户端登录 message格式: {type:login, name:xx, room_id:1} ，添加到客户端，广播给所有客户端xx进入聊天室
+        {        
+            // 客户端登录 message格式: {type:login, name:xx, room_id:1}
             case 'login':
             	if(!isset($message_data['room_id']))
                 {
@@ -63,10 +56,9 @@ class Push extends Server
 			    	$worker = $this->worker;
 			    	foreach($worker->connections as $conn)
 				    {
-                        if($message_data['text']){
-                            $message_type['text'] = $message_data['text'];
-                        }
-                        $message_type['type'] = 'login';
+                        $message_type['type'] = $this->messagepush;
+                        $message_type['room_id'] = $message_data['room_id'];
+                        $message_type['client_name'] = $message_data['client_name'];
                         $message_type['status'] = "ok";
                         $message_type['list'] = [];
                         $message_type['msg'] = $message_data['client_name']."登陆成功";
@@ -74,10 +66,61 @@ class Push extends Server
 				    }
 			    }
 
-            case 'say':
-               
-               	return;
+            break;
+
+            case 'push':
+
+                $worker = $this->worker;
+
+                Timer::add(2,function()use($worker){
+                    foreach($worker->connections as $conn)
+                    {
+
+                        global $db;
+
+                        $calllist = $db->query(
+                            "SELECT c.*,d.No,d.oldmanname,d.Address FROM `t_tree` AS a
+                            LEFT JOIN `t_tree_device` AS b
+                            ON a.`jdno` = b.`jdParent`
+                            LEFT JOIN `t_calllist_voice` AS c
+                            ON b.`deviceid` = c.`deviceid`
+                            LEFT JOIN `t_people` AS d
+                            ON c.`deviceid` = d.`deviceno`
+                            WHERE a.`jdno` = ".$this->messagepush['room_id']." AND c.status <> '挂断' AND d.oldmanname <> '' order by c.`calltime` DESC"
+                        );
+
+                        $calllistTotal = $db->query(
+                            "SELECT COUNT(*) total FROM `t_tree` AS a
+                            LEFT JOIN `t_tree_device` AS b
+                            ON a.`jdno` = b.`jdParent`
+                            LEFT JOIN `t_calllist_voice` AS c
+                            ON b.`deviceid` = c.`deviceid`
+                            LEFT JOIN `t_people` AS d
+                            ON c.`deviceid` = d.`deviceno`
+                            WHERE a.`jdno` = ".$this->messagepush['room_id']." AND c.status <> '挂断' AND d.oldmanname <> ''"
+                        );
+
+                        if($calllist){
+                            $obj_data['list'] = $calllist;
+                            $obj_data['total'] = $calllistTotal;
+                            $obj_data['type'] = "push";
+                            $obj_data['status'] = "ok";
+                            $obj_data['msg'] = "成功";                  
+                        }else{
+                            $obj_data['type'] = "push";
+                            $obj_data['status'] = "on";
+                            $obj_data['msg'] = "加载失败";
+                        }
+
+                        $conn->send(json_encode($obj_data));
+                    }
+                });
+
+            break;
+             
+            default:
         }
+
     }
 
     /**
@@ -86,7 +129,10 @@ class Push extends Server
      */
     public function onConnect($connection)
     {
+        global $db; 
 
+        //$db = new \Workerman\MySQL\Connection('127.0.0.1', '3306', 'root', 'root', 'yunmmcall_big');
+        $db = new \Workerman\MySQL\Connection('47.104.10.49', '3306', 'root', '3a1A2110-AcDe+4C3a-944e?3fe4af7fabD2', 'yunmmcall_big');
     }
     /**
 	 * 向所有验证的用户发送消息
@@ -127,28 +173,6 @@ class Push extends Server
     public function onWorkerStart()
     {
 
-        $worker = $this->worker;
-        Timer::add(2,function()use($worker){
-            foreach($worker->connections as $conn)
-            {
-                global $db;
 
-                $db = new \Workerman\MySQL\Connection('127.0.0.1', '3306', 'root', 'root', 'tp5qpi');
-
-                $result = $db->select('*')->from('tp_user')->query();
-
-                if($result){
-                    $obj_data['list'] = $result;
-                    $obj_data['type'] = "push";
-                    $obj_data['status'] = "ok"; 
-                    $obj_data['msg'] = "成功";                  
-                }else{
-                    $obj_data['status'] = "on";
-                    $obj_data['msg'] = "加载失败";
-                }
-
-                $conn->send(json_encode($obj_data));
-            }
-        });
     }
 }

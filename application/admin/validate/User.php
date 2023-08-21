@@ -11,7 +11,7 @@ class User extends Validate
 {
     //验证规则
     protected $rule = [
-        'userName' => ['require', 'max' => '25', 'alpha'],
+        'userName' => ['require'],
         'password' => ['require'],
         'phone'    => ['regex' => '/1[3458]{1}\d{9}$/'],
         'verify'   => ['require', 'captcha']

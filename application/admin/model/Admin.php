@@ -160,7 +160,7 @@ class Admin extends Model
         $true = Db::name('tree')->where(['jdno' => $customer['jdParent']])->update($group);
 
         if(!$true){
-            my_exception('用户已存在');
+            my_exception('用户已存在请联系技术人员');
             // 回滚事务
             Db::rollback();
             return false;
